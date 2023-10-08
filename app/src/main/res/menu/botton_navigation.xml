@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_menu_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/menuCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_menu_courses"
+        android:title="@string/courses" />
+    <item
+        android:id="@+id/menuSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_menu_saved"
+        android:title="@string/saved" />
+</menu>
