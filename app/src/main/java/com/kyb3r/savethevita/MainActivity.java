@@ -1,4 +1,4 @@
-package com.kyb3r.myapplication;
+package com.kyb3r.savethevita;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

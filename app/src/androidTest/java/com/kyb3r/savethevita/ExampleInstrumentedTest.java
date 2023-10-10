@@ -1,4 +1,4 @@
-package com.kyb3r.myapplication;
+package com.kyb3r.savethevita;
 
 import android.content.Context;
 
