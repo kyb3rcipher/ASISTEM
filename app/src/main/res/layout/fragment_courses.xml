@@ -9,6 +9,7 @@
     tools:context=".CoursesFragment">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/courseCardView"
         android:layout_width="match_parent"
         android:layout_height="271dp"
         android:layout_margin="25dp"
@@ -21,7 +22,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/courseImage"
                 android:layout_width="match_parent"
                 android:layout_height="176dp"
                 android:contentDescription="Course Image"
@@ -40,7 +41,7 @@
 
                     <TextView
                         android:id="@+id/courseName"
-                        android:layout_width="288dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingStart="20dp"
                         android:paddingTop="10dp"
@@ -62,10 +63,12 @@
                 </LinearLayout>
 
                 <ImageButton
+                    android:id="@+id/courseButton"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:background="@drawable/circle"
+                    android:contentDescription="Course button"
                     android:src="@drawable/ic_bookmark_add" />
 
             </LinearLayout>
