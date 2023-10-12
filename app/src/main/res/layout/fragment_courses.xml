@@ -2,13 +2,15 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imagebutton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="click"
     tools:context=".CoursesFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="271dp"
         android:layout_margin="25dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp">
@@ -31,28 +33,42 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/courseName"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="20dp"
-                    android:paddingTop="3dp"
-                    android:paddingEnd="70dp"
-                    android:text="First Aid - Basics"
-                    android:textAlignment="viewStart"
-                    android:textSize="28sp" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/courseName"
+                        android:layout_width="288dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="70dp"
+                        android:text="First Aid - Basics"
+                        android:textAlignment="viewStart"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/courseDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="30dp"
+                        android:paddingBottom="15dp"
+                        android:text="Learn about the basics of first aid."
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/ic_bookmark_add" />
 
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/courseDescription"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingStart="20dp"
-                android:paddingEnd="30dp"
-                android:paddingBottom="15dp"
-                android:text="Learn about the basics of first aid."
-                android:textSize="14sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
