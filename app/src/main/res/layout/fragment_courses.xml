@@ -2,77 +2,96 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/imagebutton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="click"
     tools:context=".CoursesFragment">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/courseCardView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="271dp"
-        android:layout_margin="25dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp">
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
 
+        <!-- COURSE 1 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/courseImage"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/course1CardView"
                 android:layout_width="match_parent"
-                android:layout_height="176dp"
-                android:contentDescription="Course Image"
-                android:scaleType="fitXY"
-                android:src="@drawable/ic_course_basic" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="289dp"
+                android:layout_margin="25dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/courseName"
+                    <ImageView
+                        android:id="@+id/course1Image"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="20dp"
-                        android:paddingTop="10dp"
-                        android:paddingEnd="70dp"
-                        android:text="First Aid - Basics"
-                        android:textAlignment="viewStart"
-                        android:textSize="26sp" />
+                        android:layout_height="176dp"
+                        android:contentDescription="@string/course1ImageDescription"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/banner_course_burns"
+                        tools:ignore="ImageContrastCheck"
+                        tools:src="@drawable/banner_course_burns" />
 
-                    <TextView
-                        android:id="@+id/courseDescription"
-                        android:layout_width="match_parent"
-                        android:layout_height="54dp"
-                        android:paddingStart="20dp"
-                        android:paddingTop="5dp"
-                        android:paddingEnd="30dp"
-                        android:paddingBottom="15dp"
-                        android:text="Learn about the basics of first aid."
-                        android:textSize="14sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="265dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="TextSizeCheck">
+
+                            <TextView
+                                android:id="@+id/course1Name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:paddingTop="10dp"
+                                android:paddingEnd="70dp"
+                                android:text="@string/course1Title"
+                                android:textAlignment="viewStart"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/course1Description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="20dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="30dp"
+                                android:paddingBottom="15dp"
+                                android:text="@string/course1Description"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/course1Button"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginStart="20dp"
+                            android:background="@drawable/circle"
+                            android:backgroundTint="?attr/colorSecondary"
+                            android:contentDescription="@string/course1ButtonDescription"
+                            android:elevation="4dp"
+                            android:src="@drawable/ic_bookmark_add"
+                            app:tint="#FFFFFF"
+                            tools:ignore="ImageContrastCheck,RedundantDescriptionCheck" />
+                    </LinearLayout>
                 </LinearLayout>
-
-                <ImageButton
-                    android:id="@+id/courseButton"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/circle"
-                    android:contentDescription="Course button"
-                    android:src="@drawable/ic_bookmark_add" />
-
-            </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </ScrollView>
+
 </FrameLayout>
