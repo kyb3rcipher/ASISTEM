@@ -5,4 +5,7 @@
 
     <color name="red">#870214</color>
     <color name="pink">#EE99A5</color>
+
+    // Color references for code
+    <attr name="colorSecondary" format="reference" />
 </resources>

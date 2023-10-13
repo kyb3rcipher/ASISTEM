@@ -4,6 +4,7 @@
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/red</item>
         <item name="colorSecondary">@color/red</item>
+        <item name="android:tint">@color/white</item>
         <item name="toolbarStyle">@style/ToolbarStyle</item>
         <item name="actionOverflowButtonStyle">@style/IconOverflow</item>
     </style>

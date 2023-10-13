@@ -37,8 +37,9 @@
                         android:contentDescription="@string/course1ImageDescription"
                         android:scaleType="fitXY"
                         android:src="@drawable/banner_course_burns"
-                        tools:ignore="ImageContrastCheck"
-                        tools:src="@drawable/banner_course_burns" />
+                        tools:ignore="ImageContrastCheck,UseAppTint"
+                        tools:src="@drawable/banner_course_burns"
+                        android:tint="@null" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"

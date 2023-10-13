@@ -1,13 +1,16 @@
 package com.kyb3r.savethevita;
 
+import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.content.res.Resources;
+import android.os.Bundle;
+import android.util.TypedValue;
+import android.view.Menu;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -18,7 +21,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationBar);
-        bottomNavigationView.setItemActiveIndicatorColor(getColorStateList(R.color.pink));  // set bottonNavigationBar selection indicator color
+
+        // Set select item indicator color
+        TypedValue typedValue = new TypedValue();
+        Resources.Theme theme = this.getTheme();
+        theme.resolveAttribute(R.attr.colorSecondary, typedValue, true);
+        ColorStateList colorStateList = ColorStateList.valueOf(typedValue.data);
+        bottomNavigationView.setItemActiveIndicatorColor(colorStateList);  // set bottonNavigationBar selection indicator color
+
         toolBar = findViewById(R.id.toolBar);
         toolBar.setTitle(R.string.home);
         setSupportActionBar(toolBar);

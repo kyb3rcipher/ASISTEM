@@ -27,5 +27,6 @@
         android:id="@+id/bottomNavigationBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:itemRippleColor="?attr/colorSecondary"
         app:menu="@menu/botton_navigation" />
 </LinearLayout>
