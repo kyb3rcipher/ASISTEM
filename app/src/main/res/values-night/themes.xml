@@ -6,6 +6,7 @@
         <item name="colorSecondary">@color/red</item>
         <item name="android:tint">@color/white</item>
         <item name="toolbarStyle">@style/ToolbarStyle</item>
+        <item name="android:textColorLink">@color/pink</item>
         <item name="actionOverflowButtonStyle">@style/IconOverflow</item>
     </style>
 

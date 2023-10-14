@@ -1,10 +1,20 @@
 <resources>
     <string name="app_name">Save The Vita</string>
+    <string name="app_version">BETA 0.0.1</string>
 
     <string name="about">About</string>
     <string name="home">Home</string>
     <string name="courses">Curses</string>
     <string name="saved">Saved</string>
+
+    <!-- About -->
+    <string name="development">Development</string>
+    <string name="image_logo_description">App logo image</string>
+    <string name="image_contributor_description">Contributor avatar image</string>
+    <string name="development_contact"><a href="https://kyb3rcipher.com">Contact</a></string>
+    <string name="teacher">Teacher</string>
+    <string name="design">Design</string>
+    <string name="designer_contact"><a href="https://github.com/bengiv">@bengiv</a></string>
 
     <!-- Courses -->
         <!-- 1 -->
