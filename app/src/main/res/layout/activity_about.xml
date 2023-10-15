@@ -46,7 +46,7 @@
                         android:layout_gravity="center"
                         android:contentDescription="@string/image_logo_description"
                         android:paddingTop="10dp"
-                        android:src="@drawable/ic_heart"
+                        android:src="@drawable/logo_solid"
                         android:tint="@null"
                         tools:ignore="UseAppTint,ImageContrastCheck" />
 
