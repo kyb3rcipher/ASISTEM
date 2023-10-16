@@ -18,10 +18,11 @@
 
     <!-- Courses -->
         <!-- 1 -->
-        <string name="course1ImageDescription">UwU</string>
+        <string name="course1ImageDescription">Course Image</string>
         <string name="course1Title">Burns</string>
-        <string name="course1Description">UwU</string>
-        <string name="course1ButtonDescription">UwU</string>
+        <string name="course1Description">Assess, treat, and prevent complications in burn injuries.</string>
+        <string name="course1ButtonDescription">Course button</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
