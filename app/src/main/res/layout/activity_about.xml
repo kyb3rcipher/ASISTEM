@@ -130,10 +130,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:paddingTop="10dp"
-                            android:text="Kyb3r Cipher"
+                            android:text="@string/development_name"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                            android:textSize="25sp"
-                            tools:ignore="HardcodedText" />
+                            android:textSize="25sp" />
 
                         <TextView
                             android:id="@+id/developmentContact"
@@ -207,10 +206,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:paddingTop="10dp"
-                            android:text="Veronica Martinez Anaya"
+                            android:text="@string/teacher_name"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                            android:textSize="25sp"
-                            tools:ignore="HardcodedText" />
+                            android:textSize="25sp" />
 
                         <TextView
                             android:id="@+id/teacherContact"
@@ -220,8 +218,7 @@
                             android:autoLink="web"
                             android:paddingBottom="15dp"
                             android:text="@null"
-                            android:textSize="18sp"
-                            tools:ignore="HardcodedText" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -285,10 +282,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:paddingTop="10dp"
-                            android:text="Benito"
+                            android:text="@string/designer_name"
                             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                            android:textSize="25sp"
-                            tools:ignore="HardcodedText" />
+                            android:textSize="25sp" />
 
                         <TextView
                             android:id="@+id/designContact"
@@ -297,8 +293,7 @@
                             android:layout_weight="1"
                             android:paddingBottom="15dp"
                             android:text="@string/designer_contact"
-                            android:textSize="18sp"
-                            tools:ignore="HardcodedText" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                 </LinearLayout>
