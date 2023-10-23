@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.kyb3r.savethevita'
+    namespace 'com.kyb3r.asistem'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.kyb3r.savethevita"
+        applicationId "com.kyb3r.asistem"
         minSdk 24
         targetSdk 33
         versionCode 1

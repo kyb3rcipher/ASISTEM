@@ -1,4 +1,4 @@
-package com.kyb3r.savethevita;
+package com.kyb3r.asistem;
 
 public class CoursesList {
     public String title, description;

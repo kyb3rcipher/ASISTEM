@@ -1,4 +1,4 @@
-package com.kyb3r.savethevita;
+package com.kyb3r.asistem;
 
 import android.os.Bundle;
 
