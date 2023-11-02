@@ -68,7 +68,7 @@
         android:layout_height="250dp"
         android:layout_centerVertical="true"
         android:background="@drawable/word_border"
-        android:backgroundTint="?android:attr/colorWindowBackground"
+        android:backgroundTint="@null"
         android:gravity="center|center_vertical">
 
         <androidx.cardview.widget.CardView
