@@ -15,13 +15,15 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="8dp">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/close_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
+            android:background="@null"
             android:clickable="true"
             android:contentDescription="Close button"
+            android:onClick="finish"
             android:src="@drawable/ic_close"
             app:tint="#7F7E80"
             tools:ignore="TouchTargetSizeCheck" />
