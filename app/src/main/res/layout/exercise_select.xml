@@ -45,20 +45,20 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="56dp"
-            android:text="Select the correct option"
+            android:text="@string/exerciseSelect_title"
             android:textSize="26sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/instruction"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="The first thing you have to do in case of a firacture"
+            android:text="[Instruction]"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -81,7 +81,7 @@
                 android:layout_height="100dp">
 
                 <ImageButton
-                    android:id="@+id/option1Button"
+                    android:id="@+id/option1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@android:drawable/btn_star" />
@@ -93,7 +93,7 @@
                 android:layout_height="100dp">
 
                 <ImageButton
-                    android:id="@+id/option2Button"
+                    android:id="@+id/option2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@android:drawable/btn_star" />
@@ -112,7 +112,7 @@
                 android:layout_height="100dp">
 
                 <ImageButton
-                    android:id="@+id/option3Button"
+                    android:id="@+id/option3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@android:drawable/btn_star" />
@@ -124,7 +124,7 @@
                 android:layout_height="100dp">
 
                 <ImageButton
-                    android:id="@+id/option4Button"
+                    android:id="@+id/option4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@android:drawable/btn_star" />
@@ -133,14 +133,5 @@
 
         </TableRow>
     </TableLayout>
-
-    <Button
-        android:id="@+id/check_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="Check"
-        android:textColor="@color/white"
-        android:textSize="17sp" />
 
 </RelativeLayout>

@@ -34,6 +34,16 @@
     <string name="course2Title">Fractures</string>
     <string name="course2Description">Assess, treat, and prevent complications in fracture injuries..</string>
 
+    <!-- Exercise -->
+    <!-- options -->
+    <string name="exerciseOptions_title">Select the answer</string>
+    <!-- read -->
+    <string name="exerciseRead_title">Read the text</string>
+    <!-- select -->
+    <string name="exerciseSelect_title">Select the correct option</string>
+    <!-- write -->
+    <string name="exerciseWrite_title">Write the answer</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
