@@ -26,13 +26,13 @@
     <string name="tapPair_title">Tap the pairs</string>
 
     <!-- Courses -->
-        <!-- 1 -->
-        <string name="courseImageDescription">Course Image</string>
-        <string name="courseButtonDescription">Course button</string>
-        <string name="course1Title">Burns</string>
-        <string name="course1Description">Assess, treat, and prevent complications in burn injuries.</string>
-        <string name="course2Title">Fractures</string>
-        <string name="course2Description">Assess, treat, and prevent complications in fracture injuries..</string>
+    <!-- 1 -->
+    <string name="courseImageDescription">Course Image</string>
+    <string name="courseButtonDescription">Course button</string>
+    <string name="course1Title">Burns</string>
+    <string name="course1Description">Assess, treat, and prevent complications in burn injuries.</string>
+    <string name="course2Title">Fractures</string>
+    <string name="course2Description">Assess, treat, and prevent complications in fracture injuries..</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
