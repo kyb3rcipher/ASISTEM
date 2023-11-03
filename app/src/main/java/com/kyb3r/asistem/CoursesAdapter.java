@@ -13,10 +13,14 @@ import java.util.List;
 
 public class CoursesAdapter extends RecyclerView.Adapter<CoursesAdapter.ViewHolder> {
     private final List<CoursesList> coursesList;
+    private OnItemClickListener onItemClickListener;
 
     public CoursesAdapter(List<CoursesList> coursesList) {
         this.coursesList = coursesList;
     }
+    public interface OnItemClickListener { void onItemClick(CoursesList coursesList); }
+
+    public void setOnItemClickListener(OnItemClickListener listener) { this.onItemClickListener = listener; }
 
     @NonNull
     @Override
@@ -29,6 +33,12 @@ public class CoursesAdapter extends RecyclerView.Adapter<CoursesAdapter.ViewHold
     public void onBindViewHolder(@NonNull CoursesAdapter.ViewHolder holder, int position) {
         CoursesList course = coursesList.get(position);
         holder.setCourses(course);
+
+        holder.itemView.setOnClickListener(view -> {
+            if (onItemClickListener != null) {
+                onItemClickListener.onItemClick(coursesList.get(position));
+            }
+        });
     }
 
     @Override
