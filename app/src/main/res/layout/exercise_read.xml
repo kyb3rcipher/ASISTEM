@@ -1,67 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
-
-    <RelativeLayout
-        android:id="@+id/layout_progress_bar"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
-
-        <ImageView
-            android:id="@+id/close_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:clickable="true"
-            android:contentDescription="Close button"
-            android:src="@drawable/ic_close"
-            app:tint="#7F7E80"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/close_button"
-            android:maxHeight="10dip"
-            android:minHeight="10dip" />
-
-    </RelativeLayout>
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:text="@string/exerciseRead_title"
         android:textSize="26sp"
         android:textStyle="bold" />
 
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/title"
-        android:background="@drawable/word_border"
-        android:backgroundTint="@null"
-        android:gravity="center|center_vertical">
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
+        <FrameLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="[Text to read]"
-            android:textSize="18sp" />
-    </FrameLayout>
+            android:background="@drawable/word_border"
+            android:backgroundTint="@null"
+            android:gravity="center|center_vertical">
 
-</RelativeLayout>
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[Text to read]"
+                android:textSize="18sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>
