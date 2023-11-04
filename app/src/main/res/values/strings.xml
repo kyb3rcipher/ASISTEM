@@ -29,10 +29,10 @@
     <!-- 1 -->
     <string name="courseImageDescription">Course Image</string>
     <string name="courseButtonDescription">Course button</string>
-    <string name="course1Title">Burns</string>
-    <string name="course1Description">Assess, treat, and prevent complications in burn injuries.</string>
-    <string name="course2Title">Fractures</string>
-    <string name="course2Description">Assess, treat, and prevent complications in fracture injuries..</string>
+    <string name="course1Title">Fractures</string>
+    <string name="course1Description">Assess, treat, and prevent complications in fracture injuries.</string>
+    <string name="course2Title">Burns</string>
+    <string name="course2Description">Assess, treat, and prevent complications in burn injuries..</string>
     <!-- exercise -->
     <string name="courseFracturesRead">
         Fractures are breaks in the bones and can range in severity from small cracks to completely broken bones. Common signs of a fracture include swelling, severe pain, deformity, inability to move the affected limb, and sometimes a popping or cracking sound at the time of the injury.

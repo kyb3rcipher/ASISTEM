@@ -55,7 +55,7 @@ public class CoursesFragment extends Fragment {
         recyclerCourses.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
 
         elements = new ArrayList<>();
-        elements.add(new CoursesList(getString(R.string.course1Title), getString(R.string.course1Description), R.drawable.banner_course_burns));
+        elements.add(new CoursesList(getString(R.string.course1Title), getString(R.string.course1Description), R.drawable.banner_course_fractures));
         elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_suicide));
 
         CoursesAdapter adapter = new CoursesAdapter(elements);
