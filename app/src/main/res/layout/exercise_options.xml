@@ -50,6 +50,7 @@
                 app:cardBackgroundColor="?android:attr/colorBackground">
 
                 <RadioGroup
+                    android:id="@+id/optionsGroup"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 

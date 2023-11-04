@@ -33,6 +33,31 @@
     <string name="course1Description">Assess, treat, and prevent complications in burn injuries.</string>
     <string name="course2Title">Fractures</string>
     <string name="course2Description">Assess, treat, and prevent complications in fracture injuries..</string>
+    <!-- exercise -->
+    <string name="courseFracturesRead">
+        Fractures are breaks in the bones and can range in severity from small cracks to completely broken bones. Common signs of a fracture include swelling, severe pain, deformity, inability to move the affected limb, and sometimes a popping or cracking sound at the time of the injury.
+         If you suspect someone has a fracture, it is crucial to act quickly and take first aid measures:
+
+         \n\n1. Evaluate the situation:
+         \nKeep calm and secure the area to prevent further injury.
+         Notify emergency services if the fracture is serious or if the injured person cannot move.
+
+         \n\n2. Immobilize the affected area:
+         \nAsk the injured person not to move the injured part to avoid further damage.
+         If the person needs to be moved, try to immobilize the broken bone with splints, a makeshift splint, or simply hold the limb in the position you found it.
+
+         \n\n3. Control swelling and pain:
+         \nApply cold compresses or ice packs wrapped in a cloth to the affected area to reduce swelling and relieve pain.
+         Do not apply ice directly to the skin, as it can cause frostbite damage.
+
+         \n\n4. Seek medical attention:
+         \nThe injured person should be taken to a medical facility or, in an emergency, call emergency services to evaluate them and provide appropriate treatment.
+         It is essential to remember that moving a person with a serious fracture can aggravate the injury. It is always best to wait for healthcare professionals to move the person, unless there is imminent danger in the environment.
+
+         \n\n
+         Providing basic first aid for a fracture can help minimize pain and prevent further complications until appropriate medical care can be obtained.
+    </string>
+
 
     <!-- Exercise -->
     <!-- options -->
@@ -43,6 +68,7 @@
     <string name="exerciseSelect_title">Select the correct option</string>
     <!-- write -->
     <string name="exerciseWrite_title">Write the answer</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
