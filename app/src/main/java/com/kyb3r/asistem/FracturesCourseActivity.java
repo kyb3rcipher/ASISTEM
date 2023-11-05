@@ -1,14 +1,18 @@
 package com.kyb3r.asistem;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.View;
+import android.os.Handler;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FracturesCourseActivity extends AppCompatActivity {
 
@@ -18,18 +22,30 @@ public class FracturesCourseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fractures_course);
 
-        Button button = findViewById(R.id.button);
+        // Add closeButton function to close (the left X)
+        ImageButton closeButton = findViewById(R.id.close_button);
+        closeButton.setOnClickListener(v -> onBackPressed());
 
-        // Set first Layout
+        // Initialize elements
+        Button button = findViewById(R.id.button);
+        MediaPlayer correctPlayer = MediaPlayer.create(this, R.raw.correct);
+        MediaPlayer incorrectPlayer = MediaPlayer.create(this, R.raw.incorrect);
+
+        // Set first fragmentExercise (read)
         FrameLayout frameLayout = findViewById(R.id.frameLayout);
         getLayoutInflater().inflate(R.layout.exercise_read, frameLayout, true);
         button.setText("Okay");
+        // Modify fragment
         TextView text = frameLayout.findViewById(R.id.text);
         text.setText(getString(R.string.courseFracturesRead));
-        nextFragment = 0;
 
+        nextFragment = 0;   // put next fragmentExercise (0)
+
+        // Exercise fragments switcher
+        // Start correct exercise variable (-1/null) - (0 - correct, 1 - incorrect)
+        final int[] correct = {-1};
+        // Listener for nextButton switch the fragment to change.
         button.setOnClickListener(v -> {
-
             switch (nextFragment) {
                 case 0:
                     changeLayout(R.layout.exercise_options);
@@ -46,23 +62,19 @@ public class FracturesCourseActivity extends AppCompatActivity {
                     option3.setText("Bad Bunny");
 
                     RadioGroup radioButton = findViewById(R.id.optionsGroup);
-                    radioButton.setOnCheckedChangeListener((group, checkedId) -> {
+                    /*radioButton.setOnCheckedChangeListener((group, checkedId) -> {
+                        correct[0] = (checkedId == R.id.option2 && checkedId == group.getCheckedRadioButtonId()) ? 1 : 0;
                         nextFragment = (checkedId == R.id.option2 && checkedId == group.getCheckedRadioButtonId()) ? 1 : 0;
-                    });
-                    /*radioButton.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                        @Override
-                        public void onCheckedChanged(RadioGroup group, int checkedId) {
-                            if (checkedId == R.id.option2) {
-                                if (group.getCheckedRadioButtonId() == R.id.option2) {
-                                    nextFragment = 1;
-                                }
-                            } else if (checkedId == R.id.option1 || checkedId == R.id.option3) {
-                                if (group.getCheckedRadioButtonId() == R.id.option1 || group.getCheckedRadioButtonId() == R.id.option3) {
-                                    nextFragment = 0;
-                                }
-                            }
-                        }
                     });*/
+                    radioButton.setOnCheckedChangeListener((group, checkedId) -> {
+                        if (checkedId == R.id.option2) {
+                            correct[0] = 1;
+                            nextFragment = 1;
+                        } else {
+                            correct[0] = 0;
+                            nextFragment = 0;
+                        }
+                    });
                 break;
 
                 case 1:
@@ -80,7 +92,43 @@ public class FracturesCourseActivity extends AppCompatActivity {
                 break;
             }
 
+            // First check if the answer not is -1 (to not execute this the first time the button is pressed in the first exercise).
+            if (correct[0] != -1) {
+                // Later check if the answer is correct or incorrect and do the correspond thin.
+                if (correct[0] == 1) {
+                    // start sound
+                    correctPlayer.start();
+                    // delay for release resource (4 seconds)
+                    new Handler().postDelayed(() -> { if (correctPlayer != null) correctPlayer.release(); }, 4000);
+
+                    Toast.makeText(getApplicationContext(), "Correct :)", Toast.LENGTH_SHORT).show();
+                } else {
+                    // start sound
+                    incorrectPlayer.start();
+                    // delay for release resource (4 seconds)
+                    new Handler().postDelayed(() -> { if (correctPlayer != null) incorrectPlayer.release(); }, 4000);
+
+                    Toast.makeText(getApplicationContext(), "Incorrect!, retry", Toast.LENGTH_SHORT).show();
+                }
+            }
+
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle("Are you sure about that?");
+        alertDialogBuilder.setMessage("All progress in this lesson will be lost.");
+
+        // Close activity if press QUIT button.
+        alertDialogBuilder.setPositiveButton("QUIT", (dialog, which) -> finish());
+
+        // Close dialog if press CANCEL button.
+        alertDialogBuilder.setNegativeButton("CANCEL", (dialog, which) -> dialog.dismiss());
+
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
     }
 
     private void changeLayout(int layoutId) {
