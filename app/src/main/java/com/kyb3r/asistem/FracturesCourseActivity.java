@@ -5,14 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Handler;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class FracturesCourseActivity extends AppCompatActivity {
 
@@ -62,17 +67,12 @@ public class FracturesCourseActivity extends AppCompatActivity {
                     option3.setText("Bad Bunny");
 
                     RadioGroup radioButton = findViewById(R.id.optionsGroup);
-                    /*radioButton.setOnCheckedChangeListener((group, checkedId) -> {
-                        correct[0] = (checkedId == R.id.option2 && checkedId == group.getCheckedRadioButtonId()) ? 1 : 0;
-                        nextFragment = (checkedId == R.id.option2 && checkedId == group.getCheckedRadioButtonId()) ? 1 : 0;
-                    });*/
                     radioButton.setOnCheckedChangeListener((group, checkedId) -> {
                         if (checkedId == R.id.option2) {
                             correct[0] = 1;
                             nextFragment = 1;
                         } else {
                             correct[0] = 0;
-                            nextFragment = 0;
                         }
                     });
                 break;
@@ -88,7 +88,26 @@ public class FracturesCourseActivity extends AppCompatActivity {
                     changeLayout(R.layout.exercise_write_answer);
                     button.setText("Check");
 
-                    nextFragment++;
+                    EditText answerEditText = findViewById(R.id.answer);
+                    answerEditText.addTextChangedListener(new TextWatcher() {
+                        @Override public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
+                        @Override public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
+
+                        @Override
+                        public void afterTextChanged(Editable editable) {
+                            String userAnswer = editable.toString().toLowerCase();
+                            List<String> correctAnswerList = Arrays.asList("uwu", "owo", "xd");
+
+                            // Check answer
+                            if (correctAnswerList.contains(userAnswer)) {
+                                correct[0] = 1;
+                                nextFragment = 1;   // tmp I HOPE, I HOPE, I HOPE...
+                            } else {
+                                correct[0] = 0;
+                            }
+                        }
+
+                    });
                 break;
             }
 
@@ -99,17 +118,18 @@ public class FracturesCourseActivity extends AppCompatActivity {
                     // start sound
                     correctPlayer.start();
                     // delay for release resource (4 seconds)
-                    new Handler().postDelayed(() -> { if (correctPlayer != null) correctPlayer.release(); }, 4000);
+                    //new Handler().postDelayed(() -> { if (correctPlayer != null) correctPlayer.release(); }, 4000);
 
                     Toast.makeText(getApplicationContext(), "Correct :)", Toast.LENGTH_SHORT).show();
                 } else {
                     // start sound
                     incorrectPlayer.start();
                     // delay for release resource (4 seconds)
-                    new Handler().postDelayed(() -> { if (correctPlayer != null) incorrectPlayer.release(); }, 4000);
+                    //new Handler().postDelayed(() -> { if (correctPlayer != null) incorrectPlayer.release(); }, 4000);
 
                     Toast.makeText(getApplicationContext(), "Incorrect!, retry", Toast.LENGTH_SHORT).show();
                 }
+                correct[0] = -1;
             }
 
         });
