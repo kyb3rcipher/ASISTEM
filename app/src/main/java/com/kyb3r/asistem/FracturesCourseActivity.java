@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -85,7 +86,35 @@ public class FracturesCourseActivity extends AppCompatActivity {
                     changeLayout(R.layout.exercise_select);
                     button.setText("Check");
 
-                    nextFragment++;
+                    ImageButton imageOption1 = findViewById(R.id.option1), imageOption2 = findViewById(R.id.option2), imageOption3 = findViewById(R.id.option3), imageOption4 = findViewById(R.id.option4);
+                    imageOption1.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            correct[0] = 0;
+                            nextFragment = 1;
+                        }
+                    });
+                    imageOption2.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            correct[0] = 0;
+                            nextFragment = 1;
+                        }
+                    });
+                    imageOption3.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            correct[0] = 0;
+                            nextFragment = 1;
+                        }
+                    });
+                    imageOption4.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            correct[0] = 1;
+                            nextFragment = 2;
+                        }
+                    });
                 break;
 
                 case 2:
