@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -22,6 +23,7 @@ import java.util.List;
 public class FracturesCourseActivity extends AppCompatActivity {
 
     private int nextFragment;
+    private int[] progrssBarNumber = {0};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,7 @@ public class FracturesCourseActivity extends AppCompatActivity {
         closeButton.setOnClickListener(v -> onBackPressed());
 
         // Initialize elements
+        ProgressBar progressBar = findViewById(R.id.progress_bar);
         Button button = findViewById(R.id.button);
         MediaPlayer correctPlayer = MediaPlayer.create(this, R.raw.correct);
         MediaPlayer incorrectPlayer = MediaPlayer.create(this, R.raw.incorrect);
@@ -73,6 +76,7 @@ public class FracturesCourseActivity extends AppCompatActivity {
                             nextFragment = 1;
                         } else {
                             correct[0] = 0;
+                            nextFragment = 0;
                         }
                     });
                 break;
@@ -104,6 +108,7 @@ public class FracturesCourseActivity extends AppCompatActivity {
                                 nextFragment = 1;   // tmp I HOPE, I HOPE, I HOPE...
                             } else {
                                 correct[0] = 0;
+                                nextFragment = 2;
                             }
                         }
 
@@ -120,6 +125,11 @@ public class FracturesCourseActivity extends AppCompatActivity {
                     // delay for release resource (4 seconds)
                     //new Handler().postDelayed(() -> { if (correctPlayer != null) correctPlayer.release(); }, 4000);
 
+                    // Progress bar
+                    progrssBarNumber[0] += 10;
+                    progressBar.setProgress(progrssBarNumber[0]);
+
+                    // Message
                     Toast.makeText(getApplicationContext(), "Correct :)", Toast.LENGTH_SHORT).show();
                 } else {
                     // start sound
@@ -127,6 +137,7 @@ public class FracturesCourseActivity extends AppCompatActivity {
                     // delay for release resource (4 seconds)
                     //new Handler().postDelayed(() -> { if (correctPlayer != null) incorrectPlayer.release(); }, 4000);
 
+                    // Message
                     Toast.makeText(getApplicationContext(), "Incorrect!, retry", Toast.LENGTH_SHORT).show();
                 }
                 correct[0] = -1;
