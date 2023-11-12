@@ -1,4 +1,4 @@
-package com.kyb3r.asistem;
+package com.kyb3r.asistem.exercise;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
+
+import com.kyb3r.asistem.R;
 
 public class ExerciseOptionsClass {
     private Context context;
