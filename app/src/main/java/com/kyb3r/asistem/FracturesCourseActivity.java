@@ -3,6 +3,7 @@ package com.kyb3r.asistem;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.Editable;
@@ -58,18 +59,7 @@ public class FracturesCourseActivity extends AppCompatActivity {
         button.setOnClickListener(v -> {
             switch (nextFragment) {
                 case 0:
-                    changeLayout(R.layout.exercise_options);
-                    button.setText("Check");
-
-                    TextView instruction = findViewById(R.id.instruction);
-                    instruction.setText("What are fractures?");
-
-
-                    RadioButton option1 = findViewById(R.id.option1), option2 = findViewById(R.id.option2), option3 = findViewById(R.id.option3);
-
-                    option1.setText("NADIE SABE...");
-                    option2.setText("They are breaks in the bones and can vary in severity");
-                    option3.setText("Bad Bunny");
+                    ExerciseOptionsClass exerciseOptions = new ExerciseOptionsClass(this);
 
                     RadioGroup radioButton = findViewById(R.id.optionsGroup);
                     radioButton.setOnCheckedChangeListener((group, checkedId) -> {
