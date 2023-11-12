@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -134,13 +135,183 @@ public class FracturesCourseActivity extends AppCompatActivity {
                             // Check answer
                             if (correctAnswerList.contains(userAnswer)) {
                                 correct[0] = 1;
-                                nextFragment = 1;   // tmp I HOPE, I HOPE, I HOPE...
+                                nextFragment = 3;
                             } else {
                                 correct[0] = 0;
                                 nextFragment = 2;
                             }
                         }
 
+                    });
+                break;
+
+                case 3:
+                    changeLayout(R.layout.exercise_tap_pairs);
+                    button.setVisibility(View.GONE);
+
+                    Button button1 = findViewById(R.id.button1), button2 = findViewById(R.id.button2), button3 = findViewById(R.id.button3),
+                           button4 = findViewById(R.id.button4), button5 = findViewById(R.id.button5), button6 = findViewById(R.id.button6);
+
+
+                    boolean[] buttonClicked = new boolean[6];
+                    boolean[] buttonCorrect = new boolean[3];
+                    button1.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            buttonClicked[0] = true;
+
+                            if (buttonClicked[1]) {
+                                buttonCorrect[0] = true;
+                                button1.setEnabled(false);
+                                button2.setEnabled(false);
+                            } else {
+                                //buttonClicked[0] = false;
+                                buttonClicked[1] = false;
+                                buttonClicked[2] = false;
+                                buttonClicked[3] = false;
+                                buttonClicked[4] = false;
+                                buttonClicked[5] = false;
+                            }
+
+                            if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
+                                correct[0] = 1;
+                                nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
+                                button.performClick();  // Simulate click main button
+                            }
+                        }
+                    });
+                    button2.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            buttonClicked[1] = true;
+
+                            if (buttonClicked[0]) {
+                                buttonCorrect[0] = true;
+                                button1.setEnabled(false);
+                                button2.setEnabled(false);
+
+                            } else {
+                                buttonClicked[0] = false;
+                                //buttonClicked[1] = false;
+                                buttonClicked[2] = false;
+                                buttonClicked[3] = false;
+                                buttonClicked[4] = false;
+                                buttonClicked[5] = false;
+                            }
+
+                            if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
+                                correct[0] = 1;
+                                nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
+                                button.performClick();  // Simulate click main button
+                            }
+                        }
+                    });
+
+                    button3.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            buttonClicked[2] = true;
+
+                            if (buttonClicked[3]) {
+                                buttonCorrect[1] = true;
+                                button3.setEnabled(false);
+                                button4.setEnabled(false);
+
+                            } else {
+                                buttonClicked[0] = false;
+                                buttonClicked[1] = false;
+                                //buttonClicked[2] = false;
+                                buttonClicked[3] = false;
+                                buttonClicked[4] = false;
+                                buttonClicked[5] = false;
+                            }
+
+
+                            if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
+                                correct[0] = 1;
+                                nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
+                                button.performClick();  // Simulate click main button
+                            }
+                        }
+                    });
+                    button4.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            buttonClicked[3] = true;
+
+                            if (buttonClicked[2]) {
+                                buttonCorrect[1] = true;
+                                button3.setEnabled(false);
+                                button4.setEnabled(false);
+
+                            } else {
+                                buttonClicked[0] = false;
+                                buttonClicked[1] = false;
+                                buttonClicked[2] = false;
+                                //buttonClicked[3] = false;
+                                buttonClicked[4] = false;
+                                buttonClicked[5] = false;
+                            }
+
+                            if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
+                                correct[0] = 1;
+                                nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
+                                button.performClick();  // Simulate click main button
+                            }
+                        }
+                    });
+
+                    button5.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            buttonClicked[4] = true;
+
+                            if (buttonClicked[5]) {
+                                buttonCorrect[2] = true;
+                                button5.setEnabled(false);
+                                button6.setEnabled(false);
+
+                            } else {
+                                buttonClicked[0] = false;
+                                buttonClicked[1] = false;
+                                buttonClicked[2] = false;
+                                buttonClicked[3] = false;
+                                //buttonClicked[4] = false;
+                                buttonClicked[5] = false;
+                            }
+
+                            if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
+                                correct[0] = 1;
+                                nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
+                                button.performClick();  // Simulate click main button
+                            }
+                        }
+                    });
+                    button6.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            buttonClicked[5] = true;
+
+                            if (buttonClicked[4]) {
+                                buttonCorrect[2] = true;
+                                button5.setEnabled(false);
+                                button6.setEnabled(false);
+
+                            } else {
+                                buttonClicked[0] = false;
+                                buttonClicked[1] = false;
+                                buttonClicked[2] = false;
+                                buttonClicked[3] = false;
+                                buttonClicked[4] = false;
+                                //buttonClicked[5] = false;
+                            }
+
+                            if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
+                                correct[0] = 1;
+                                nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
+                                button.performClick();  // Simulate click main button
+                            }
+                        }
                     });
                 break;
             }
