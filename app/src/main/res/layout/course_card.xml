@@ -17,20 +17,21 @@
             android:layout_width="match_parent"
             android:layout_height="176dp"
             android:contentDescription="@string/courseImageDescription"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
             android:src="@drawable/banner_course_burns"
+            android:tint="@null"
             tools:ignore="ImageContrastCheck,UseAppTint"
-            tools:src="@drawable/banner_course_burns"
-            android:tint="@null" />
+            tools:src="@drawable/banner_course_burns" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="265dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="vertical"
                 tools:ignore="TextSizeCheck">
 
@@ -38,6 +39,7 @@
                     android:id="@+id/course1Name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="70dp"
                     android:paddingStart="20dp"
                     android:paddingTop="10dp"
                     android:paddingEnd="70dp"
@@ -62,7 +64,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="start|center_vertical"
-                android:layout_marginStart="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@drawable/circle"
                 android:backgroundTint="?attr/colorSecondary"
                 android:contentDescription="@string/courseButtonDescription"
