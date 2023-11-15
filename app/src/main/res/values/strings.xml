@@ -68,7 +68,8 @@
     <string name="exerciseSelect_title">Select the correct option</string>
     <!-- write -->
     <string name="exerciseWrite_title">Write the answer</string>
-
+    <!-- tap pairs -->
+    <string name="exerciseTap_pairs">Tap the pairs</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

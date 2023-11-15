@@ -16,16 +16,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AlertDialog;
-
 import com.kyb3r.asistem.R;
-
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ExerciseClass {
-    private Context context;
+    private final Context context;
     public static int nextFragment;
     public static int correct;
 
@@ -81,96 +78,93 @@ public class ExerciseClass {
             correct = -1;
         }
     }
+
     private void changeLayout(int layoutId) {
         FrameLayout frameLayout = ((Activity) context).findViewById(R.id.frameLayout);
         frameLayout.removeAllViews();
         ((Activity) context).getLayoutInflater().inflate(layoutId, frameLayout, true);
     }
 
-    public void setupRead() {
+    // Exercises setup methods.
+    public void setupRead(String buttonText, String readText, int correctFragment) {
         changeLayout(R.layout.exercise_read);
         Button button = ((Activity) context).findViewById(R.id.button);
-        button.setText("Okay");
+        button.setText(buttonText);
+
         // Modify fragment
         TextView text = ((Activity) context).findViewById(R.id.text);
-        text.setText(((Activity) context).getString(R.string.courseFracturesRead));
+        text.setText(readText);
 
-        nextFragment = 0;   // put next fragmentExercise (0)
+        nextFragment = correctFragment;
+        correct = -1;
     }
 
-    public void setupOptions() {
+    public void setupOptions(String buttonText, String instructionText, String option1Text, String option2Text, String option3Text, int correctOption, int correctFragment, int incorrectFragment) {
         changeLayout(R.layout.exercise_options);
         Button button = ((Activity) context).findViewById(R.id.button);
-        button.setText("Check");
+        button.setText(buttonText);
 
         TextView instruction = ((Activity) context).findViewById(R.id.instruction);
-        instruction.setText("What are fractures?");
+        instruction.setText(instructionText);
 
         RadioButton option1 = ((Activity) context).findViewById(R.id.option1);
         RadioButton option2 = ((Activity) context).findViewById(R.id.option2);
         RadioButton option3 = ((Activity) context).findViewById(R.id.option3);
 
-        option1.setText("NADIE SABE...");
-        option2.setText("They are breaks in the bones and can vary in severity");
-        option3.setText("Bad Bunny");
-
+        option1.setText(option1Text);
+        option2.setText(option2Text);
+        option3.setText(option3Text);
 
         RadioGroup radioButton = ((Activity) context).findViewById(R.id.optionsGroup);
         radioButton.setOnCheckedChangeListener((group, checkedId) -> {
-            if (checkedId == R.id.option2) {
+            if (checkedId == correctOption) {
                 correct = 1;
-                nextFragment = 1;
+                nextFragment = correctFragment;
             } else {
                 correct = 0;
-                nextFragment = 0;
+                nextFragment = incorrectFragment;
             }
         });
 
         checkAnswer();
     }
 
-    public void setupSelect() {
+    public void setupSelect(String instructionText, String buttonText, int correctOption, int[] fragmentMappings) {
         changeLayout(R.layout.exercise_select);
         Button button = ((Activity) context).findViewById(R.id.button);
-        button.setText("Check");
+        button.setText(buttonText);
 
-        ImageButton imageOption1 = ((Activity) context).findViewById(R.id.option1), imageOption2 = ((Activity) context).findViewById(R.id.option2), imageOption3 = ((Activity) context).findViewById(R.id.option3), imageOption4 = ((Activity) context).findViewById(R.id.option4);
-        imageOption1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                correct = 0;
-                nextFragment = 1;
-            }
-        });
-        imageOption2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                correct = 0;
-                nextFragment = 1;
-            }
-        });
-        imageOption3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                correct = 0;
-                nextFragment = 1;
-            }
-        });
-        imageOption4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                correct = 1;
-                nextFragment = 2;
-            }
-        });
+        TextView instruction = ((Activity) context).findViewById(R.id.instruction);
+        instruction.setText(instructionText);
+
+        ImageButton[] imageOptions = new ImageButton[4];
+        imageOptions[0] = ((Activity) context).findViewById(R.id.option1);
+        imageOptions[1] = ((Activity) context).findViewById(R.id.option1);
+        imageOptions[2] = ((Activity) context).findViewById(R.id.option3);
+        imageOptions[3] = ((Activity) context).findViewById(R.id.option4);
+
+        for (int i = 0; i < imageOptions.length; i++) {
+            int finalI = i;
+            imageOptions[i].setOnClickListener(view -> {
+                if (finalI == correctOption) {
+                    correct = 1;
+                } else {
+                    correct = 0;
+                }
+                nextFragment = fragmentMappings[finalI];
+            });
+        }
 
         checkAnswer();
     }
 
-    public void setupWrite() {
+    public void setupWrite(String instructionText, String buttonText, List<String> correctAnswerList, int correctFragment, int incorrectFragment) {
         changeLayout(R.layout.exercise_write_answer);
         Button button = ((Activity) context).findViewById(R.id.button);
-        button.setText("Check");
+        button.setText(buttonText);
+
+        TextView instruction = ((Activity) context).findViewById(R.id.instruction);
+        instruction.setText(instructionText);
 
         EditText answerEditText = ((Activity) context).findViewById(R.id.answer);
         answerEditText.addTextChangedListener(new TextWatcher() {
@@ -180,15 +174,14 @@ public class ExerciseClass {
             @Override
             public void afterTextChanged(Editable editable) {
                 String userAnswer = editable.toString().toLowerCase();
-                List<String> correctAnswerList = Arrays.asList("uwu", "owo", "xd");
 
                 // Check answer
                 if (correctAnswerList.contains(userAnswer)) {
                     correct = 1;
-                    nextFragment = 3;
+                    nextFragment = correctFragment;
                 } else {
                     correct = 0;
-                    nextFragment = 2;
+                    nextFragment = incorrectFragment;
                 }
             }
 
@@ -197,176 +190,72 @@ public class ExerciseClass {
         checkAnswer();
     }
 
-    public void setupTapPairs() {
+    public void setupTapPairs(String instructionText, int[][] buttonPairs, int correctFragment) {
         changeLayout(R.layout.exercise_tap_pairs);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setVisibility(View.GONE);
 
-        Button button1 = ((Activity) context).findViewById(R.id.button1), button2 = ((Activity) context).findViewById(R.id.button2), button3 = ((Activity) context).findViewById(R.id.button3),
-                button4 = ((Activity) context).findViewById(R.id.button4), button5 = ((Activity) context).findViewById(R.id.button5), button6 = ((Activity) context).findViewById(R.id.button6);
+        TextView instruction = ((Activity) context).findViewById(R.id.instruction);
+        instruction.setText(instructionText);
 
+        List<Button> buttons = new ArrayList<>();
+        buttons.add(((Activity) context).findViewById(R.id.button1));
+        buttons.add(((Activity) context).findViewById(R.id.button2));
+        buttons.add(((Activity) context).findViewById(R.id.button3));
+        buttons.add(((Activity) context).findViewById(R.id.button4));
+        buttons.add(((Activity) context).findViewById(R.id.button5));
+        buttons.add(((Activity) context).findViewById(R.id.button6));
 
-        boolean[] buttonClicked = new boolean[6];
-        boolean[] buttonCorrect = new boolean[3];
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttonClicked[0] = true;
+        List<Integer> clickedButtons = new ArrayList<>();
 
-                if (buttonClicked[1]) {
-                    buttonCorrect[0] = true;
-                    button1.setEnabled(false);
-                    button2.setEnabled(false);
-                } else {
-                    //buttonClicked[0] = false;
-                    buttonClicked[1] = false;
-                    buttonClicked[2] = false;
-                    buttonClicked[3] = false;
-                    buttonClicked[4] = false;
-                    buttonClicked[5] = false;
+        for (Button btn : buttons) {
+            btn.setOnClickListener(v -> {
+                int buttonIndex = buttons.indexOf(btn);
+
+                if (clickedButtons.contains(buttonIndex)) {
+                    // Button already clicked, do nothing
+                    return;
                 }
 
-                if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
-                    correct = 1;
-                    nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
-                    button.performClick();  // Simulate click main button
+                clickedButtons.add(buttonIndex);
+
+                if (clickedButtons.size() == 2) {
+                    // Check if the clicked buttons form a pair
+                    int button1 = clickedButtons.get(0);
+                    int button2 = clickedButtons.get(1);
+
+                    for (int[] pair : buttonPairs) {
+                        if ((pair[0] == button1 && pair[1] == button2) ||
+                                (pair[0] == button2 && pair[1] == button1)) {
+                            // Disable the buttons in the pair
+                            buttons.get(pair[0]).setEnabled(false);
+                            buttons.get(pair[1]).setEnabled(false);
+                        }
+                    }
+
+                    // Clear the list for the next pair
+                    clickedButtons.clear();
+
+                    // Check if all buttons are disabled
+                    boolean allDisabled = true;
+                    for (Button b : buttons) {
+                        if (b.isEnabled()) {
+                            allDisabled = false;
+                            break;
+                        }
+                    }
+
+                    // If all buttons are disabled, trigger the next action
+                    if (allDisabled) {
+                        correct = 1;
+                        nextFragment = correctFragment;
+                        button.performClick();
+                    }
                 }
-            }
-        });
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttonClicked[1] = true;
-
-                if (buttonClicked[0]) {
-                    buttonCorrect[0] = true;
-                    button1.setEnabled(false);
-                    button2.setEnabled(false);
-
-                } else {
-                    buttonClicked[0] = false;
-                    //buttonClicked[1] = false;
-                    buttonClicked[2] = false;
-                    buttonClicked[3] = false;
-                    buttonClicked[4] = false;
-                    buttonClicked[5] = false;
-                }
-
-                if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
-                    correct = 1;
-                    nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
-                    button.performClick();  // Simulate click main button
-                }
-            }
-        });
-
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttonClicked[2] = true;
-
-                if (buttonClicked[3]) {
-                    buttonCorrect[1] = true;
-                    button3.setEnabled(false);
-                    button4.setEnabled(false);
-
-                } else {
-                    buttonClicked[0] = false;
-                    buttonClicked[1] = false;
-                    //buttonClicked[2] = false;
-                    buttonClicked[3] = false;
-                    buttonClicked[4] = false;
-                    buttonClicked[5] = false;
-                }
-
-
-                if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
-                    correct = 1;
-                    nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
-                    button.performClick();  // Simulate click main button
-                }
-            }
-        });
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttonClicked[3] = true;
-
-                if (buttonClicked[2]) {
-                    buttonCorrect[1] = true;
-                    button3.setEnabled(false);
-                    button4.setEnabled(false);
-
-                } else {
-                    buttonClicked[0] = false;
-                    buttonClicked[1] = false;
-                    buttonClicked[2] = false;
-                    //buttonClicked[3] = false;
-                    buttonClicked[4] = false;
-                    buttonClicked[5] = false;
-                }
-
-                if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
-                    correct = 1;
-                    nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
-                    button.performClick();  // Simulate click main button
-                }
-            }
-        });
-
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttonClicked[4] = true;
-
-                if (buttonClicked[5]) {
-                    buttonCorrect[2] = true;
-                    button5.setEnabled(false);
-                    button6.setEnabled(false);
-
-                } else {
-                    buttonClicked[0] = false;
-                    buttonClicked[1] = false;
-                    buttonClicked[2] = false;
-                    buttonClicked[3] = false;
-                    //buttonClicked[4] = false;
-                    buttonClicked[5] = false;
-                }
-
-                if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
-                    correct = 1;
-                    nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
-                    button.performClick();  // Simulate click main button
-                }
-            }
-        });
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttonClicked[5] = true;
-
-                if (buttonClicked[4]) {
-                    buttonCorrect[2] = true;
-                    button5.setEnabled(false);
-                    button6.setEnabled(false);
-
-                } else {
-                    buttonClicked[0] = false;
-                    buttonClicked[1] = false;
-                    buttonClicked[2] = false;
-                    buttonClicked[3] = false;
-                    buttonClicked[4] = false;
-                    //buttonClicked[5] = false;
-                }
-
-                if (buttonCorrect[0] && buttonCorrect[1] && buttonCorrect[2]) {
-                    correct = 1;
-                    nextFragment = 0;  // TEMPORAL, I HOPE I HOPE I HOPE
-                    button.performClick();  // Simulate click main button
-                }
-            }
-        });
+            });
+        }
 
         checkAnswer();
     }
+
 }
