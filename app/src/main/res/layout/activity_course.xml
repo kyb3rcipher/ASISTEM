@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FracturesCourseActivity">
+    tools:context=".course.FracturesCourseActivity">
 
     <RelativeLayout
         android:id="@+id/layout_progress_bar"

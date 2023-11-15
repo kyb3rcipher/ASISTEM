@@ -1,4 +1,4 @@
-package com.kyb3r.asistem.exercise;
+package com.kyb3r.asistem;
 
 
 import android.app.Activity;
@@ -17,7 +17,6 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
-import com.kyb3r.asistem.R;
 import java.util.ArrayList;
 import java.util.List;
 

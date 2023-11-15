@@ -1,12 +1,13 @@
-package com.kyb3r.asistem;
-
-import com.kyb3r.asistem.exercise.ExerciseClass;
+package com.kyb3r.asistem.course;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.kyb3r.asistem.ExerciseClass;
+import com.kyb3r.asistem.R;
 
 import java.util.Arrays;
 
