@@ -1,14 +1,12 @@
 package com.kyb3r.asistem;
 
 import com.kyb3r.asistem.exercise.ExerciseClass;
-import androidx.appcompat.app.AlertDialog;
+
 import androidx.appcompat.app.AppCompatActivity;
-import android.media.MediaPlayer;
+
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ProgressBar;
-import android.widget.Toast;
 
 
 public class FracturesCourseActivity extends AppCompatActivity {
@@ -17,7 +15,7 @@ public class FracturesCourseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fractures_course);
+        setContentView(R.layout.activity_course);
 
         // Add closeButton function to close (the left X)
         ImageButton closeButton = findViewById(R.id.close_button);
