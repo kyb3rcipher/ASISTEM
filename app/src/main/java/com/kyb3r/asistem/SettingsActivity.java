@@ -4,8 +4,11 @@ package com.kyb3r.asistem;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
+
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import java.util.Locale;
@@ -17,29 +20,42 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarSettings);
+        Toolbar toolbar = findViewById(R.id.toolbarSettings);
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
-        // Apparance
+        // Appearance
         ArrayAdapter<String> appearanceOptions = new ArrayAdapter<>(this, R.layout.dropdown_item, getResources().getStringArray(R.array.appareance));
         AutoCompleteTextView appearanceautoCompleteTextView = findViewById(R.id.appearanceTextView);
         appearanceautoCompleteTextView.setAdapter(appearanceOptions);
         appearanceautoCompleteTextView.setOnItemClickListener((parent, view, position, id) -> {
+            int apperancedMode = AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM;
+
             switch (position) {
                 case 0:
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+                    apperancedMode = AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM;
                     break;
                 case 1:
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    apperancedMode = AppCompatDelegate.MODE_NIGHT_NO;
                     break;
                 case 2:
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    apperancedMode = AppCompatDelegate.MODE_NIGHT_YES;
                     break;
             }
 
+            // Set appearance
+            AppCompatDelegate.setDefaultNightMode(apperancedMode);
+
+            // Save config
+            SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putInt("appearance_mode", apperancedMode);
+            editor.apply();
+
+            // Reload activity
             finish();
             startActivity(getIntent());
         });
+
 
         // Language
         String[] languages = getResources().getStringArray(R.array.languages);
@@ -47,32 +63,39 @@ public class SettingsActivity extends AppCompatActivity {
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
         autoCompleteTextView.setAdapter(arrayAdapter);
         autoCompleteTextView.setOnItemClickListener((parent, view, position, id) -> {
+            String language = "en";
+
             switch (position) {
                 case 0:
-                    setLanguage("en");
+                    language = "en";
                     break;
                 case 1:
-                    setLanguage("es");
+                    language = "es";
                     break;
                 case 2:
-                    setLanguage("de");
+                    language = "de";
+                    break;
                 case 3:
-                    setLanguage("ru");
+                    language = "ru";
                     break;
             }
+
+            // Set language
+            Locale locale = new Locale(language);
+            Locale.setDefault(locale);
+            Configuration config = new Configuration(getResources().getConfiguration());
+            config.setLocale(locale);
+            getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+
+            // Save language preference
+            SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("selected_language", language);
+            editor.apply();
+
+            // Reload Activity
+            finish();
+            startActivity(getIntent());
         });
     }
-
-    private void setLanguage(String language) {
-        Locale locale = new Locale(language);
-        Locale.setDefault(locale);
-        Configuration config = new Configuration(getResources().getConfiguration());
-        config.setLocale(locale);
-        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
-
-        // Reload Activity
-        finish();
-        startActivity(getIntent());
-    }
-
 }

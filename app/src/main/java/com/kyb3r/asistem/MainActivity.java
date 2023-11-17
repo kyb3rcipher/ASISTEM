@@ -1,25 +1,36 @@
 package com.kyb3r.asistem;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private Toolbar toolBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Restore settings
+        setSavedSettings();
+
+        // Layout
         setContentView(R.layout.activity_main);
+
+        // Bottom bar
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationBar);
 
         // Set select item indicator color
@@ -74,5 +85,26 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    // Settings restore
+    private void setSavedSettings() {
+        // Language
+        AppCompatDelegate.setDefaultNightMode(getSavedApparanceMode());
+        Locale locale = new Locale(getSavedLanguage());
+        Locale.setDefault(locale);
+        Configuration config = new Configuration(getResources().getConfiguration());
+        config.setLocale(locale);
+
+        // Appearance
+        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+    }
+    private int getSavedApparanceMode() {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        return preferences.getInt("appearance_mode", AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+    }
+    private String getSavedLanguage() {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        return preferences.getString("selected_language", "en");
     }
 }
