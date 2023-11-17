@@ -2,10 +2,24 @@
     <string name="app_name">ASISTEM</string>
     <string name="app_version">ALPHA 0.0.4</string>
 
+    <string name="settings">Settings</string>
     <string name="about">About</string>
     <string name="home">Home</string>
     <string name="courses">Curses</string>
     <string name="saved">Saved</string>
+
+    <!-- Settings -->
+    <string-array name="appareance">
+        <item>Auto</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>German</item>
+        <item>Russian</item>
+    </string-array>
 
     <!-- About -->
     <string name="image_logo_description">App logo image</string>

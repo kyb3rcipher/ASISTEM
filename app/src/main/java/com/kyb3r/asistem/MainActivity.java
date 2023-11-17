@@ -68,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
             Intent AboutActivity = new Intent(this, AboutActivity.class);
             startActivity(AboutActivity);
             return true;
+        } else if (item.getItemId() == R.id.menuSettings) {
+            Intent SettingsActivity = new Intent(this, SettingsActivity.class);
+            startActivity(SettingsActivity);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
