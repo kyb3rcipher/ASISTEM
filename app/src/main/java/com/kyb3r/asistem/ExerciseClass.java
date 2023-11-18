@@ -4,6 +4,7 @@ package com.kyb3r.asistem;
 import android.app.Activity;
 import android.content.Context;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -11,11 +12,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.MediaController;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.VideoView;
+
 import androidx.appcompat.app.AlertDialog;
 import java.util.ArrayList;
 import java.util.List;
@@ -121,6 +125,26 @@ public class ExerciseClass {
         // Modify fragment
         TextView text = ((Activity) context).findViewById(R.id.text);
         text.setText(readText);
+
+        nextFragment = correctFragment;
+        correct = -1;
+    }
+
+    public void setupVideo(String buttonText, int videoFile, int correctFragment) {
+        changeLayout(R.layout.exercise_video);
+        Button button = ((Activity) context).findViewById(R.id.button);
+        button.setText(buttonText);
+
+        VideoView video =  ((Activity) context).findViewById(R.id.videoView);
+        Uri uri = Uri.parse("android.resource://" + context.getPackageName() + "/" + videoFile);
+        video.setVideoURI(uri);
+
+        MediaController mediaController = new MediaController(context);
+        video.setMediaController(mediaController);
+        mediaController.setAnchorView(video);
+
+        // Automatically start video
+        video.start();
 
         nextFragment = correctFragment;
         correct = -1;
