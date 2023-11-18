@@ -44,6 +44,24 @@ public class ExerciseClass {
         alertDialog.show();
     }
 
+    private int lives = 5;
+    private void decreaseLives() {
+        lives--;
+        TextView textLives = ((Activity) context).findViewById(R.id.lives);
+        textLives.setText(String.valueOf(lives));
+
+        if (lives <= 0) {
+            ((Activity) context).setContentView(R.layout.fail_leasson);
+
+            // Start sound
+            MediaPlayer failLeasson = MediaPlayer.create(context, R.raw.lesson_fail);
+            failLeasson.start();
+
+            /*ImageButton imageButton = ((Activity) context).findViewById(R.id.closeButton);
+            imageButton.setOnClickListener(view -> ((Activity) context).finish());*/
+        }
+    }
+
     private int progressBarNumber = 0;
     public void checkAnswer() {
         MediaPlayer correctPlayer = MediaPlayer.create(context, R.raw.correct);
@@ -68,6 +86,7 @@ public class ExerciseClass {
             } else {
                 // start sound
                 incorrectPlayer.start();
+                decreaseLives(); // Restar una vida
                 // delay for release resource (4 seconds)
                 //new Handler().postDelayed(() -> { if (correctPlayer != null) incorrectPlayer.release(); }, 4000);
 

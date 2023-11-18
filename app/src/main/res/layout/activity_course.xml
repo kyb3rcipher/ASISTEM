@@ -7,37 +7,63 @@
     android:orientation="vertical"
     tools:context=".course.FracturesCourseActivity">
 
-    <RelativeLayout
-        android:id="@+id/layout_progress_bar"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="8dp">
+        android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/close_button"
+        <RelativeLayout
+            android:id="@+id/layout_progress_bar"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp">
+
+            <ImageButton
+                android:id="@+id/close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:clickable="true"
+                android:contentDescription="Close button"
+                android:src="@drawable/ic_close"
+                app:tint="#7F7E80"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/close_button"
+                android:maxHeight="10dip"
+                android:minHeight="10dip" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lives"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:background="@null"
-            android:clickable="true"
-            android:contentDescription="Close button"
-            android:src="@drawable/ic_close"
-            app:tint="#7F7E80"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="8dp"
+            android:text="5"
+            android:textStyle="bold" />
 
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/close_button"
-            android:maxHeight="10dip"
-            android:minHeight="10dip" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/logo_duetone"
+            android:tint="@null"
+            tools:ignore="UseAppTint" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout"
