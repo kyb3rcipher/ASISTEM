@@ -6,23 +6,18 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class LivesDatabaseHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "lives_database";
-    private static final int DATABASE_VERSION = 1;
-
     private static final String TABLE_LIVES = "lives";
-    private static final String COLUMN_ID = "id";
     private static final String COLUMN_LIVES_COUNT = "lives_count";
 
     public LivesDatabaseHelper(Context context) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        super(context, "ASISTEM.db", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTableQuery = "CREATE TABLE " + TABLE_LIVES + " (" +
-                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+        String createTableLivesQuery = "CREATE TABLE " + TABLE_LIVES + " (" +
                 COLUMN_LIVES_COUNT + " INTEGER)";
-        db.execSQL(createTableQuery);
+        db.execSQL(createTableLivesQuery);
     }
 
     @Override

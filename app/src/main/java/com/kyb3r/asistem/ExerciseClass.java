@@ -22,8 +22,7 @@ import java.util.List;
 
 public class ExerciseClass {
     private final Context context;
-    public static int nextFragment;
-    public static int correct;
+    public static int correct, nextFragment;
     private LivesDatabaseHelper livesDatabaseHelper;
     private int currentLives;
 
@@ -49,10 +48,13 @@ public class ExerciseClass {
 
     private void decreaseLives() {
         currentLives = livesDatabaseHelper.getLivesCount();
+        // Decrease live
         currentLives--;
+        // Update lives count in database
         livesDatabaseHelper.setLivesCount(currentLives);
 
 
+        // Write lives number
         TextView textLives = ((Activity) context).findViewById(R.id.lives);
         textLives.setText(String.valueOf(currentLives));
 
