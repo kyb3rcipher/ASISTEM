@@ -24,9 +24,12 @@ public class ExerciseClass {
     private final Context context;
     public static int nextFragment;
     public static int correct;
+    private LivesDatabaseHelper livesDatabaseHelper;
+    private int currentLives;
 
     public ExerciseClass(Context context) {
         this.context = context;
+        this.livesDatabaseHelper = new LivesDatabaseHelper(context);
     }
 
     public void closeButton() {
@@ -44,21 +47,21 @@ public class ExerciseClass {
         alertDialog.show();
     }
 
-    private int lives = 5;
     private void decreaseLives() {
-        lives--;
-        TextView textLives = ((Activity) context).findViewById(R.id.lives);
-        textLives.setText(String.valueOf(lives));
+        currentLives = livesDatabaseHelper.getLivesCount();
+        currentLives--;
+        livesDatabaseHelper.setLivesCount(currentLives);
 
-        if (lives <= 0) {
+
+        TextView textLives = ((Activity) context).findViewById(R.id.lives);
+        textLives.setText(String.valueOf(currentLives));
+
+        if (currentLives <= 0) {
             ((Activity) context).setContentView(R.layout.fail_leasson);
 
             // Start sound
             MediaPlayer failLeasson = MediaPlayer.create(context, R.raw.lesson_fail);
             failLeasson.start();
-
-            /*ImageButton imageButton = ((Activity) context).findViewById(R.id.closeButton);
-            imageButton.setOnClickListener(view -> ((Activity) context).finish());*/
         }
     }
 
@@ -101,6 +104,10 @@ public class ExerciseClass {
         FrameLayout frameLayout = ((Activity) context).findViewById(R.id.frameLayout);
         frameLayout.removeAllViews();
         ((Activity) context).getLayoutInflater().inflate(layoutId, frameLayout, true);
+
+        currentLives = livesDatabaseHelper.getLivesCount();
+        TextView textLives = ((Activity) context).findViewById(R.id.lives);
+        textLives.setText(String.valueOf(currentLives));
     }
 
     // Exercises setup methods.
