@@ -78,6 +78,8 @@
     <string name="exerciseOptions_title">Select the answer</string>
     <!-- read -->
     <string name="exerciseRead_title">Read the text</string>
+    <!-- video -->
+    <string name="exerciseVideo_title">Watch the video</string>
     <!-- select -->
     <string name="exerciseSelect_title">Select the correct option</string>
     <!-- write -->
