@@ -5,7 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class LivesDatabaseHelper extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String TABLE_LIVES = "lives";
     private static final String COLUMN_LIVES_COUNT = "lives_count";
 
@@ -13,7 +13,7 @@ public class LivesDatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_COURSES_NAME = "name";
     private static final String COLUMN_COURSES_PROGRESS = "progress";
 
-    public LivesDatabaseHelper(Context context) {
+    public DatabaseHelper(Context context) {
         super(context, "ASISTEM.db", null, 2);
     }
 
@@ -38,6 +38,7 @@ public class LivesDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    // Methods for lives table
     public void setLivesCount(int livesCount) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -62,6 +63,7 @@ public class LivesDatabaseHelper extends SQLiteOpenHelper {
         return livesCount;
     }
 
+    // Methods for course table
     public boolean isCourseExists(String courseName) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(
@@ -82,6 +84,29 @@ public class LivesDatabaseHelper extends SQLiteOpenHelper {
         return exists;
     }
 
+    public void addCourse(String courseName, int progress) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_COURSES_NAME, courseName);
+        values.put(COLUMN_COURSES_PROGRESS, progress);
+        db.insert(TABLE_COURSES, null, values);
+        db.close();
+    }
+
+    public void setCourseProgress(String courseName, int progress) {
+        // Max progress
+        if (progress >= 4) { return; }
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_COURSES_PROGRESS, progress);
+
+        String whereClause = COLUMN_COURSES_NAME + " = ?";
+        String[] whereArgs = {courseName};
+
+        db.update(TABLE_COURSES, values, whereClause, whereArgs);
+        db.close();
+    }
 
     public int getCourseProgress(String courseName) {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -108,28 +133,5 @@ public class LivesDatabaseHelper extends SQLiteOpenHelper {
         db.close();
 
         return progress;
-    }
-
-    public void setCourseProgress(String courseName, int progress) {
-        // Max progress
-        if (progress >= 4) { return; }
-
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put(COLUMN_COURSES_PROGRESS, progress);
-
-        String whereClause = COLUMN_COURSES_NAME + " = ?";
-        String[] whereArgs = {courseName};
-
-        db.update(TABLE_COURSES, values, whereClause, whereArgs);
-        db.close();
-    }
-    public void addCourse(String courseName, int progress) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues values = new ContentValues();
-        values.put(COLUMN_COURSES_NAME, courseName);
-        values.put(COLUMN_COURSES_PROGRESS, progress);
-        db.insert(TABLE_COURSES, null, values);
-        db.close();
     }
 }

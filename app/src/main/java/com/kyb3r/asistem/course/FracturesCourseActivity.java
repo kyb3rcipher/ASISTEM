@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.kyb3r.asistem.ExerciseClass;
-import com.kyb3r.asistem.LivesDatabaseHelper;
+import com.kyb3r.asistem.DatabaseHelper;
 import com.kyb3r.asistem.R;
 
 import java.util.Arrays;
@@ -26,7 +26,7 @@ public class FracturesCourseActivity extends AppCompatActivity {
         closeButton.setOnClickListener(v -> exercises.closeButton());
 
         // Exercise fragments switcher
-        LivesDatabaseHelper db = new LivesDatabaseHelper(this);
+        DatabaseHelper db = new DatabaseHelper(this);
         int progress = db.getCourseProgress(getString(R.string.course1Title));
         Button button = findViewById(R.id.button);
         switch (progress) {

@@ -28,14 +28,14 @@ public class ExerciseClass {
     private final String courseName;
     private final Context context;
     public static int correct, nextFragment;
-    private LivesDatabaseHelper livesDatabaseHelper;
+    private DatabaseHelper livesDatabaseHelper;
     private int currentLives;
     private boolean finish;
 
     public ExerciseClass(String courseName, Context context ) {
         this.courseName = courseName;
         this.context = context;
-        this.livesDatabaseHelper = new LivesDatabaseHelper(context);
+        this.livesDatabaseHelper = new DatabaseHelper(context);
     }
 
     public void closeButton() {

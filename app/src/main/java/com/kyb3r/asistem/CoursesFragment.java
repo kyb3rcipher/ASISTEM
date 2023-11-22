@@ -59,7 +59,7 @@ public class CoursesFragment extends Fragment {
         elements.add(new CoursesList(getString(R.string.course1Title), getString(R.string.course1Description), R.drawable.banner_course_fractures));
         elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_suicide));
 
-        LivesDatabaseHelper db = new LivesDatabaseHelper(getContext());
+        DatabaseHelper db = new DatabaseHelper(getContext());
         for (CoursesList course : elements) {
             // If the course not exists add (to avoid duplicate rows)
             if (!db.isCourseExists(course.getTitle())) {
