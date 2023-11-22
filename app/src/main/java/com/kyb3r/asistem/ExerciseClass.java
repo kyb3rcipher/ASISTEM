@@ -25,13 +25,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExerciseClass {
+    private final String courseName;
     private final Context context;
     public static int correct, nextFragment;
     private LivesDatabaseHelper livesDatabaseHelper;
     private int currentLives;
     private boolean finish;
 
-    public ExerciseClass(Context context) {
+    public ExerciseClass(String courseName, Context context ) {
+        this.courseName = courseName;
         this.context = context;
         this.livesDatabaseHelper = new LivesDatabaseHelper(context);
     }
@@ -95,6 +97,10 @@ public class ExerciseClass {
                 Toast.makeText(context, "Correct :)", Toast.LENGTH_SHORT).show();
 
                 if (finish) {
+                    int progress = livesDatabaseHelper.getCourseProgress(courseName);
+                    int newProgress = progress + 1;
+                    livesDatabaseHelper.setCourseProgress(courseName, newProgress);
+
                     ((Activity) context).setContentView(R.layout.fail_leasson);
                     finish = false;
                     return;

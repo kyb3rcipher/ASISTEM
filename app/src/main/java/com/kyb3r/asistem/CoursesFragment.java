@@ -59,6 +59,14 @@ public class CoursesFragment extends Fragment {
         elements.add(new CoursesList(getString(R.string.course1Title), getString(R.string.course1Description), R.drawable.banner_course_fractures));
         elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_suicide));
 
+        LivesDatabaseHelper db = new LivesDatabaseHelper(getContext());
+        for (CoursesList course : elements) {
+            // Verificar si el curso ya existe antes de insertarlo
+            if (!db.isCourseExists(course.getTitle())) {
+                db.addCourse(course.getTitle(), 0);
+            }
+        }
+
         CoursesAdapter adapter = new CoursesAdapter(elements);
         recyclerCourses.setAdapter(adapter);
 
