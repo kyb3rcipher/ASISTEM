@@ -62,7 +62,7 @@ public class ExerciseClass {
 
 
         // Write lives number
-        TextView textLives = ((Activity) context).findViewById(R.id.lives);
+        TextView textLives = ((Activity) context).findViewById(R.id.livesLeft);
         textLives.setText(String.valueOf(currentLives));
 
         if (currentLives <= 0) {
@@ -125,12 +125,12 @@ public class ExerciseClass {
         ((Activity) context).getLayoutInflater().inflate(layoutId, frameLayout, true);
 
         currentLives = livesDatabaseHelper.getLivesCount();
-        TextView textLives = ((Activity) context).findViewById(R.id.lives);
+        TextView textLives = ((Activity) context).findViewById(R.id.livesLeft);
         textLives.setText(String.valueOf(currentLives));
     }
 
     // Exercises setup methods.
-    public void setupRead(String readText, int correctFragment) {
+    public void read(String readText, int correctFragment) {
         changeLayout(R.layout.exercise_read);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setText(R.string.exerciseOkay);
@@ -143,7 +143,7 @@ public class ExerciseClass {
         correct = -1;
     }
 
-    public void setupVideo(int videoFile, int correctFragment) {
+    public void video(int videoFile) {
         changeLayout(R.layout.exercise_video);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setText(R.string.exerciseOkay);
@@ -159,11 +159,11 @@ public class ExerciseClass {
         // Automatically start video
         video.start();
 
-        nextFragment = correctFragment;
+        nextFragment = 0;
         correct = -1;
     }
 
-    public void setupOptions(String instructionText, String option1Text, String option2Text, String option3Text, int correctOption, int correctFragment, int incorrectFragment, boolean last) {
+    public void options(String instructionText, String option1Text, String option2Text, String option3Text, int correctOption, int correctFragment, int incorrectFragment, boolean last) {
         changeLayout(R.layout.exercise_options);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setText(R.string.exerciseCheck);
@@ -196,7 +196,7 @@ public class ExerciseClass {
         checkAnswer();
     }
 
-    public void setupSelect(String instructionText, int correctOption, int[] fragmentMappings, boolean last) {
+    public void select(String instructionText, int correctOption, int[] fragmentMappings, boolean last) {
         changeLayout(R.layout.exercise_select);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setText(R.string.exerciseCheck);
@@ -228,7 +228,7 @@ public class ExerciseClass {
         checkAnswer();
     }
 
-    public void setupWrite(String instructionText, List<String> correctAnswerList, int correctFragment, int incorrectFragment, boolean last) {
+    public void write(String instructionText, List<String> correctAnswerList, int correctFragment, int incorrectFragment, boolean last) {
         changeLayout(R.layout.exercise_write_answer);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setText(R.string.exerciseCheck);
@@ -263,7 +263,7 @@ public class ExerciseClass {
         checkAnswer();
     }
 
-    public void setupTapPairs(String instructionText, int[][] buttonPairs, int correctFragment, boolean last) {
+    public void tapPairs(String instructionText, int[][] buttonPairs, int correctFragment, boolean last) {
         changeLayout(R.layout.exercise_tap_pairs);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setVisibility(View.GONE);
