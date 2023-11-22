@@ -29,6 +29,7 @@ public class ExerciseClass {
     public static int correct, nextFragment;
     private LivesDatabaseHelper livesDatabaseHelper;
     private int currentLives;
+    private boolean finish;
 
     public ExerciseClass(Context context) {
         this.context = context;
@@ -92,6 +93,12 @@ public class ExerciseClass {
 
                 // Message
                 Toast.makeText(context, "Correct :)", Toast.LENGTH_SHORT).show();
+
+                if (finish) {
+                    ((Activity) context).setContentView(R.layout.fail_leasson);
+                    finish = false;
+                    return;
+                }
             } else {
                 // start sound
                 incorrectPlayer.start();
@@ -150,7 +157,7 @@ public class ExerciseClass {
         correct = -1;
     }
 
-    public void setupOptions(String buttonText, String instructionText, String option1Text, String option2Text, String option3Text, int correctOption, int correctFragment, int incorrectFragment) {
+    public void setupOptions(String buttonText, String instructionText, String option1Text, String option2Text, String option3Text, int correctOption, int correctFragment, int incorrectFragment, boolean last) {
         changeLayout(R.layout.exercise_options);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setText(buttonText);
@@ -171,6 +178,9 @@ public class ExerciseClass {
             if (checkedId == correctOption) {
                 correct = 1;
                 nextFragment = correctFragment;
+                if (last) {
+                    finish = true;
+                }
             } else {
                 correct = 0;
                 nextFragment = incorrectFragment;
@@ -180,7 +190,7 @@ public class ExerciseClass {
         checkAnswer();
     }
 
-    public void setupSelect(String instructionText, String buttonText, int correctOption, int[] fragmentMappings) {
+    public void setupSelect(String instructionText, String buttonText, int correctOption, int[] fragmentMappings, boolean last) {
         changeLayout(R.layout.exercise_select);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setText(buttonText);
@@ -199,6 +209,9 @@ public class ExerciseClass {
             imageOptions[i].setOnClickListener(view -> {
                 if (finalI == correctOption) {
                     correct = 1;
+                    if (last) {
+                        finish = true;
+                    }
                 } else {
                     correct = 0;
                 }
@@ -209,7 +222,7 @@ public class ExerciseClass {
         checkAnswer();
     }
 
-    public void setupWrite(String instructionText, String buttonText, List<String> correctAnswerList, int correctFragment, int incorrectFragment) {
+    public void setupWrite(String instructionText, String buttonText, List<String> correctAnswerList, int correctFragment, int incorrectFragment, boolean last) {
         changeLayout(R.layout.exercise_write_answer);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setText(buttonText);
@@ -230,6 +243,9 @@ public class ExerciseClass {
                 if (correctAnswerList.contains(userAnswer)) {
                     correct = 1;
                     nextFragment = correctFragment;
+                    if (last) {
+                        finish = true;
+                    }
                 } else {
                     correct = 0;
                     nextFragment = incorrectFragment;
@@ -241,7 +257,7 @@ public class ExerciseClass {
         checkAnswer();
     }
 
-    public void setupTapPairs(String instructionText, int[][] buttonPairs, int correctFragment) {
+    public void setupTapPairs(String instructionText, int[][] buttonPairs, int correctFragment, boolean last) {
         changeLayout(R.layout.exercise_tap_pairs);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setVisibility(View.GONE);
@@ -300,6 +316,9 @@ public class ExerciseClass {
                     if (allDisabled) {
                         correct = 1;
                         nextFragment = correctFragment;
+                        if (last) {
+                            finish = true;
+                        }
                         button.performClick();
                     }
                 }

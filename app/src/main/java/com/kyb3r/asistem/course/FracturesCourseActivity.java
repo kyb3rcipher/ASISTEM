@@ -33,21 +33,21 @@ public class FracturesCourseActivity extends AppCompatActivity {
         button.setOnClickListener(v -> {
             switch (ExerciseClass.nextFragment) {
                 case 0:
-                    exercises.setupOptions("Check", "Best song?", "NADIE SABE", "MONACO", "FINA", R.id.option1, 1, 0);
+                    exercises.setupOptions("Check", "Best song?", "NADIE SABE", "MONACO", "FINA", R.id.option1, 1, 0, false);
                 break;
 
                 case 1:
                     int[] fragmentMappings = {1, 1, 1, 2};
-                    exercises.setupSelect("PERRO NEGRO", "Check", 3, fragmentMappings);
+                    exercises.setupSelect("PERRO NEGRO", "Check", 3, fragmentMappings, false);
                 break;
 
                 case 2:
-                    exercises.setupWrite("CONAN GRAY", "Check", Arrays.asList("uwu", "owo", "xd"), 3, 2);
+                    exercises.setupWrite("CONAN GRAY", "Check", Arrays.asList("uwu", "owo", "xd"), 3, 2, false);
                 break;
 
                 case 3:
                     int[][] buttonPairs = {{0, 1}, {2, 3}, {4, 5}};
-                    exercises.setupTapPairs("DJ PASTOR", buttonPairs, 1);
+                    exercises.setupTapPairs("DJ PASTOR", buttonPairs, 1, true);
                 break;
             }
         });
