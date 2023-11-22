@@ -74,6 +74,8 @@
 
 
     <!-- Exercise -->
+    <string name="exerciseOkay">Okay</string>
+    <string name="exerciseCheck">Check</string>
     <!-- options -->
     <string name="exerciseOptions_title">Select the answer</string>
     <!-- read -->

@@ -31,21 +31,21 @@ public class FracturesCourseActivity extends AppCompatActivity {
         Button button = findViewById(R.id.button);
         switch (progress) {
             case 0:
-                exercises.setupRead("Okay", getString(R.string.courseFracturesRead), 0);
+                exercises.setupRead(getString(R.string.courseFracturesRead), 0);
 
                 button.setOnClickListener(v -> {
                     switch (ExerciseClass.nextFragment) {
                         case 0:
-                            exercises.setupOptions("Check", "Best song?", "NADIE SABE", "MONACO", "FINA", R.id.option1, 1, 0, false);
+                            exercises.setupOptions("Best song?", "NADIE SABE", "MONACO", "FINA", R.id.option1, 1, 0, false);
                             break;
 
                         case 1:
                             int[] fragmentMappings = {1, 1, 1, 2};
-                            exercises.setupSelect("PERRO NEGRO", "Check", 3, fragmentMappings, false);
+                            exercises.setupSelect("PERRO NEGRO",  3, fragmentMappings, false);
                             break;
 
                         case 2:
-                            exercises.setupWrite("CONAN GRAY", "Check", Arrays.asList("uwu", "owo", "xd"), 3, 2, false);
+                            exercises.setupWrite("CONAN GRAY", Arrays.asList("uwu", "owo", "xd"), 3, 2, false);
                             break;
 
                         case 3:
@@ -57,12 +57,12 @@ public class FracturesCourseActivity extends AppCompatActivity {
             break;
 
             case 1:
-                exercises.setupVideo("Okay", R.raw.video, 0);
+                exercises.setupVideo(R.raw.video, 0);
 
                 button.setOnClickListener(v -> {
                     switch (ExerciseClass.nextFragment) {
                         case 0:
-                            exercises.setupOptions("Check", "BULAO", "WHO IS BAD BUNNY", "MONACO", "FINA", R.id.option3, 0, 0, true);
+                            exercises.setupOptions("BULAO", "WHO IS BAD BUNNY", "MONACO", "FINA", R.id.option3, 0, 0, true);
                             break;
                     }
                 });
