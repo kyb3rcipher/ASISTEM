@@ -68,6 +68,9 @@ public class FracturesCourseActivity extends AppCompatActivity {
                 });
             break;
 
+            default:
+                exercises.setupFinishCourse();
+                break;
         }
     }
 

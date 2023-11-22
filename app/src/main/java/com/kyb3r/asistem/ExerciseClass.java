@@ -66,7 +66,7 @@ public class ExerciseClass {
         textLives.setText(String.valueOf(currentLives));
 
         if (currentLives <= 0) {
-            ((Activity) context).setContentView(R.layout.fail_leasson);
+            ((Activity) context).setContentView(R.layout.leasson);
 
             // Start sound
             MediaPlayer failLeasson = MediaPlayer.create(context, R.raw.lesson_fail);
@@ -101,7 +101,7 @@ public class ExerciseClass {
                     int newProgress = progress + 1;
                     livesDatabaseHelper.setCourseProgress(courseName, newProgress);
 
-                    ((Activity) context).setContentView(R.layout.fail_leasson);
+                    ((Activity) context).setContentView(R.layout.leasson);
                     finish = false;
                     return;
                 }
@@ -332,6 +332,14 @@ public class ExerciseClass {
         }
 
         checkAnswer();
+    }
+
+    public void setupFinishCourse() {
+        ((Activity) context).setContentView(R.layout.leasson);
+        TextView title = ((Activity) context).findViewById(R.id.title), text = ((Activity) context).findViewById(R.id.text);
+
+        title.setText("FINISH COURSE");
+        text.setText("MENTIIIIIIIIIIIIIIIIIIIII");
     }
 
 }

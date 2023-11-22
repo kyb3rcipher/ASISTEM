@@ -50,9 +50,9 @@ public class CoursesFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View vista = inflater.inflate(R.layout.fragment_courses, container, false);
+        View view = inflater.inflate(R.layout.fragment_courses, container, false);
 
-        recyclerCourses = (RecyclerView) vista.findViewById(R.id.coursesRecyclerView);
+        recyclerCourses = (RecyclerView) view.findViewById(R.id.coursesRecyclerView);
         recyclerCourses.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
 
         elements = new ArrayList<>();
@@ -61,7 +61,7 @@ public class CoursesFragment extends Fragment {
 
         LivesDatabaseHelper db = new LivesDatabaseHelper(getContext());
         for (CoursesList course : elements) {
-            // Verificar si el curso ya existe antes de insertarlo
+            // If the course not exists add (to avoid duplicate rows)
             if (!db.isCourseExists(course.getTitle())) {
                 db.addCourse(course.getTitle(), 0);
             }
@@ -80,6 +80,6 @@ public class CoursesFragment extends Fragment {
             }
         });
 
-        return vista;
+        return view;
     }
 }
