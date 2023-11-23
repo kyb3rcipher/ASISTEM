@@ -129,7 +129,7 @@ public class ExerciseClass {
         ((Activity) context).getLayoutInflater().inflate(layoutId, frameLayout, true);
 
         currentLives = livesDatabaseHelper.getLivesCount();
-        TextView textLives = ((Activity) context).findViewById(R.id.livesLeft);
+        TextView textLives = ((Activity) context).findViewById(R.id.lives);
         textLives.setText(String.valueOf(currentLives));
     }
 
