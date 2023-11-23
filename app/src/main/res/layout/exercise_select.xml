@@ -40,37 +40,70 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="match_parent"
             android:background="@drawable/word_border"
             android:backgroundTint="@null"
             android:gravity="center|center_vertical">
 
             <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp">
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                    <ImageButton
-                        android:id="@+id/option1"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@android:drawable/btn_star" />
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/option1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@android:drawable/btn_star"
+                            android:tint="@null" />
+
+                        <TextView
+                            android:id="@+id/option1Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Text" />
+                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp">
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                    <ImageButton
-                        android:id="@+id/option2"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@android:drawable/btn_star" />
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/option2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@android:drawable/btn_star"
+                            android:tint="@null" />
+
+                        <TextView
+                            android:id="@+id/option2Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Text" />
+                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -78,30 +111,63 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:gravity="center">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp">
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                    <ImageButton
-                        android:id="@+id/option3"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@android:drawable/btn_star" />
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/option3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@android:drawable/btn_star"
+                            android:tint="@null" />
+
+                        <TextView
+                            android:id="@+id/option3Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Text" />
+                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp">
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                    <ImageButton
-                        android:id="@+id/option4"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@android:drawable/btn_star" />
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/option4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@android:drawable/btn_star"
+                            android:tint="@null" />
+
+                        <TextView
+                            android:id="@+id/option4Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Text" />
+                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
