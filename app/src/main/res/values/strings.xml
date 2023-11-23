@@ -40,11 +40,13 @@
     <string name="tapPair_title">Tap the pairs</string>
 
     <!-- Courses -->
-    <!-- 1 -->
     <string name="courseImageDescription">Course Image</string>
     <string name="courseButtonDescription">Course button</string>
-    <string name="course1Title">Fractures</string>
+    <!-- 1 -->
+    <string name="course1Title">Depresion</string>
     <string name="course1Description">Assess, treat, and prevent complications in fracture injuries.</string>
+
+
     <string name="course2Title">Burns</string>
     <string name="course2Description">Assess, treat, and prevent complications in burn injuries..</string>
     <!-- exercise -->

@@ -11,7 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.kyb3r.asistem.course.FracturesCourseActivity;
+import com.kyb3r.asistem.course.DepressionCourseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,8 +56,8 @@ public class CoursesFragment extends Fragment {
         recyclerCourses.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
 
         elements = new ArrayList<>();
-        elements.add(new CoursesList(getString(R.string.course1Title), getString(R.string.course1Description), R.drawable.banner_course_fractures));
-        elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_suicide));
+        elements.add(new CoursesList(getString(R.string.course1Title), getString(R.string.course1Description), R.drawable.banner_course_depression));
+        elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_fractures));
 
         DatabaseHelper db = new DatabaseHelper(getContext());
         for (CoursesList course : elements) {
@@ -72,12 +72,13 @@ public class CoursesFragment extends Fragment {
 
         // Cards clicks
         adapter.setOnItemClickListener(coursesList -> {
+            Intent course = null;
             switch (elements.indexOf(coursesList)) {
                 case 0:
-                    Intent intent = new Intent(getContext(), FracturesCourseActivity.class);
-                    startActivity(intent);
+                    course = new Intent(getContext(), DepressionCourseActivity.class);
                     break;
             }
+            startActivity(course);
         });
 
         return view;

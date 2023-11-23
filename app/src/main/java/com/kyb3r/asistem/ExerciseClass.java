@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
@@ -21,6 +22,9 @@ import android.widget.Toast;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.AlertDialog;
+
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -183,10 +187,11 @@ public class ExerciseClass {
         radioButton.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == correctOption) {
                 correct = 1;
-                nextFragment = correctFragment;
                 if (last) {
                     finish = true;
+                    return;
                 }
+                nextFragment = correctFragment;
             } else {
                 correct = 0;
                 nextFragment = incorrectFragment;
@@ -196,7 +201,7 @@ public class ExerciseClass {
         checkAnswer();
     }
 
-    public void select(String instructionText, int correctOption, int[] fragmentMappings, boolean last) {
+    public void select(String instructionText, int image1, String text1, int image2, String text2, int image3, String text3, int image4, String text4, int correctOption, int correctFragment, int incorrectFragment, boolean last) {
         changeLayout(R.layout.exercise_select);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setText(R.string.exerciseCheck);
@@ -204,24 +209,36 @@ public class ExerciseClass {
         TextView instruction = ((Activity) context).findViewById(R.id.instruction);
         instruction.setText(instructionText);
 
+        TextView option1Text = ((Activity) context).findViewById(R.id.option1Text), option2Text = ((Activity) context).findViewById(R.id.option2Text), option3Text = ((Activity) context).findViewById(R.id.option3Text), option4Text = ((Activity) context).findViewById(R.id.option4Text);
+        option1Text.setText(text1);
+        option2Text.setText(text2);
+        option3Text.setText(text3);
+        option4Text.setText(text4);
+
         ImageButton[] imageOptions = new ImageButton[4];
         imageOptions[0] = ((Activity) context).findViewById(R.id.option1);
-        imageOptions[1] = ((Activity) context).findViewById(R.id.option1);
+        imageOptions[1] = ((Activity) context).findViewById(R.id.option2);
         imageOptions[2] = ((Activity) context).findViewById(R.id.option3);
         imageOptions[3] = ((Activity) context).findViewById(R.id.option4);
+
+        imageOptions[0].setImageResource(image1);
+        imageOptions[1].setImageResource(image2);
+        imageOptions[2].setImageResource(image3);
+        imageOptions[3].setImageResource(image4);
 
         for (int i = 0; i < imageOptions.length; i++) {
             int finalI = i;
             imageOptions[i].setOnClickListener(view -> {
-                if (finalI == correctOption) {
+                if (finalI == correctOption - 1) {
                     correct = 1;
+                    nextFragment = correctFragment;
                     if (last) {
                         finish = true;
                     }
                 } else {
                     correct = 0;
+                    nextFragment = incorrectFragment;
                 }
-                nextFragment = fragmentMappings[finalI];
             });
         }
 
@@ -263,7 +280,7 @@ public class ExerciseClass {
         checkAnswer();
     }
 
-    public void tapPairs(String instructionText, int[][] buttonPairs, int correctFragment, boolean last) {
+    public void tapPairs(String instructionText, String[] buttonPairsText, int[][] buttonPairs, int correctFragment, boolean last) {
         changeLayout(R.layout.exercise_tap_pairs);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setVisibility(View.GONE);
@@ -278,6 +295,11 @@ public class ExerciseClass {
         buttons.add(((Activity) context).findViewById(R.id.button4));
         buttons.add(((Activity) context).findViewById(R.id.button5));
         buttons.add(((Activity) context).findViewById(R.id.button6));
+
+        for (int i = 0; i < buttons.size(); i++) {
+            Button buttonText = buttons.get(i);
+            buttonText.setText(buttonPairsText[i]);
+        }
 
         List<Integer> clickedButtons = new ArrayList<>();
 
@@ -338,7 +360,7 @@ public class ExerciseClass {
         ((Activity) context).setContentView(R.layout.leasson);
         TextView title = ((Activity) context).findViewById(R.id.title), text = ((Activity) context).findViewById(R.id.text);
 
-        title.setText("FINISH COURSE");
+        title.setText("Completed Course");
         text.setText("MENTIIIIIIIIIIIIIIIIIIIII");
     }
 
