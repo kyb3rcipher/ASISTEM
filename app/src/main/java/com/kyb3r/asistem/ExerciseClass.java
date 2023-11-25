@@ -66,7 +66,7 @@ public class ExerciseClass {
 
 
         // Write lives number
-        TextView textLives = ((Activity) context).findViewById(R.id.livesLeft);
+        TextView textLives = ((Activity) context).findViewById(R.id.lives);
         textLives.setText(String.valueOf(currentLives));
 
         if (currentLives <= 0) {
