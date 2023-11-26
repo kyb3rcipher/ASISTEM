@@ -43,9 +43,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(COLUMN_LIVES_COUNT, livesCount);
-        db.insertWithOnConflict(TABLE_LIVES, null, values, SQLiteDatabase.CONFLICT_REPLACE);
+
+        // Update the existing row with the new lives count
+        int rowsAffected = db.update(TABLE_LIVES, values, null, null);
+
+        // If no rows were affected, insert a new row
+        if (rowsAffected == 0) {
+            db.insert(TABLE_LIVES, null, values);
+        }
+
         db.close();
     }
+
 
     public int getLivesCount() {
         SQLiteDatabase db = this.getReadableDatabase();

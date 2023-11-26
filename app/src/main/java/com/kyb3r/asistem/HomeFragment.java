@@ -1,7 +1,9 @@
 package com.kyb3r.asistem;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -45,13 +47,12 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        // Obtener la referencia del TextView
         TextView lives = view.findViewById(R.id.livesLeft), days = view.findViewById(R.id.streaksDays);
 
         DatabaseHelper db = new DatabaseHelper(getContext());
 
         int livesNumber = db.getLivesCount();
-        lives.setText(livesNumber + " lives");
+        lives.setText(livesNumber + " " + getString(R.string.lives));
         ImageView heart = view.findViewById(R.id.imageHeart), fire = view.findViewById(R.id.imageFire);
         if (livesNumber > 0) {
             heart.setImageResource(R.drawable.logo_duetone);
@@ -59,18 +60,22 @@ public class HomeFragment extends Fragment {
             heart.setImageResource(R.drawable.logo_duetone_black);
         }
 
-        days.setText("7 days");
+        days.setText("7 " + getString(R.string.days));
         if (1 > 0) {
             fire.setImageResource(R.drawable.ic_fire);
         } else {
             fire.setImageResource(R.drawable.ic_fire_black);
         }
 
-        /*ImageView heart1 = view.findViewById(R.id.liveHeart1), heart2 = view.findViewById(R.id.liveHeart2), heart3 = view.findViewById(R.id.liveHeart3), heart4 = view.findViewById(R.id.liveHeart4), heart5 = view.findViewById(R.id.liveHeart5);
-        ImageView[] hearts = new ImageView[]{heart1, heart2, heart3, heart4, heart5};
-        for (int i = 0; i < lives; i++) {
-            hearts[i].setImageResource(R.drawable.logo_duetone);
-        }*/
+
+        CardView course1CardView = view.findViewById(R.id.livesCard);
+        course1CardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent LivesActivity = new Intent(getContext(), LivesActivity.class);
+                startActivity(LivesActivity);
+            }
+        });
 
         // Inflate the layout for this fragment
         return view;
