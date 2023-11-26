@@ -12,14 +12,14 @@
         android:id="@+id/textWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome Back!"
+        android:text="@string/textWelcome"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <TextView
         android:id="@+id/textInCaseOf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="In case of:" />
+        android:text="@string/in_case_of" />
 
     <TextView
         android:id="@+id/textInCaseOftext"
@@ -120,7 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:text="Call Emergency number"
+                android:text="@string/call_emergency_number"
                 android:textAlignment="center" />
         </LinearLayout>
 
@@ -131,7 +131,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="Continue where you left of"
+        android:text="@string/continue_where_you_left_of"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <androidx.cardview.widget.CardView
