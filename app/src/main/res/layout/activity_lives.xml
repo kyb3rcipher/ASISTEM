@@ -37,7 +37,7 @@
             android:layout_height="50dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/logo_duetone_black"
-            android:tint="@null" />
+            app:tint="@null" />
 
         <ImageView
             android:id="@+id/heart2"
@@ -45,7 +45,7 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:src="@drawable/logo_duetone_black"
-            android:tint="@null" />
+            app:tint="@null" />
 
         <ImageView
             android:id="@+id/heart3"
@@ -53,7 +53,7 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:src="@drawable/logo_duetone_black"
-            android:tint="@null" />
+            app:tint="@null" />
 
         <ImageView
             android:id="@+id/heart4"
@@ -61,7 +61,7 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:src="@drawable/logo_duetone_black"
-            android:tint="@null" />
+            app:tint="@null" />
 
         <ImageView
             android:id="@+id/heart5"
@@ -69,7 +69,7 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:src="@drawable/logo_duetone_black"
-            android:tint="@null" />
+            app:tint="@null" />
 
     </LinearLayout>
 
@@ -93,7 +93,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonCallEmergency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
