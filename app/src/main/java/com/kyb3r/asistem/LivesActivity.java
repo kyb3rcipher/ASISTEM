@@ -16,6 +16,10 @@ public class LivesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lives);
 
+        // Close button
+        ImageButton closeButton = findViewById(R.id.closeButton);
+        closeButton.setOnClickListener(new View.OnClickListener() { @Override  public void onClick(View v) { finish(); }});
+
         DatabaseHelper db = new DatabaseHelper(this);
         int livesNumber = db.getLivesCount();
 

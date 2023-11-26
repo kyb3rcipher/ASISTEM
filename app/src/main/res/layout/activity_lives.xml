@@ -19,7 +19,6 @@
             android:layout_marginRight="65dp"
             android:background="@null"
             android:foregroundGravity="center_vertical"
-            android:onClick="onBackPressed"
             android:src="@drawable/ic_close"
             app:tint="#3C3838" />
 
@@ -37,35 +36,40 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginRight="10dp"
-            android:src="@drawable/logo_duetone_black" />
+            android:src="@drawable/logo_duetone_black"
+            android:tint="@null" />
 
         <ImageView
             android:id="@+id/heart2"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:src="@drawable/logo_duetone_black" />
+            android:src="@drawable/logo_duetone_black"
+            android:tint="@null" />
 
         <ImageView
             android:id="@+id/heart3"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:src="@drawable/logo_duetone_black" />
+            android:src="@drawable/logo_duetone_black"
+            android:tint="@null" />
 
         <ImageView
             android:id="@+id/heart4"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:src="@drawable/logo_duetone_black" />
+            android:src="@drawable/logo_duetone_black"
+            android:tint="@null" />
 
         <ImageView
             android:id="@+id/heart5"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:src="@drawable/logo_duetone_black" />
+            android:src="@drawable/logo_duetone_black"
+            android:tint="@null" />
 
     </LinearLayout>
 
