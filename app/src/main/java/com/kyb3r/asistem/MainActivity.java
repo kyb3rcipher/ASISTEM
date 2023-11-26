@@ -57,10 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 toolBar.setTitle(R.string.courses);
                 getSupportFragmentManager().beginTransaction().replace(R.id.frameLayoutMain, new CoursesFragment()).commit();
                 return true;
-            } else if (item.getItemId() == R.id.menuSaved) {
-                toolBar.setTitle(R.string.saved);
-                getSupportFragmentManager().beginTransaction().replace(R.id.frameLayoutMain, new SavedFragment()).commit();
-                return true;
             }
             return false;
         });
