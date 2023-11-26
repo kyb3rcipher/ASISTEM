@@ -132,6 +132,73 @@
     <string name="case10_text2">Depression is 100% genetic</string>
     <string name="case10_text3">Talking about depression helps</string>
     <string name="case10_text4">Depression already has a definitive cure</string>
+    <!-- Step 2 -->
+    <string name="readText">
+        Depression is a common mental disorder that affects millions of people worldwide. It is characterized by a profound sense of sadness, lack of interest in activities that were once pleasurable, changes in appetite and sleep patterns, persistent fatigue, and difficulties in concentration. Although depression can vary in severity, from mild episodes to more severe forms that can significantly interfere with daily life, it is crucial to recognize early symptoms and seek appropriate help. First aid for depression can play a crucial role in supporting someone experiencing these emotional challenges.
+
+        \n\nOne of the first steps in managing depression is awareness and understanding of signs and symptoms. It can be challenging for those experiencing depression to express their feelings, and often, they may hide their suffering. Therefore, it is essential to pay attention to changes in behavior, such as social isolation, decreased academic or work performance, changes in sleep or eating habits, and expressions of hopelessness or worthlessness.
+
+        \n\nEmotional support and empathy are crucial in first aid for depression. Showing understanding and listening without judgment can make the affected person feel understood and supported. It is crucial to remember that depression is not just a passing mood or a personal weakness; it is a real medical disorder that requires treatment.
+
+        \n\nEncouraging the person to seek professional help, such as a psychologist, psychiatrist, or counselor, is another vital step in first aid for depression. These mental health professionals are trained to assess and treat depression effectively, using approaches ranging from cognitive-behavioral therapy to medication, depending on the severity of the disorder.
+
+        \n\nPromoting a supportive environment can also make a difference. Social isolation can exacerbate depression symptoms, so maintaining social connections and offering shared activities can be beneficial. Engagement in recreational activities and regular physical exercise has also proven effective in managing depression.
+
+        \n\nIn cases of urgency, where the affected person may pose a risk to themselves or others, it is crucial to seek help immediately. Emergency services and crisis hotlines can provide immediate assistance.
+
+        \n\nIn summary, first aid for depression involves understanding, emotional support, and promoting the seeking of professional help. Depression is not something that can be overcome simply through willpower, and the stigma surrounding it often makes it difficult for people to seek the necessary support. With awareness, compassion, and action, we can contribute to breaking the stigma and providing the necessary support for those battling depression.
+    </string>
+
+    <string name="step1_case0_instruction">Select the correct answer:</string>
+    <string name="step1_case0_option1">Showing understanding and listening without judging can make the affected person feel misunderstood and helpless</string>
+    <string name="step1_case0_option2">One of the first steps in managing depression is awareness and understanding of signs and symptoms</string>
+    <string name="step1_case0_option3">In cases of urgency, where the affected person may pose a risk to themselves or others, it is crucial to seek help immediately</string>
+
+    <string name="step1_case1_instruction">What can a person do to support someone experiencing depression?</string>
+    <string name="step1_case1_option1">Showing understanding and listening without judging can make the affected person feel understood and supported</string>
+    <string name="step1_case1_option2">Ignore changes in the person's behavior and wait for them to recover on their own</string>
+    <string name="step1_case1_option3">Suggest that depression is simply a passing mood, and the person should overcome it with willpower</string>
+
+    <string name="step1_case2_instruction">What can make the affected person feel understood and supported in the context of depression?</string>
+    <string name="step1_case2_word1">empathy</string>
+    <string name="step1_case2_word2">empathy</string>
+
+    <string name="step1_case3_instruction">What is depression?</string>
+    <string name="step1_case3_text1">It is solely caused by genetic factors, and there is no influence from life experiences or environmental factors</string>
+    <string name="step1_case3_text2">A common mental disorder</string>
+    <string name="step1_case3_text3">It is simply a sad mood that everyone experiences</string>
+    <string name="step1_case3_text4">It is simply a lack of willpower</string>
+
+    <string name="step1_case4_instruction">What are some early signs of depression mentioned in the text, and why is it crucial to pay attention to these changes in behavior?</string>
+    <string name="step1_case4_text1">Depression only affects emotionally weak people</string>
+    <string name="step1_case4_text2">The best way to help someone with depression is to force them to face their problems and overcome them on their own</string>
+    <string name="step1_case4_text3">Regular physical exercise has no impact on managing depression</string>
+    <string name="step1_case4_text4">Emotional support and empathy are crucial in first aid for depression</string>
+
+    <string name="step1_case5_instruction">What is one fundamental step in the first aid for depression according to the text?</string>
+    <string name="step1_case5_option1">Ignore changes in the person's behavior</string>
+    <string name="step1_case5_option2">Prescribe medication on their own</string>
+    <string name="step1_case5_option3">Encourage the person to seek professional help</string>
+
+    <string name="step1_case6_instruction">What is one of the main characteristics of depression?</string>
+    <string name="step1_case6_option1">Significant increase in energy and motivation</string>
+    <string name="step1_case6_option2">Profound sense of sadness and lack of interest in pleasurable activities</string>
+    <string name="step1_case6_option3">Positive changes in sleep habits</string>
+
+    <string name="step1_case7_instruction">What is crucial for the management of depression according to the described first aid?</string>
+    <string name="step1_case7_word1">support</string>
+    <string name="step1_case7_word2">emotional support</string>
+
+    <string name="step1_case8_instruction">What is crucial for the management of depression?</string>
+    <string name="step1_case8_word1">awareness</string>
+
+    <string name="step1_case9_instruction">What is one of the crucial first steps in managing depression according to the text?</string>
+    <string name="step1_case9_option1">Ignore changes in the affected person's behavior</string>
+    <string name="step1_case9_option2">Show understanding and listen without judging</string>
+    <string name="step1_case9_option3">Blame the affected person for their condition</string>
+
+    <string name="step1_case10_instruction">What can increase depression symptoms?</string>
+    <string name="step1_case10_word1">isolation</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

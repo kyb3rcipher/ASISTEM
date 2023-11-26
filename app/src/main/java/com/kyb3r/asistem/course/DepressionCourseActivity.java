@@ -152,6 +152,122 @@ public class DepressionCourseActivity extends AppCompatActivity {
                 });
             break;
 
+            case 1:
+                exercises.read(getString(R.string.readText), 0);
+                button.setOnClickListener(v -> {
+                    switch (ExerciseClass.nextFragment) {
+                        case 0:
+                            exercises.options(
+                                    getString(R.string.step1_case0_instruction),
+                                    getString(R.string.step1_case0_option1),
+                                    getString(R.string.step1_case0_option2),
+                                    getString(R.string.step1_case0_option3),
+                                    R.id.option2,
+                                    1, 0, false
+                            );
+                            break;
+                        case 1:
+                            exercises.options(
+                                    getString(R.string.step1_case1_instruction),
+                                    getString(R.string.step1_case1_option1),
+                                    getString(R.string.step1_case1_option2),
+                                    getString(R.string.step1_case1_option3),
+                                    R.id.option1,
+                                    2, 1, false
+                            );
+                            break;
+                        case 2:
+                            exercises.write(
+                                    getString(R.string.step1_case2_instruction),
+                                    Arrays.asList(getString(R.string.step1_case2_word1), getString(R.string.step1_case2_word2)),
+                                    3, 2, false
+                            );
+                            break;
+                        case 3:
+                            exercises.select(
+                                    getString(R.string.step1_case3_instruction),
+                                    R.drawable.avatar1,
+                                    getString(R.string.step1_case3_text1),
+                                    R.drawable.brain,
+                                    getString(R.string.step1_case3_text2),
+                                    R.drawable.tristeza,
+                                    getString(R.string.step1_case3_text3),
+                                    R.drawable.fuerza,
+                                    getString(R.string.step1_case3_text4),
+                                    2,
+                                    4, 3, false
+                            );
+                            break;
+                        case 4:
+                            exercises.select(
+                                    getString(R.string.step1_case4_instruction),
+                                    R.drawable.emotions,
+                                    getString(R.string.step1_case4_text1),
+                                    R.drawable.warrior,
+                                    getString(R.string.step1_case4_text2),
+                                    R.drawable.ninguno,
+                                    getString(R.string.step1_case4_text3),
+                                    R.drawable.friends,
+                                    getString(R.string.step1_case4_text4),
+                                    4,
+                                    5, 4, false
+                            );
+                            break;
+                        case 5:
+                            exercises.options(
+                                    getString(R.string.step1_case5_instruction),
+                                    getString(R.string.step1_case5_option1),
+                                    getString(R.string.step1_case5_option2),
+                                    getString(R.string.step1_case5_option3),
+                                    R.id.option3,
+                                    6, 5, false
+                            );
+                            break;
+                        case 6:
+                            exercises.options(
+                                    getString(R.string.step1_case6_instruction),
+                                    getString(R.string.step1_case6_option1),
+                                    getString(R.string.step1_case6_option2),
+                                    getString(R.string.step1_case6_option3),
+                                    R.id.option2,
+                                    7, 6, false
+                            );
+                            break;
+                        case 7:
+                            exercises.write(
+                                    getString(R.string.step1_case7_instruction),
+                                    Arrays.asList(getString(R.string.step1_case7_word1), getString(R.string.step1_case7_word2)),
+                                    8, 7, false
+                            );
+                            break;
+                        case 8:
+                            exercises.write(
+                                    getString(R.string.step1_case8_instruction),
+                                    Arrays.asList(getString(R.string.step1_case8_word1)),
+                                    9, 8, false
+                            );
+                            break;
+                        case 9:
+                            exercises.options(
+                                    getString(R.string.step1_case9_instruction),
+                                    getString(R.string.step1_case9_option1),
+                                    getString(R.string.step1_case9_option2),
+                                    getString(R.string.step1_case9_option3),
+                                    R.id.option1,
+                                    10, 9, false
+                            );
+                            break;
+                        case 10:
+                            exercises.write(
+                                    getString(R.string.step1_case10_instruction),
+                                    Arrays.asList(getString(R.string.step1_case10_word1)),
+                                    10, 10, true
+                            );
+                            break;
+                    }
+                });
+            break;
+
             default:
                 exercises.setupFinishCourse();
                 break;
