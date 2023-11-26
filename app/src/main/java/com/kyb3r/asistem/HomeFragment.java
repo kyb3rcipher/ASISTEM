@@ -68,12 +68,19 @@ public class HomeFragment extends Fragment {
         }
 
 
-        CardView course1CardView = view.findViewById(R.id.livesCard);
-        course1CardView.setOnClickListener(new View.OnClickListener() {
+        CardView livesCard = view.findViewById(R.id.livesCard), emergencyNumbers = view.findViewById(R.id.emergencyNumbersCard);
+        livesCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent LivesActivity = new Intent(getContext(), LivesActivity.class);
                 startActivity(LivesActivity);
+            }
+        });
+        emergencyNumbers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent EmergencyNumbersActivity = new Intent(getContext(), EmergencyNumbersActivity.class);
+                startActivity(EmergencyNumbersActivity);
             }
         });
 
