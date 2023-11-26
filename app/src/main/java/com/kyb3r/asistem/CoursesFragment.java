@@ -57,7 +57,7 @@ public class CoursesFragment extends Fragment {
 
         elements = new ArrayList<>();
         elements.add(new CoursesList(getString(R.string.course1Title), getString(R.string.course1Description), R.drawable.banner_course_depression));
-        elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_fractures));
+        //elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_fractures));
 
         DatabaseHelper db = new DatabaseHelper(getContext());
         for (CoursesList course : elements) {
