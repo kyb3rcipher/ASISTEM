@@ -36,6 +36,7 @@
     <string name="teacher">Profesor</string>
     <string name="design">Diseño</string>
     <string name="designer_contact"><a href="https://github.com/bengiv">@bengiv</a></string>
+    <string name="translation">Traducción</string>
 
     <!-- Tap Pair -->
     <string name="button_check_name">Verificar</string>
