@@ -1,0 +1,132 @@
+<resources>
+
+    <!-- Menu -->
+    <string name="settings">Configuración</string>
+    <string name="about">Acerca de</string>
+    <string name="home">Inicio</string>
+    <string name="courses">Cursos</string>
+    <string name="saved">Guardado</string>
+
+    <!-- Settings -->
+    <string-array name="appareance">
+        <item>Automático</item>
+        <item>Claro</item>
+        <item>Oscuro</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Inglés</item>
+        <item>Español</item>
+        <item>Alemán</item>
+        <item>Ruso</item>
+    </string-array>
+
+    <!-- Home -->
+    <string name="textWelcome">Bienvenido de nuevo</string>
+    <string name="in_case_of">En caso de:</string>
+    <string name="lives">vidas</string>
+    <string name="days">días</string>
+    <string name="call_emergency_number">Números de emergencia</string>
+    <string name="continue_where_you_left_of">Continúa donde lo dejaste</string>
+
+    <!-- About -->
+    <string name="image_logo_description">Imagen del logo de la aplicación</string>
+    <string name="image_contributor_description">Imagen del avatar del colaborador</string>
+    <string name="development">Desarrollo</string>
+    <string name="development_contact"><a href="https://kyb3rcipher.com">Contacto</a></string>
+    <string name="teacher">Profesor</string>
+    <string name="design">Diseño</string>
+    <string name="designer_contact"><a href="https://github.com/bengiv">@bengiv</a></string>
+
+    <!-- Tap Pair -->
+    <string name="button_check_name">Verificar</string>
+    <string name="button_check_description">Botón de verificar</string>
+    <string name="button_close_description">Botón de cerrar</string>
+    <string name="tapPair_title">Toca las parejas</string>
+
+    <!-- Exercise -->
+    <string name="exerciseOkay">Listo</string>
+    <string name="exerciseCheck">Verificar</string>
+    <!-- options -->
+    <string name="exerciseOptions_title">Selecciona la respuesta</string>
+    <!-- read -->
+    <string name="exerciseRead_title">Lee el texto</string>
+    <!-- video -->
+    <string name="exerciseVideo_title">Mira el video</string>
+    <!-- select -->
+    <string name="exerciseSelect_title">Selecciona la opción correcta</string>
+    <!-- write -->
+    <string name="exerciseWrite_title">Escribe la respuesta</string>
+    <!-- tap pairs -->
+    <string name="exerciseTap_pairs">Toca las parejas</string>
+
+    <!-- Courses -->
+    <string name="courseImageDescription">Imagen del curso</string>
+    <string name="courseButtonDescription">Botón del curso</string>
+
+    <!-- 1 -->
+    <string name="course1Title">Depresión</string>
+    <string name="course1Description">Evalúa, trata y previene complicaciones en lesiones por fracturas.</string>
+    <!-- step 1 -->
+    <string name="case0_instruction">Selecciona síntomas de la depresión:</string>
+    <string name="case0_option1">Dolor de cabeza, Llanto, Cambio en la manera de vestirse</string>
+    <string name="case0_option2">Apatía, Pérdida de interés, Cambios en el apetito, Sentirse inútil/culpable</string>
+    <string name="case0_option3">Estar solo todo el día, dormir mucho, no jugar videojuegos</string>
+
+    <string name="case1_instruction">Escribe un neurotransmisor que en menor medida genere la depresión</string>
+    <string name="case1_word1">serotonina</string>
+    <string name="case1_word2">dopamina</string>
+    <string name="case1_word3">norepinefrina</string>
+
+    <string name="case2_instruction">Selecciona un cambio que se produce en el cerebro de una persona con depresión</string>
+    <string name="case2_text1">Lóbulos/hipocampo más pequeño</string>
+    <string name="case2_text2">Cerebro vacío/blanco</string>
+    <string name="case2_text3">Visión de rayos X</string>
+    <string name="case2_text4">Lóbulos frontales e hipocampo más grandes</string>
+
+    <string name="case3_instruction">¿Cuánto tarda aproximadamente una persona con una enfermedad mental/depresión en pedir ayuda?</string>
+    <string name="case3_option1">12 meses</string>
+    <string name="case3_option2">6 meses</string>
+    <string name="case3_option3">10 años</string>
+
+    <string name="case4_instruction">¿Qué diferencia hay entre la depresión clínica y simplemente sentirse deprimido?</string>
+    <string name="case4_option1">La depresión clínica es una respuesta temporal a situaciones como obtener malas calificaciones. En contraste, sentirse deprimido es una respuesta y afectación médica que puede persistir durante semanas</string>
+    <string name="case4_option2">La depresión clínica es una afección médica que persiste durante al menos dos semanas y afecta significativamente la capacidad de trabajar, jugar o amar. En contraste, sentirse deprimido puede ser una respuesta temporal a situaciones como obtener malas calificaciones</string>
+    <string name="case4_option3">La depresión clínica es una enfermedad que puede ser detectada por rayos X</string>
+
+    <string name="case5_instruction">¿Cuáles son algunos tratamientos efectivos para la depresión?</string>
+    <string name="case5_text1">Terapia, Medicamentos, Tratamientos experimentales como la estimulación magnética transcraneal</string>
+    <string name="case5_text2">Terapia, Comer más, Salir con amigos</string>
+    <string name="case5_text3">Terapia, Salir de viaje, Tratamientos experimentales como las drogas</string>
+
+    <string name="case6_instruction">Escribe ¿Cómo se describe la terapia electroconvulsiva y en qué casos se menciona que puede ser especialmente útil como tratamiento para la depresión?</string>
+    <string name="case6_word1">terapia electroconvulsiva</string>
+    <string name="case6_word2">electroconvulsiva terapia</string>
+    <string name="case6_word3">electroconvulsiva</string>
+
+    <string name="case7_instruction">Selecciona la respuesta correcta</string>
+    <string name="case7_option1">La depresión es una enfermedad que se cura con medicamentos</string>
+    <string name="case7_option2">La depresión, aunque es una enfermedad, no significa que la persona tenga una debilidad</string>
+    <string name="case7_option3">La depresión es equivalente a ser una persona suicida</string>
+
+    <string name="case8_instruction">Escribe el porcentaje de adultos que tienen depresión en Estados Unidos</string>
+    <string name="case8_word1">10%</string>
+    <string name="case8_word2">10</string>
+    <string name="case8_word3">10porciento</string>
+    <string name="case8_word4">diez</string>
+    <string name="case8_word5">diezporciento</string>
+
+    <string name="case9_instruction">Selecciona la persona que posiblemente tenga depresión</string>
+    <string name="case9_text1">Se siente mal desde hace unos días porque reprobó su examen</string>
+    <string name="case9_text2">No ha querido salir en las últimas 2 semanas por la muerte de su mascota</string>
+    <string name="case9_text3">Se ha sentido culpable, tiene apatía y se siente generalmente mal desde hace 1 mes</string>
+    <string name="case9_text4">No ha comido en todo el día porque los días lluviosos le ponen triste</string>
+
+    <string name="case10_instruction">Selecciona la respuesta correcta</string>
+    <string name="case10_text1">Llorar una vez es un indicio de depresión</string>
+    <string name="case10_text2">La depresión es 100% genética</string>
+    <string name="case10_text3">Hablar sobre la depresión ayuda</string>
+    <string name="case10_text4">La depresión ya tiene una cura definitiva</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+</resources>
