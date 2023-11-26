@@ -29,7 +29,7 @@ public class DepressionCourseActivity extends AppCompatActivity {
         // Exercise steps progress switcher
         switch (progress) {
             case 0:
-                exercises.video(R.raw.depression_es);
+                exercises.video("depression");
                 button.setOnClickListener(v -> {
                     switch (ExerciseClass.nextFragment) {
                         case 0:
