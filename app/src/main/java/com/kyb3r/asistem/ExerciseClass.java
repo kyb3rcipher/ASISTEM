@@ -147,12 +147,27 @@ public class ExerciseClass {
         correct = -1;
     }
 
-    public void video(int videoFile) {
+    public void video(String videoName) {
         changeLayout(R.layout.exercise_video);
         Button button = ((Activity) context).findViewById(R.id.button);
         button.setText(R.string.exerciseOkay);
 
         VideoView video =  ((Activity) context).findViewById(R.id.videoView);
+
+        // Get the code of the current locale
+        String localeCode = context.getResources().getConfiguration().locale.getLanguage();
+
+        // Build the video file name based on the locale
+        String videoFileName = videoName + "_" + localeCode;
+
+        // Get the resource identifier for the video
+        int videoFile = context.getResources().getIdentifier(videoFileName, "raw", context.getPackageName());
+
+        if (videoFile == 0) {
+            // If the video specific to the locale is not found, use the default one
+            videoFile = context.getResources().getIdentifier(videoName, "raw", context.getPackageName());
+        }
+
         Uri uri = Uri.parse("android.resource://" + context.getPackageName() + "/" + videoFile);
         video.setVideoURI(uri);
 
@@ -160,7 +175,7 @@ public class ExerciseClass {
         video.setMediaController(mediaController);
         mediaController.setAnchorView(video);
 
-        // Automatically start video
+        // Start the video automatically
         video.start();
 
         nextFragment = 0;
