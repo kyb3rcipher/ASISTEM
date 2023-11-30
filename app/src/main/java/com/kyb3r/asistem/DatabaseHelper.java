@@ -72,6 +72,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return livesCount;
     }
 
+    public void addOneLive() {
+        int livesNumber = getLivesCount();
+        if (livesNumber < 5) {
+            livesNumber++;
+            setLivesCount(livesNumber);
+        }
+    }
+
     // Methods for course table
     public boolean isCourseExists(String courseName) {
         SQLiteDatabase db = this.getReadableDatabase();
