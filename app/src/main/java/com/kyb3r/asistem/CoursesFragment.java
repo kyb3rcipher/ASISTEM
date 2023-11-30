@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.kyb3r.asistem.course.DepressionCourseActivity;
 
@@ -60,6 +61,7 @@ public class CoursesFragment extends Fragment {
         //elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_fractures));
 
         DatabaseHelper db = new DatabaseHelper(getContext());
+
         for (CoursesList course : elements) {
             // If the course not exists add (to avoid duplicate rows)
             if (!db.isCourseExists(course.getTitle())) {
@@ -73,12 +75,19 @@ public class CoursesFragment extends Fragment {
         // Cards clicks
         adapter.setOnItemClickListener(coursesList -> {
             Intent course = null;
+
             switch (elements.indexOf(coursesList)) {
                 case 0:
                     course = new Intent(getContext(), DepressionCourseActivity.class);
                     break;
             }
-            startActivity(course);
+
+            // If you don't have lives no start course
+            if (db.getLivesCount() > 0) {
+                startActivity(course);
+            } else {
+                Toast.makeText(getContext(), R.string.courseNoLives_message, Toast.LENGTH_SHORT).show();
+            }
         });
 
         return view;
