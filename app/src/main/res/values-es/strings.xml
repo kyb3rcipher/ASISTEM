@@ -127,7 +127,4 @@
     <string name="case10_text2">La depresión es 100% genética</string>
     <string name="case10_text3">Hablar sobre la depresión ayuda</string>
     <string name="case10_text4">La depresión ya tiene una cura definitiva</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
 </resources>

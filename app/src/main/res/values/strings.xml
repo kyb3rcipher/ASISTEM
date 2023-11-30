@@ -149,7 +149,4 @@
     <string name="case10_text2">Depression is 100% genetic</string>
     <string name="case10_text3">Talking about depression helps</string>
     <string name="case10_text4">Depression already has a definitive cure</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
