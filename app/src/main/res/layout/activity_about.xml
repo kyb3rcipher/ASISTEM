@@ -339,7 +339,7 @@
                             android:layout_height="60dp"
                             android:contentDescription="@string/image_contributor_description"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/avatar_bengiv"
+                            android:src="@drawable/avatar_picaflorito"
                             android:tint="@null"
                             tools:ignore="UseAppTint" />
                     </androidx.cardview.widget.CardView>
@@ -367,7 +367,7 @@
                             android:layout_height="0dp"
                             android:layout_weight="1"
                             android:paddingBottom="15dp"
-                            android:text="@string/designer_contact"
+                            android:text="@string/translator_contact"
                             android:textSize="18sp" />
                     </LinearLayout>
 
