@@ -70,7 +70,7 @@ public class ExerciseClass {
         textLives.setText(String.valueOf(currentLives));
 
         if (currentLives <= 0) {
-            ((Activity) context).setContentView(R.layout.leasson);
+            setupLeasson(R.string.courseNoLives_title, R.string.courseNoLives_message);
 
             // Start sound
             MediaPlayer failLeasson = MediaPlayer.create(context, R.raw.lesson_fail);
@@ -371,12 +371,14 @@ public class ExerciseClass {
         checkAnswer();
     }
 
-    public void setupFinishCourse() {
+    public void setupLeasson(int tittle, int message) {
         ((Activity) context).setContentView(R.layout.leasson);
         TextView title = ((Activity) context).findViewById(R.id.title), text = ((Activity) context).findViewById(R.id.text);
-
-        title.setText(R.string.courseFinished_title);
-        text.setText(R.string.courseFinished_message);
+        title.setText(tittle);
+        text.setText(message);
     }
 
+    public void setupFinishCourse() {
+        setupLeasson(R.string.courseFinished_title, R.string.courseFinished_message);
+    }
 }

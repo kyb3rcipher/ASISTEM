@@ -42,7 +42,7 @@
     <string name="designer_name" translatable="false">Benito</string>
     <string name="designer_contact"><a href="https://github.com/bengiv">@bengiv</a></string>
     <string name="translation">Translation</string>
-    <string name="translator_name" translatable="false">Саймон Hoвикoв (Simon Novikov)</string>
+    <string name="translator_name" translatable="false">Данил Климович (Danil Klimovich)</string>
     <!-- Tap Pair -->
     <string name="button_check_name">Check</string>
     <string name="button_check_description">Check button</string>
@@ -76,8 +76,14 @@
     <string name="courseImageDescription">Course Image</string>
     <string name="courseButtonDescription">Course button</string>
     <!-- completed -->
-    <string name="courseFinished_title">Completed Course</string>
-    <string name="courseFinished_message">MENTIIIIIIIIIIIIIIIIIIIII</string>
+    <string name="courseNoLives_title">YOU DONT HAVE LIVES</string>
+    <string name="courseNoLives_message">TEMPORAL I HOPE I HOPE</string>
+    <!-- completed -->
+    <string name="courseCompleted_title">Completed Course</string>
+    <string name="courseCompleted_message">TEMPORAL I HOPE I HOPE</string>
+    <!-- finished -->
+    <string name="courseFinished_title">Finished Course</string>
+    <string name="courseFinished_message">TEMPORAL I HOPE I HOPE</string>
 
     <!-- 1 -->
     <string name="course1Title">Depression</string>
