@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
-import android.widget.ImageView;
+
 import android.widget.MediaController;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
@@ -23,7 +23,7 @@ import android.widget.VideoView;
 
 import androidx.appcompat.app.AlertDialog;
 
-import org.w3c.dom.Text;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,14 +44,14 @@ public class ExerciseClass {
 
     public void closeButton() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
-        alertDialogBuilder.setTitle("Are you sure about that?");
-        alertDialogBuilder.setMessage("All progress in this lesson will be lost.");
+        alertDialogBuilder.setTitle(R.string.exerciseAlert_title);
+        alertDialogBuilder.setMessage(R.string.exerciseAlert_message);
 
         // Close activity if press QUIT button.
-        alertDialogBuilder.setPositiveButton("QUIT", (dialog, which) -> ((Activity) context).finish());
+        alertDialogBuilder.setPositiveButton(R.string.exerciseAlert_quit, (dialog, which) -> ((Activity) context).finish());
 
         // Close dialog if press CANCEL button.
-        alertDialogBuilder.setNegativeButton("CANCEL", (dialog, which) -> dialog.dismiss());
+        alertDialogBuilder.setNegativeButton(R.string.exerciseAlert_cancel, (dialog, which) -> dialog.dismiss());
 
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
@@ -98,7 +98,7 @@ public class ExerciseClass {
                 progressBar.setProgress(progressBarNumber);
 
                 // Message
-                Toast.makeText(context, "Correct :)", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, R.string.exerciseCorrect, Toast.LENGTH_SHORT).show();
 
                 if (finish) {
                     int progress = livesDatabaseHelper.getCourseProgress(courseName);
@@ -117,7 +117,7 @@ public class ExerciseClass {
                 //new Handler().postDelayed(() -> { if (correctPlayer != null) incorrectPlayer.release(); }, 4000);
 
                 // Message
-                Toast.makeText(context, "Incorrect!, retry", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, R.string.exerciseIncorrect, Toast.LENGTH_SHORT).show();
             }
             correct = -1;
         }
@@ -375,8 +375,8 @@ public class ExerciseClass {
         ((Activity) context).setContentView(R.layout.leasson);
         TextView title = ((Activity) context).findViewById(R.id.title), text = ((Activity) context).findViewById(R.id.text);
 
-        title.setText("Completed Course");
-        text.setText("MENTIIIIIIIIIIIIIIIIIIIII");
+        title.setText(R.string.courseFinished_title);
+        text.setText(R.string.courseFinished_message);
     }
 
 }

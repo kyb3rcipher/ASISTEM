@@ -50,8 +50,15 @@
     <string name="tapPair_title">Tap the pairs</string>
 
     <!-- Exercise -->
+    <string name="exerciseCorrect">Correct :D</string>
+    <string name="exerciseIncorrect">Incorrect, retry! D:</string>
     <string name="exerciseOkay">Okay</string>
     <string name="exerciseCheck">Check</string>
+    <!-- Close alert -->
+    <string name="exerciseAlert_title">Are you sure about that?</string>
+    <string name="exerciseAlert_message">All progress in this lesson will be lost.</string>
+    <string name="exerciseAlert_quit">QUIT</string>
+    <string name="exerciseAlert_cancel">CANCEL</string>
     <!-- options -->
     <string name="exerciseOptions_title">Select the answer</string>
     <!-- read -->
@@ -68,6 +75,9 @@
     <!-- Courses -->
     <string name="courseImageDescription">Course Image</string>
     <string name="courseButtonDescription">Course button</string>
+    <!-- completed -->
+    <string name="courseFinished_title">Completed Course</string>
+    <string name="courseFinished_message">MENTIIIIIIIIIIIIIIIIIIIII</string>
 
     <!-- 1 -->
     <string name="course1Title">Depression</string>
