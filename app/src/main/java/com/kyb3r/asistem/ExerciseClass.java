@@ -373,6 +373,11 @@ public class ExerciseClass {
 
     public void setupLeasson(int tittle, int message) {
         ((Activity) context).setContentView(R.layout.leasson);
+        // Set close button
+        ImageButton closeButton = ((Activity) context).findViewById(R.id.closeButton);
+        closeButton.setOnClickListener(new View.OnClickListener() { @Override  public void onClick(View v) { ((Activity) context).finish(); }});
+
+        // Set text
         TextView title = ((Activity) context).findViewById(R.id.title), text = ((Activity) context).findViewById(R.id.text);
         title.setText(tittle);
         text.setText(message);
