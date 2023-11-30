@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:text="In the event of a fire, the first thing you have to do is cover your mouth to prevent smoke from entering your lungs." />
+        android:text="@string/in_case_of_text" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -191,19 +191,6 @@
                         android:textSize="14sp" />
                 </LinearLayout>
 
-                <ImageButton
-                    android:id="@+id/course1Button"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="start|center_vertical"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/circle"
-                    android:backgroundTint="?attr/colorSecondary"
-                    android:contentDescription="@string/courseButtonDescription"
-                    android:elevation="4dp"
-                    android:src="@drawable/ic_bookmark_add"
-                    app:tint="#FFFFFF"
-                    tools:ignore="ImageContrastCheck,RedundantDescriptionCheck" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -1,3 +1,457 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Меню -->
+    <string name="settings">Настройки</string>
+    <string name="about">О приложении</string>
+    <string name="home">Главная</string>
+    <string name="courses">Курсы</string>
+    <string name="saved">Сохраненные</string>
+
+    <!-- Настройки -->
+    <string-array name="appareance">
+        <item>Авто</item>
+        <item>Светлая тема</item>
+        <item>Темная тема</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Английский</item>
+        <item>Испанский</item>
+        <item>Немецкий</item>
+        <item>Русский</item>
+    </string-array>
+
+    <!-- Главная -->
+    <string name="textWelcome">Добро пожаловать обратно</string>
+    <string name="in_case_of">В случае:</string>
+    <string name="lives">жизни</string>
+    <string name="days">дни</string>
+    <string name="call_emergency_number">Номера экстренной помощи</string>
+    <string name="continue_where_you_left_of">Продолжить с того места, где вы остановились</string>
+
+    <!-- О приложении -->
+    <string name="image_logo_description">Изображение логотипа приложения</string>
+    <string name="image_contributor_description">Изображение аватара участника</string>
+    <string name="development">Разработка</string>
+    <string name="development_contact"><a href="https://kyb3rcipher.com">Свяжитесь</a></string>
+    <string name="teacher">Учитель</string>
+    <string name="design">Дизайн</string>
+    <string name="designer_contact"><a href="https://github.com/bengiv">@bengiv</a></string>
+    <string name="translation">Перевод</string>
+    <!-- Тап Пейр -->
+    <string name="button_check_name">Проверка</string>
+    <string name="button_check_description">Кнопка "Проверка</string>
+    <string name="button_close_description">Кнопка "Закрыть"</string>
+    <string name="tapPair_title">Тапайте пары</string>
+
+    <!-- Упражнение -->
+    <string name="notlevel">У вас недостаточно уровня для разблокировки этого курса</string>
+    <string name="completedCourse_title">Завершенный курс</string>
+    <string name="completedCourse_description">Поздравляю, вы завершили этот курс. Продолжайте обучение с другим</string>
+    <string name="noLives_title">У вас нет жизней</string>
+    <string name="noLives_description">Получите больше жизней :(</string>
+    <string name="closeButton_title">Вы уверены?</string>
+    <string name="closeButton_message">Весь прогресс в этом уроке будет потерян.</string>
+    <string name="closeButton_quit">ВЫЙТИ</string>
+    <string name="closeButton_cancel">ОТМЕНА</string>
+    <string name="exerciseOkay">Хорошо</string>
+    <string name="exerciseCheck">Проверка</string>
+    <!-- Опции -->
+    <string name="exerciseOptions_title">Выберите ответ</string>
+    <!-- Чтение -->
+    <string name="exerciseRead_title">Прочитайте текст</string>
+    <!-- Видео -->
+    <string name="exerciseVideo_title">Просмотреть видео</string>
+    <!-- Выбор -->
+    <string name="exerciseSelect_title">Выберите правильный вариант</string>
+    <!-- Запись -->
+    <string name="exerciseWrite_title">Напишите ответ</string>
+    <!-- Тапайте пары -->
+    <string name="exerciseTap_pairs">Тапайте пары</string>
+
+    <!-- Курсы -->
+    <string name="courseImageDescription">Изображение курса</string>
+    <string name="courseButtonDescription">Кнопка курса</string>
+
+    <!-- 1 -->
+    <string name="course1Title">Депрессия</string>
+    <string name="course1Description">Оценивайте, лечите и предотвращайте осложнения при переломах.</string>
+    <!-- шаг 1 -->
+    <string name="case0_instruction">Выберите симптомы депрессии:</string>
+    <string name="case0_option1">Головная боль, Плач, Изменение стиля одежды</string>
+    <string name="case0_option2">Апатия, Потеря интереса, Изменения в аппетите, Чувство бесполезности/вины</string>
+    <string name="case0_option3">Быть одному весь день, много спать, не играть в видеоигры</string>
+
+    <string name="case1_instruction">Напишите нейромедиатор, который в меньшей степени вызывает депрессию</string>
+    <string name="case1_word1">серотонин</string>
+    <string name="case1_word2">допамин</string>
+    <string name="case1_word3">норэпинефрин</string>
+
+    <string name="case2_instruction">Выберите изменение, которое происходит в мозге у человека с депрессией</string>
+    <string name="case2_text1">Меньшие доли/гиппокамп</string>
+    <string name="case2_text2">Пустой/пустой мозг</string>
+    <string name="case2_text3">Рентгеновское зрение</string>
+    <string name="case2_text4">Большие лобные доли и гиппокамп</string>
+
+    <string name="case3_instruction">Примерно за какое время человек с психическим заболеванием/депрессией ищет помощь:</string>
+    <string name="case3_option1">12 месяцев</string>
+    <string name="case3_option2">6 месяцев</string>
+    <string name="case3_option3">10 лет</string>
+
+    <string name="case4_instruction">В чем разница между клинической депрессией и просто чувством уныния?</string>
+    <string name="case4_option1">Клиническая депрессия - временная реакция на ситуации, такие как получение плохих оценок. В отличие от этого, чувство уныния - это медицинская реакция и состояние, которое может продолжаться неделями</string>
+    <string name="case4_option2">Клиническая депрессия - это медицинское состояние, которое продолжается не менее двух недель и значительно влияет на способность работать, играть или любить. В отличие от этого, чувство уныния может быть временной реакцией на ситуации, такие как получение плохих оценок</string>
+    <string name="case4_option3">Клиническая депрессия - это болезнь, которую можно обнаружить с помощью рентгеновских лучей</string>
+
+    <string name="case5_instruction">Какие существенные методы лечения депрессии?</string>
+    <string name="case5_text1">Терапия, Лекарства, Экспериментальные методы, такие как транскраниальная магнитная стимуляция</string>
+    <string name="case5_text2">Терапия, Больше есть, Общение с друзьями</string>
+    <string name="case5_text3">Терапия, Путешествия, Экспериментальные методы, такие как наркотики</string>
+
+    <string name="case6_instruction">Напишите, как описывается электрошоковая терапия и в каких случаях говорится, что она особенно полезна как метод лечения депрессии</string>
+    <string name="case6_word1">электрошоковая терапия</string>
+    <string name="case6_word2">электрошоковая терапия</string>
+    <string name="case6_word3">электрошоковая терапия</string>
+
+    <string name="case7_instruction">Выберите правильный ответ</string>
+    <string name="case7_option1">Депрессия - это болезнь, которую можно вылечить лекарствами</string>
+    <string name="case7_option2">Депрессия, хотя и болезнь, не означает, что человек слаб</string>
+    <string name="case7_option3">Депрессия эквивалентна наличию у человека суицидальных намерений</string>
+
+    <string name="case8_instruction">Напишите процент взрослых с депрессией в Соединенных Штатах</string>
+    <string name="case8_word1">10%</string>
+    <string name="case8_word2">10</string>
+    <string name="case8_word3">10процентов</string>
+    <string name="case8_word4">десять</string>
+    <string name="case8_word5">десятьпроцентов</string>
+
+    <string name="case9_instruction">Выберите человека, у которого возможно депрессия</string>
+    <string name="case9_text1">Чувство плохо несколько дней из-за провала экзамена</string>
+    <string name="case9_text2">Не хочет выходить в течение последних 2 недель из-за смерти своего питомца</string>
+    <string name="case9_text3">Чувство вины, апатии и общей бесполезности в течение последнего месяца</string>
+    <string name="case9_text4">Не ел весь день, потому что дождливые дни заставляют его грустным</string>
+
+    <string name="case10_instruction">Выберите правильный ответ</string>
+    <string name="case10_text1">Один раз плакать - признак депрессии</string>
+    <string name="case10_text2">Депрессия 100% генетическая</string>
+    <string name="case10_text3">Говорить о депрессии полезно</string>
+    <string name="case10_text4">Депрессия уже имеет определенное лечение</string>
+
+    <!-- step 2 -->
+    <string name="readText">
+        Депрессия - это распространенное психическое расстройство, которое затрагивает миллионы людей по всему миру. Она характеризуется глубоким чувством грусти, отсутствием интереса к ранее приятным занятиям, изменениями в аппетите и режиме сна, постоянной усталостью и трудностями с концентрацией. Хотя депрессия может варьироваться по степени тяжести от легких эпизодов до более тяжелых форм, которые могут существенно вмешиваться в повседневную жизнь, важно распознавать ранние симптомы и искать подходящую помощь. Первая помощь при депрессии может сыграть ключевую роль в поддержке тех, кто испытывает эти эмоциональные трудности.
+        \n\nОдин из первых шагов в управлении депрессией является осознание и понимание признаков и симптомов. Тем, кто страдает от депрессии, часто трудно выразить свои чувства, и часто они могут скрывать свою боль. Поэтому важно обращать внимание на изменения в поведении, такие как социальная изоляция, снижение академической или профессиональной эффективности, изменения в режиме сна или питания, а также выражения отчаяния или бесполезности.
+        \n\nЭмоциональная поддержка и сопереживание крайне важны в первой помощи при депрессии. Показывая понимание и слушая без суждений, можно заставить пострадавшего почувствовать себя понятым и поддержанным. Важно помнить, что депрессия - это не просто проходящее настроение или личная слабость; это реальное медицинское расстройство, требующее лечения.
+        \n\nПоощрение пострадавшего обратиться за профессиональной помощью, такой как у психолога, психиатра, или консультанта, является еще одним важным шагом в первой помощи при депрессии. Эти специалисты по психическому здоровью обучены эффективно оценивать и лечить депрессию, используя методы, варьирующиеся от когнитивно-поведенческой терапии до лекарств, в зависимости от тяжести расстройства.
+        \n\nСоздание поддерживающей среды также может сделать разницу. Социальная изоляция может усугубить симптомы депрессии, поэтому поддержание социальных связей и предложение совместных мероприятий может быть полезным. Участие в рекреационных мероприятиях и регулярные физические упражнения также показали свою эффективность в управлении депрессией.
+        \n\nВ случаях крайней неотложности, когда пострадавший может представлять опасность для себя или других, важно немедленно обращаться за помощью. Экстренные службы и кризисные телефонные линии могут предоставить немедленную помощь.
+        \n\nВ заключение, первая помощь при депрессии включает в себя понимание, эмоциональную поддержку и поощрение поиска профессиональной помощи. Депрессию нельзя преодолеть просто силой воли, и стигма, окружающая ее, часто делает сложным для людей поиск необходимой поддержки. С осознанностью, состраданием и действием мы можем способствовать разрушению стигмы и предоставлению необходимой поддержки тем, кто борется с депрессией.
+    </string>
+
+    <string name="step2_case0_instruction">Выберите правильный ответ:</string>
+    <string name="step2_case0_option1">Показывать понимание и слушать, не осуждая, может заставить пострадавшего чувствовать себя</string>
+    <string name="step2_case0_option2">Один из первых шагов в управлении депрессией - осознание и понимание признаков и симптомов</string>
+    <string name="step2_case0_option3">В случаях крайней неотложности, где пострадавший может представлять опасность для себя или других, важно немедленно обращаться за помощью</string>
+
+    <string name="step2_case1_instruction">Что человек может сделать, чтобы поддержать того, кто испытывает депрессию?</string>
+    <string name="step2_case1_option1">Показывать понимание и слушать, не осуждая, может заставить пострадавшего чувствовать себя понятым и поддержанным</string>
+    <string name="step2_case1_option2">Игнорировать изменения в поведении человека и ждать, пока он восстановится самостоятельно</string>
+    <string name="step2_case1_option3">Предполагать, что депрессия - это просто проходное настроение, и человек должен преодолеть ее силой воли</string>
+
+    <string name="step2_case2_instruction">Что может заставить пострадавшего почувствовать себя понятым и поддержанным в контексте депрессии?</string>
+    <string name="step2_case2_word1">сопереживание</string>
+    <string name="step2_case2_word2">сопереживание</string>
+
+    <string name="step2_case3_instruction">Что такое депрессия?</string>
+    <string name="step2_case3_text1">Она вызывается исключительно генетическими факторами, и на нее не оказывает влияния опыт жизни или окружающая среда</string>
+    <string name="step2_case3_text2">Распространенное психическое расстройство</string>
+    <string name="step2_case3_text3">Это просто грустное настроение, которое переживает каждый</string>
+    <string name="step2_case3_text4">Это просто отсутствие силы воли</string>
+
+    <string name="step2_case4_instruction">Какие ранние признаки депрессии упоминаются в тексте, и почему важно обращать внимание на эти изменения в поведении?</string>
+    <string name="step2_case4_text1">Депрессия влияет только на эмоционально слабых людей</string>
+    <string name="step2_case4_text2">Лучший способ помочь человеку с депрессией - заставить его столкнуться с проблемами и преодолеть их самостоятельно</string>
+    <string name="step2_case4_text3">Регулярные физические упражнения не влияют на управление депрессией</string>
+    <string name="step2_case4_text4">Эмоциональная поддержка и сопереживание крайне важны в первой помощи при депрессии</string>
+
+    <string name="step2_case5_instruction">Какой из фундаментальных шагов в первой помощи при депрессии упоминается в тексте?</string>
+    <string name="step2_case5_option1">Игнорировать изменения в поведении человека</string>
+    <string name="step2_case5_option2">Назначать лекарства на свое усмотрение</string>
+    <string name="step2_case5_option3">Поощрять человека обратиться за профессиональной помощью</string>
+
+    <string name="step2_case6_instruction">Что является одной из основных характеристик депрессии?</string>
+    <string name="step2_case6_option1">Значительное увеличение энергии и мотивации</string>
+    <string name="step2_case6_option2">Глубокое чувство грусти и отсутствие интереса к приятным занятиям</string>
+    <string name="step2_case6_option3">Положительные изменения в привычках сна</string>
+
+    <string name="step2_case7_instruction">Что критично для управления депрессией согласно описанной первой помощи?</string>
+    <string name="step2_case7_word1">поддержка</string>
+    <string name="step2_case7_word2">первых шагов в управлении депрессией согласно тексту?</string>
+
+    <string name="step2_case8_instruction">Что критично для управления депрессией?</string>
+    <string name="step2_case8_word1">осознание</string>
+
+    <string name="step2_case9_instruction">Что является одним из ключевых первых шагов в управлении депрессией согласно тексту?</string>
+    <string name="step2_case9_option1">Игнорировать изменения в поведении пострадавшего</string>
+    <string name="step2_case9_option2">Показывать понимание и слушать, не осуждая</string>
+    <string name="step2_case9_option3">Обвинять пострадавшего в его состоянии</string>
+
+    <string name="step2_case10_instruction">Что может усилить симптомы депрессии?</string>
+    <string name="step2_case10_word1">изоляция</string>
+
+    <!-- step 3 -->
+    <string name="step3_case0_instruction">Может ли депрессия влиять на...?</string>
+    <string name="step3_case0_word1">любого</string>
+    <string name="step3_case0_word2">любого человека</string>
+
+    <string name="step3_case1_instruction">Какой процент детей в возрасте 3-17 лет страдает от депрессии?</string>
+    <string name="step3_case1_word1">3</string>
+    <string name="step3_case1_word2">3%</string>
+    <string name="step3_case1_word3">три</string>
+    <string name="step3_case1_word4">3 процента</string>
+
+    <string name="course4Description">Какой процент детей в возрасте лет страдает от депрессии.</string>
+    <string name="course5Title">процента</string>
+    <string name="course5Description">Обвинять пострадавшего в его состоянии</string>
+    <string name="course6Title">понимание</string>
+    <string name="course6Description">Глубокое чувство грусти и отсутствие интереса</string>
+    <string name="course7Title">изоляция</string>
+    <string name="course7Description">Что может усилить симптомы депрессии</string>
+
+    <!-- 2 -->
+    <string name="course2Title">шагов</string>
+    <string name="course2Description">Игнорировать изменения в депрессии</string>
+
+    <!-- step 1 -->
+    <string name="courseFractures_step1_case0_instruction">Игнорировать изменения в поведении пострадавшего</string>
+    <string name="courseFractures_step1_case0_option1">Обвинять пострадавшего в его состоянии</string>
+    <string name="courseFractures_step1_case0_option2">Какой процент детей в возрасте лет страдает от депрессии.</string>
+    <string name="courseFractures_step1_case0_option3">Что может усилить симптомы депрессии</string>
+
+    <string name="courseFractures_step1_case1_instruction">Показывать понимание и слушать, не осуждая</string>
+    <string name="courseFractures_step1_case1_word1">Глубокое т симптомы</string>
+    <string name="courseFractures_step1_case1_word2">может</string>
+    <string name="courseFractures_step1_case1_word3">депрессии</string>
+
+    <string name="courseFractures_step1_case2_instruction">Что может усилить симптомы депрессии</string>
+    <string name="courseFractures_step1_case2_text1">изоляция</string>
+    <string name="courseFractures_step1_case2_text2">в возрасте</string>
+    <string name="courseFractures_step1_case2_text3">изоляция</string>
+    <string name="courseFractures_step1_case2_text4">депрессии</string>
+
+    <string name="courseFractures_step1_case3_instruction">первых шагов в управлении депрессией согласно тексту?</string>
+    <string name="courseFractures_step1_case3_option1">пер Выберите ответ</string>
+    <string name="courseFractures_step1_case3_option2">омочь человеку с депрессией</string>
+    <string name="courseFractures_step1_case3_option3">му что дождливые дни заставляют</string>
+
+    <string name="courseFractures_step1_case4_instruction">оведении человека и ждать, пока он восстановится</string>
+    <string name="courseFractures_step1_case4_option1">депрессии</string>
+    <string name="courseFractures_step1_case4_option2">тей в возрасте лет страдает</string>
+    <string name="courseFractures_step1_case4_option3">ние и слушать</string>
+
+    <string name="courseFractures_step1_case5_instruction">заставить его столкнуться с проб</string>
+    <string name="courseFractures_step1_case5_text1">его в его состо</string>
+    <string name="courseFractures_step1_case5_text2">сией является осознани</string>
+    <string name="courseFractures_step1_case5_text3">которое продолжаетс</string>
+
+    <string name="courseFractures_step1_case6_instruction">вать понимание и слуша?</string>
+    <string name="courseFractures_step1_case6_word1">вать понимание и слуша</string>
+    <string name="courseFractures_step1_case6_word2">является</string>
+    <string name="courseFractures_step1_case6_word3">му что дождливые дни заставляют</string>
+
+    <string name="courseFractures_step1_case7_instruction">Что является одним из ключевых первых шагов в управлении депрессией согласно тексту</string>
+    <string name="courseFractures_step1_case7_option1">Что является одним</string>
+    <string name="courseFractures_step1_case7_option2">является</string>
+    <string name="courseFractures_step1_case7_option3">управлении</string>
+
+    <string name="courseFractures_step1_case8_instruction">Что может усилить симптомы?</string>
+    <string name="courseFractures_step1_case8_word1">психическое расстройство, которое</string>
+    <string name="courseFractures_step1_case8_word2">разницу. Социальная</string>
+    <string name="courseFractures_step1_case8_word3">эмоциональную поддержку и поощрение</string>
+
+    <string name="courseFractures_step1_case9_instruction">>любого человека</string>
+    <string name="courseFractures_step1_case9_text1">является осознание и понимание признаков</string>
+    <string name="courseFractures_step1_case9_text2">сделать разницу. Социальная изоляция</string>
+    <string name="courseFractures_step1_case9_text3">также может сделать разницу. Социальная</string>
+    <string name="courseFractures_step1_case9_text4">когда пострадавший может представлять</string>
+
+    <string name="courseFractures_step1_case10_instruction">или консультанта, является еще?</string>
+    <string name="courseFractures_step1_case10_text1">депрессией</string>
+    <string name="courseFractures_step1_case10_text2">понимание</string>
+    <string name="courseFractures_step1_case10_text3">миллионы</string>
+    <string name="courseFractures_step1_case10_text4">которое</string>
+
+    <!-- step 2 -->
+    <string name="courseFractures_step2_readText">
+        Депрессия - это распространенное психическое расстройство, которое затрагивает миллионы людей по всему миру. Она характеризуется глубоким чувством грусти, отсутствием интереса к ранее приятным занятиям, изменениями в аппетите и режиме сна, постоянной усталостью и трудностями с концентрацией. Хотя депрессия может варьироваться по степени тяжести от легких эпизодов до более тяжелых форм, которые могут существенно вмешиваться в повседневную жизнь, важно распознавать ранние симптомы и искать подходящую помощь. Первая помощь при депрессии может сыграть ключевую роль в поддержке тех, кто испытывает эти эмоциональные трудности.
+        \n\nОдин из первых шагов в управлении депрессией является осознание и понимание признаков и симптомов. Тем, кто страдает от депрессии, часто трудно выразить свои чувства, и часто они могут скрывать свою боль. Поэтому важно обращать внимание на изменения в поведении, такие как социальная изоляция, снижение академической или профессиональной эффективности, изменения в режиме сна или питания, а также выражения отчаяния или бесполезности.
+        \n\nЭмоциональная поддержка и сопереживание крайне важны в первой помощи при депрессии. Показывая понимание и слушая без суждений, можно заставить пострадавшего почувствовать себя понятым и поддержанным. Важно помнить, что депрессия - это не просто проходящее настроение или личная слабость; это реальное медицинское расстройство, требующее лечения.
+        \n\nПоощрение пострадавшего обратиться за профессиональной помощью, такой как у психолога, психиатра, или консультанта, является еще одним важным шагом в первой помощи при депрессии. Эти специалисты по психическому здоровью обучены эффективно оценивать и лечить депрессию, используя методы, варьирующиеся от когнитивно-поведенческой терапии до лекарств, в зависимости от тяжести расстройства.
+        \n\nСоздание поддерживающей среды также может сделать разницу. Социальная изоляция может усугубить симптомы депрессии, поэтому поддержание социальных связей и предложение совместных мероприятий может быть полезным. Участие в рекреационных мероприятиях и регулярные физические упражнения также показали свою эффективность в управлении депрессией.
+        \n\nВ случаях крайней неотложности, когда пострадавший может представлять опасность для себя или других, важно немедленно обращаться за помощью. Экстренные службы и кризисные телефонные линии могут предоставить немедленную помощь.
+        \n\nВ заключение, первая помощь при депрессии включает в себя понимание, эмоциональную поддержку и поощрение поиска профессиональной помощи. Депрессию нельзя преодолеть просто силой воли, и стигма, окружающая ее, часто делает сложным для людей поиск необходимой поддержки. С осознанностью, состраданием и действием мы можем способствовать разрушению стигмы и предоставлению необходимой поддержки тем, кто борется с депрессией.
+    </string>
+
+    <string name="courseFractures_step2_case0_instruction">обратиться за профессиональной помощью:</string>
+    <string name="courseFractures_step2_case0_option1">такой как у психолога</string>
+    <string name="courseFractures_step2_case0_option2">Показывать понимание и слушать</string>
+    <string name="courseFractures_step2_case0_option3">депрессии включает в себя понимание</string>
+
+    <string name="courseFractures_step2_case1_instruction">депрессии включает в себя понимание?</string>
+    <string name="courseFractures_step2_case1_option1">усугубить</string>
+    <string name="courseFractures_step2_case1_option2">слушая</string>
+    <string name="courseFractures_step2_case1_option3">случаях крайней неотложности</string>
+
+    <string name="courseFractures_step2_case2_instruction">депрессии включает в себя понимание?</string>
+    <string name="courseFractures_step2_case2_word1">поиска профессиональной помощи</string>
+    <string name="courseFractures_step2_case2_word2">также может сделать разницу</string>
+
+    <string name="courseFractures_step2_case3_instruction">Показывать понимание и слушать, не осуждая, может заставить пострадавшего чувствовать себя:</string>
+    <string name="courseFractures_step2_case3_option1">Показывать понимание и слушать, не осуждая, может заставить пострадавшего чувствовать себя</string>
+    <string name="courseFractures_step2_case3_option2">и слушать, не осуждая</string>
+    <string name="courseFractures_step2_case3_option3">депрессии включает в себя понимание</string>
+    <string name="courseFractures_step2_case3_option4">заставить пострадавшего</string>
+
+    <string name="courseFractures_step2_case4_instruction">Показывать понимание и слушать, не осуждая?</string>
+    <string name="courseFractures_step2_case4_word1">понимание</string>
+    <string name="courseFractures_step2_case4_word2">слушая</string>
+    <string name="courseFractures_step2_case4_word3">Проверка</string>
+    <string name="courseFractures_step2_case4_word4">Кнопка</string>
+
+    <string name="courseFractures_step2_case5_instruction">Показывать понимание и слушать?</string>
+    <string name="courseFractures_step2_case5_option1">Кнопка Проверка</string>
+    <string name="courseFractures_step2_case5_option2">суждая, может</string>
+    <string name="courseFractures_step2_case5_option3">может заставить пострадавшего</string>
+
+    <string name="courseFractures_step2_case6_instruction">слушать, не осуждая, может заставить:</string>
+    <string name="courseFractures_step2_case6_option1">Показывать понимание и слушать</string>
+    <string name="courseFractures_step2_case6_option2">пострадавшего чувствовать себя</string>
+    <string name="courseFractures_step2_case6_option3">суждая, может</string>
+
+    <string name="courseFractures_step2_case7_instruction">What should you do if you suspect a compound fracture?</string>
+    <string name="courseFractures_step2_case7_option1">Leave it alone; it will heal on its own</string>
+    <string name="courseFractures_step2_case7_option2">Cover the wound with a sterile dressing and seek immediate medical attention</string>
+    <string name="courseFractures_step2_case7_option3">Apply a tight bandage to control bleeding</string>
+
+    <string name="courseFractures_step2_case8_instruction">Поощрять движение для предотвращения стеснения:</string>
+    <string name="courseFractures_step2_case8_option1">Назовите некоторые</string>
+    <string name="courseFractures_step2_case8_option2">раздражитдвижение</string>
+    <string name="courseFractures_step2_case8_option3">раздражительность</string>
+
+    <string name="courseFractures_step2_case9_instruction">Поощрять движение для предотвращения стеснения?</string>
+    <string name="courseFractures_step2_case9_option1">Назовите некоторые из</string>
+    <string name="courseFractures_step2_case9_option2">Назовите некоторые из причин</string>
+    <string name="courseFractures_step2_case9_option3">раздражитдвижение</string>
+
+    <string name="courseFractures_step2_case10_instruction">What should you do if a fracture involves a major joint?</string>
+    <string name="courseFractures_step2_case10_word1">Назовите некоторые из причин</string>
+    <string name="courseFractures_step2_case10_word2">Поощрять движение для предотвращения стеснения</string>
+    <string name="courseFractures_step2_case10_word3">Проверка</string>
+    <string name="courseFractures_step2_case10_word4">раздражительность</string>
+
+    <!-- step 3 -->
+    <string name="courseFractures_step3_readText">
+        Fractures are common injuries that require prompt and appropriate first aid. A fracture occurs when there is a break in the continuity of the bone. It can result from trauma, falls, or excessive force applied to the bone. Recognizing the signs and providing immediate care are essential steps in managing fractures effectively.
+        \n\nCommon symptoms of a fracture include pain, swelling, and deformity at the site of injury. It is crucial to assess the injured area carefully and look for signs such as limited mobility, bruising, and tenderness. Immediate action should be taken to immobilize the injured limb and seek medical help.
+        \n\nDifferent types of fractures exist, including greenstick fractures, hairline fractures, and compound fractures with visible bone protrusion. The severity of the fracture determines the appropriate first aid measures. In cases of open fractures with visible wounds, covering the wound with a sterile dressing is essential to prevent infection.
+        \n\nSplinting is a key first aid technique for fractures. It involves immobilizing the injured limb to prevent further damage and promote proper healing. It is important to splint the fracture in the position found and avoid unnecessary movement of the injured area.
+        \n\nRemember, immediate medical attention is crucial for severe fractures or those involving major joints. Calling for emergency medical help and providing comfort to the injured person are vital steps in the first aid process for fractures.
+    </string>
+    <string name="courseFractures_step3_case0_instruction">Select the correct action for an open fracture with a visible wound:</string>
+    <string name="courseFractures_step3_case0_option1">Поощрять движение для предотвращения стеснения</string>
+    <string name="courseFractures_step3_case0_option2">Какой общий симптом детской депрессии</string>
+    <string name="courseFractures_step3_case0_option3">Какой общий симптом детской депрессии, упомянутый в тексте, связан с изменениями настроения?</string>
+
+    <string name="courseFractures_step3_case1_instruction">раздражительность?</string>
+    <string name="courseFractures_step3_case1_option1">Назовите некоторые из причин депрессии у детей</string>
+    <string name="courseFractures_step3_case1_option2">Изменения в пищевых привычках</string>
+    <string name="courseFractures_step3_case1_option3">Назовите некоторые из причин депрессии у детей</string>
+
+    <string name="courseFractures_step3_case2_instruction">What should you avoid when splinting a fracture?</string>
+    <string name="courseFractures_step3_case2_word1">unnecessarymovement</string>
+
+    <string name="step3_case2_instruction">Назовите некоторые из причин депрессии у детей</string>
+    <string name="step3_case2_word1">школьное издевательство</string>
+    <string name="course4Title">ожог</string>
+    <string name="courseFractures_step3_case2_word2">сохранение неподвижности конечности</string>
+    <string name="step3_case2_word2">семейные проблемы</string>
+    <string name="step3_case2_word3">стресс</string>
+    <string name="step3_case2_word4">физические заболевания</string>
+
+    <string name="step3_case3_instruction">Выберите признак детской депрессии, упомянутый в видео</string>
+    <string name="step3_case3_option1">Плохое настроение</string>
+    <string name="step3_case3_option2">Изменения в пищевых привычках</string>
+    <string name="step3_case3_option3">Плач</string>
+
+    <string name="step3_case4_instruction">Какой общий симптом детской депрессии, упомянутый в тексте, связан с изменениями настроения?</string>
+    <string name="step3_case4_option1">Увеличение физической активности</string>
+    <string name="step3_case4_option2">Изменение пищевых привычек</string>
+    <string name="step3_case4_option3">Больший интерес к веселым занятиям</string>
+
+    <string name="step3_case5_instruction">Какой общий симптом детской депрессии, упомянутый в тексте, связан с изменениями настроения?</string>
+    <string name="step3_case5_word1">раздражительность</string>
+
+    <string name="step3_case6_instruction">Как депрессия может повлиять на пищевые привычки ребенка, согласно видео?</string>
+    <string name="step3_case6_option1">Депрессия не влияет на пищевые привычки</string>
+    <string name="step3_case6_option2">Она может привести к изменениям, таким как переедание или отказ от еды, из-за чувства бесполезности или безнадежности</string>
+    <string name="step3_case6_option3">Вызывает только положительные изменения в рационе, такие как выбор более здоровых опций</string>
+
+    <string name="step3_case7_instruction">Какой из симптомов депрессии у детей, проявляющийся через поведение, такие как драки, увеличенная эмоциональная чувствительность и беспокойство, согласно тексту?</string>
+    <string name="step3_case7_word1">усталость</string>
+
+    <string name="step3_case8_instruction">Что может указывать на снижение оценок у ребенка?</string>
+    <string name="step3_case8_word1">отсутствие интереса</string>
+
+    <string name="step3_case9_instruction">Как предлагается решить проблемы поведения в школе, связанные с детской депрессией?</string>
+    <string name="step3_case9_option1">Игнорировать проблемы и ждать, пока они сами не исчезнут</string>
+    <string name="step3_case9_option2">Наказать ребенка, чтобы исправить его поведение</string>
+    <string name="step3_case9_option3">Решать их с сочувствием и пониманием, признавая возможную связь с депрессией</string>
+
+    <string name="step3_case10_instruction">Выберите правильный ответ</string>
+
+    <string name="courseFractures_step3_case3_instruction">Выберите правильный ответ:</string>
+    <string name="courseFractures_step3_case3_option1">Вызов экстренной помощи не требуется при переломах</string>
+    <string name="courseFractures_step3_case3_option2">Срочная медицинская помощь критична для тяжелых переломов</string>
+    <string name="courseFractures_step3_case3_option3">Переломы всегда требуют операции</string>
+    <string name="courseFractures_step3_case3_option4">От перелома можно умереть</string>
+
+    <string name="courseFractures_step3_case4_instruction">Какова основная цель первой помощи при переломах?</string>
+    <string name="courseFractures_step3_case4_word1">предотвратить дополнительные повреждения</string>
+    <string name="courseFractures_step3_case4_word2">минимизировать</string>
+    <string name="courseFractures_step3_case4_word3">ожог</string>
+
+    <string name="courseFractures_step3_case5_instruction">Какова важность иммобилизации поврежденной конечности?</string>
+    <string name="courseFractures_step3_case5_option1">Поощрять движение</string>
+    <string name="courseFractures_step3_case5_option2">Предотвращать дополнительные повреждения и способствовать правильному заживлению</string>
+    <string name="courseFractures_step3_case5_option3">Увеличить боль</string>
+
+    <string name="courseFractures_step3_case6_instruction">Выберите правильное действие при зеленой ветке перелома:</string>
+    <string name="courseFractures_step3_case6_option1">Нанести холодный компресс</string>
+    <string name="courseFractures_step3_case6_option2">Иммобилизовать конечность и обратиться за медицинской помощью</string>
+    <string name="courseFractures_step3_case6_option3">Поощрять движение для предотвращения стеснения</string>
+
+    <string name="courseFractures_step3_case7_instruction">Что следует делать, если вы подозреваете открытый перелом?</string>
+    <string name="courseFractures_step3_case7_option1">Оставьте его в покое; он заживет сам</string>
+    <string name="courseFractures_step3_case7_option2">Покрыть рану стерильным перевязочным материалом и немедленно обратиться за медицинской помощью</string>
+    <string name="courseFractures_step3_case7_option3">Наложить крепкую повязку для контроля кровотечения</string>
+
+    <string name="courseFractures_step3_case8_instruction">Выберите правильную меру первой помощи при трещине:</string>
+    <string name="courseFractures_step3_case8_option1">Иммобилизовать конечность и обратиться за медицинской помощью</string>
+    <string name="courseFractures_step3_case8_option2">Проигнорировать; трещины не требуют первой помощи</string>
+    <string name="courseFractures_step3_case8_option3">Нанести тепло на поврежденную область</string>
+
+    <string name="courseFractures_step3_case9_instruction">Какова роль немедленной медицинской помощи при тяжелых переломах?</string>
+    <string name="courseFractures_step3_case9_option1">Это необязательно; переломы заживут сами</string>
+    <string name="courseFractures_step3_case9_option2">Обеспечить утешение пострадавшему</string>
+    <string name="courseFractures_step3_case9_option3">Тщательно оценить поврежденную область</string>
+
+    <string name="courseFractures_step3_case10_instruction">Что следует делать, если перелом затрагивает крупный сустав?</string>
+    <string name="courseFractures_step3_case10_word1">Обратиться за медицинской помощью немедленно</string>
+    <string name="courseFractures_step3_case10_word2">Поощрять движение для предотвращения стеснения</string>
+    <string name="courseFractures_step3_case10_word3">Нанести теплый компресс</string>
+    <string name="courseFractures_step3_case10_word4">Оставьте его в покое; он заживет сам</string>
+
+    <!-- TODO: Удалить или изменить этот заполнитель текста -->
+    <string name="hello_blank_fragment">Привет пустой фрагмент</string>
+    <string name="in_case_of_text">В случае пожара первое, что вам нужно сделать, это прикрыть рот, чтобы дым не попал в легкие.</string>
 </resources>

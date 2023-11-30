@@ -1,5 +1,6 @@
 package com.kyb3r.asistem;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,8 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.kyb3r.asistem.course.DepressionCourseActivity;
+import com.kyb3r.asistem.course.FracturesCourseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,7 +62,11 @@ public class CoursesFragment extends Fragment {
 
         elements = new ArrayList<>();
         elements.add(new CoursesList(getString(R.string.course1Title), getString(R.string.course1Description), R.drawable.banner_course_depression));
-        //elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_fractures));
+        elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_fractures));
+        elements.add(new CoursesList(getString(R.string.course4Title), getString(R.string.course4Description), R.drawable.banner_course_burns));
+        elements.add(new CoursesList(getString(R.string.course5Title), getString(R.string.course5Description), R.drawable.banner_course_wounds));
+        elements.add(new CoursesList(getString(R.string.course6Title), getString(R.string.course6Description), R.drawable.banner_course_hemorrhages));
+        elements.add(new CoursesList(getString(R.string.course7Title), getString(R.string.course7Description), R.drawable.banner_course_resusitation));
 
         DatabaseHelper db = new DatabaseHelper(getContext());
         for (CoursesList course : elements) {
@@ -76,9 +85,30 @@ public class CoursesFragment extends Fragment {
             switch (elements.indexOf(coursesList)) {
                 case 0:
                     course = new Intent(getContext(), DepressionCourseActivity.class);
+                    if (db.getLivesCount() > 0) {
+                        startActivity(course);
+                    } else {
+                        Toast.makeText(getContext(), R.string.noLives_title, Toast.LENGTH_SHORT).show();
+                    }
+                    break;
+                case 1:
+                    course = new Intent(getContext(), FracturesCourseActivity.class);
+                    if (db.getLivesCount() > 0) {
+                        startActivity(course);
+                    } else {
+                        Toast.makeText(getContext(), R.string.notlevel, Toast.LENGTH_SHORT).show();
+                    }
+                    break;
+                case 2:
+                    Toast.makeText(getContext(), R.string.notlevel, Toast.LENGTH_SHORT).show();
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                    Toast.makeText(getContext(), R.string.notlevel, Toast.LENGTH_SHORT).show();
                     break;
             }
-            startActivity(course);
         });
 
         return view;

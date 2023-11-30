@@ -1,132 +1,457 @@
 <resources>
+    <!-- Menü -->
+    <string name="settings">Einstellungen</string>
+    <string name="about">Über</string>
+    <string name="home">Startseite</string>
+    <string name="courses">Kurse</string>
+    <string name="saved">Gespeichert</string>
 
-    <!-- Menu -->
-    <string name="settings">Settings</string>
-    <string name="about">About</string>
-    <string name="home">Home</string>
-    <string name="courses">Curses</string>
-    <string name="saved">Saved</string>
-
-    <!-- Settings -->
+    <!-- Einstellungen -->
     <string-array name="appareance">
         <item>Auto</item>
-        <item>Light</item>
-        <item>Dark</item>
+        <item>Hell</item>
+        <item>Dunkel</item>
     </string-array>
     <string-array name="languages">
-        <item>English</item>
-        <item>Spanish</item>
-        <item>German</item>
-        <item>Russian</item>
+        <item>Englisch</item>
+        <item>Spanisch</item>
+        <item>Deutsch</item>
+        <item>Russisch</item>
     </string-array>
 
-    <!-- Home -->
-    <string name="textWelcome">Welcome Back</string>
-    <string name="in_case_of">In case of:</string>
-    <string name="lives">lives</string>
-    <string name="days">days</string>
-    <string name="call_emergency_number">Emergency Numbers</string>
-    <string name="continue_where_you_left_of">Continue where you left of</string>
+    <!-- Startseite -->
+    <string name="textWelcome">Willkommen zurück</string>
+    <string name="in_case_of">Im Falle von:</string>
+    <string name="lives">Leben</string>
+    <string name="days">Tage</string>
+    <string name="call_emergency_number">Notrufnummern</string>
+    <string name="continue_where_you_left_of">Fortsetzen, wo Sie aufgehört haben</string>
 
-    <!-- About -->
-    <string name="image_logo_description">App logo image</string>
-    <string name="image_contributor_description">Contributor avatar image</string>
-    <string name="development">Development</string>
-    <string name="development_contact"><a href="https://kyb3rcipher.com">Contact</a></string>
-    <string name="teacher">Teacher</string>
+    <!-- Über -->
+    <string name="image_logo_description">App-Logo-Bild</string>
+    <string name="image_contributor_description">Beitragsavatarbild</string>
+    <string name="development">Entwicklung</string>
+    <string name="development_contact"><a href="https://kyb3rcipher.com">Kontakt</a></string>
+    <string name="teacher">Lehrer</string>
     <string name="design">Design</string>
     <string name="designer_contact"><a href="https://github.com/bengiv">@bengiv</a></string>
-    <string name="translation">Translation</string>
-    <!-- Tap Pair -->
-    <string name="button_check_name">Check</string>
-    <string name="button_check_description">Check button</string>
-    <string name="button_close_description">Close button</string>
-    <string name="tapPair_title">Tap the pairs</string>
+    <string name="translation">Übersetzung</string>
+    <!-- Paar antippen -->
+    <string name="button_check_name">Überprüfen</string>
+    <string name="button_check_description">Überprüfen-Schaltfläche</string>
+    <string name="button_close_description">Schließen-Schaltfläche</string>
+    <string name="tapPair_title">Tippen Sie die Paare an</string>
 
-    <!-- Exercise -->
+    <!-- Übung -->
+    <string name="notlevel">Sie haben nicht genug Level, um diesen Kurs freizuschalten</string>
+    <string name="completedCourse_title">Abgeschlossener Kurs</string>
+    <string name="completedCourse_description">Herzlichen Glückwunsch, Sie haben diesen Kurs abgeschlossen. Fahren Sie mit einem anderen fort.</string>
+    <string name="noLives_title">Sie haben keine Leben</string>
+    <string name="noLives_description">Holen Sie sich mehr Leben :(</string>
+    <string name="closeButton_title">Sind Sie sicher?</string>
+    <string name="closeButton_message">Alle Fortschritte in dieser Lektion gehen verloren.</string>
+    <string name="closeButton_quit">BEENDEN</string>
+    <string name="closeButton_cancel">ABBRECHEN</string>
     <string name="exerciseOkay">Okay</string>
-    <string name="exerciseCheck">Check</string>
-    <!-- options -->
-    <string name="exerciseOptions_title">Select the answer</string>
-    <!-- read -->
-    <string name="exerciseRead_title">Read the text</string>
-    <!-- video -->
-    <string name="exerciseVideo_title">Watch the video</string>
-    <!-- select -->
-    <string name="exerciseSelect_title">Select the correct option</string>
-    <!-- write -->
-    <string name="exerciseWrite_title">Write the answer</string>
-    <!-- tap pairs -->
-    <string name="exerciseTap_pairs">Tap the pairs</string>
+    <string name="exerciseCheck">Überprüfen</string>
+    <!-- Optionen -->
+    <string name="exerciseOptions_title">Antwort auswählen</string>
+    <!-- Lesen -->
+    <string name="exerciseRead_title">Text lesen</string>
+    <!-- Video -->
+    <string name="exerciseVideo_title">Video ansehen</string>
+    <!-- Auswählen -->
+    <string name="exerciseSelect_title">Richtige Option auswählen</string>
+    <!-- Schreiben -->
+    <string name="exerciseWrite_title">Antwort schreiben</string>
+    <!-- Paare antippen -->
+    <string name="exerciseTap_pairs">Tippen Sie die Paare an</string>
 
-    <!-- Courses -->
-    <string name="courseImageDescription">Course Image</string>
-    <string name="courseButtonDescription">Course button</string>
+    <!-- Kurse -->
+    <string name="courseImageDescription">Kursbild</string>
+    <string name="courseButtonDescription">Kurs-Schaltfläche</string>
 
+    Aquí está la traducción al alemán del código XML proporcionado:
+
+    ```xml
     <!-- 1 -->
     <string name="course1Title">Depression</string>
-    <string name="course1Description">Assess, treat, and prevent complications in fracture injuries.</string>
-    <!-- step 1 -->
-    <string name="case0_instruction">Select symptoms of depression:</string>
-    <string name="case0_option1">Headache, Crying, Change in dressing style</string>
-    <string name="case0_option2">Apathy, Loss of interest, Changes in appetite, Feeling useless/guilty</string>
-    <string name="case0_option3">Being alone all day, sleeping a lot, not playing video games</string>
+    <string name="course1Description">Beurteilen, behandeln und Komplikationen bei Frakturverletzungen verhindern.</string>
+    <!-- Schritt 1 -->
+    <string name="case0_instruction">Wählen Sie Symptome von Depression aus:</string>
+    <string name="case0_option1">Kopfschmerzen, Weinen, Änderung des Kleidungsstils</string>
+    <string name="case0_option2">Apathie, Verlust des Interesses, Veränderungen im Appetit, Gefühl von Nutzlosigkeit/Schuld</string>
+    <string name="case0_option3">Den ganzen Tag allein sein, viel schlafen, keine Videospiele spielen</string>
 
-    <string name="case1_instruction">Write a neurotransmitter that, to a lesser extent, causes depression</string>
-    <string name="case1_word1">serotonin</string>
-    <string name="case1_word2">dopamine</string>
-    <string name="case1_word3">norepinephrine</string>
+    <string name="case1_instruction">Schreiben Sie einen Neurotransmitter, der in geringerem Maße Depressionen verursacht</string>
+    <string name="case1_word1">Serotonin</string>
+    <string name="case1_word2">Dopamin</string>
+    <string name="case1_word3">Noradrenalin</string>
 
-    <string name="case2_instruction">Select a change that occurs in the brain of a person with depression</string>
-    <string name="case2_text1">Smaller lobes/hippocampus</string>
-    <string name="case2_text2">Empty/blank brain</string>
-    <string name="case2_text3">X-ray vision</string>
-    <string name="case2_text4">Larger frontal lobes and hippocampus</string>
+    <string name="case2_instruction">Wählen Sie eine Veränderung aus, die im Gehirn einer Person mit Depressionen auftritt</string>
+    <string name="case2_text1">Kleinere Lappen/Hippocampus</string>
+    <string name="case2_text2">Leeres/Gesichtsloses Gehirn</string>
+    <string name="case2_text3">Röntgenblick</string>
+    <string name="case2_text4">Größere frontale Lappen und Hippocampus</string>
 
-    <string name="case3_instruction">Approximately how long does a person with a mental illness/depression take to seek help:</string>
-    <string name="case3_option1">12 months</string>
-    <string name="case3_option2">6 months</string>
-    <string name="case3_option3">10 years</string>
+    <string name="case3_instruction">Wie lange dauert es etwa, bis eine Person mit einer psychischen Erkrankung/Depression Hilfe sucht:</string>
+    <string name="case3_option1">12 Monate</string>
+    <string name="case3_option2">6 Monate</string>
+    <string name="case3_option3">10 Jahre</string>
 
-    <string name="case4_instruction">What is the difference between clinical depression and simply feeling depressed?</string>
-    <string name="case4_option1">Clinical depression is a temporary response to situations like getting bad grades. In contrast, feeling depressed is a medical response and condition that can persist for weeks</string>
-    <string name="case4_option2">Clinical depression is a medical condition that persists for at least two weeks and significantly affects the ability to work, play, or love. In contrast, feeling depressed may be a temporary response to situations like getting bad grades</string>
-    <string name="case4_option3">Clinical depression is an illness that can be detected by X-rays</string>
+    <string name="case4_instruction">Was ist der Unterschied zwischen klinischer Depression und einfachem depressivem Gefühl?</string>
+    <string name="case4_option1">Klinische Depression ist eine vorübergehende Reaktion auf Situationen wie schlechte Noten. Im Gegensatz dazu ist depressives Gefühl eine medizinische Reaktion und Bedingung, die wochenlang anhalten kann.</string>
+    <string name="case4_option2">Klinische Depression ist eine medizinische Erkrankung, die mindestens zwei Wochen anhält und die Fähigkeit zu arbeiten, zu spielen oder zu lieben, erheblich beeinträchtigt. Im Gegensatz dazu kann das Gefühl von Depression eine vorübergehende Reaktion auf Situationen wie schlechte Noten sein.</string>
+    <string name="case4_option3">Klinische Depression ist eine Krankheit, die durch Röntgenaufnahmen nachgewiesen werden kann.</string>
 
-    <string name="case5_instruction">What are some effective treatments for depression?</string>
-    <string name="case5_text1">Therapy, Medications, Experimental treatments like transcranial magnetic stimulation</string>
-    <string name="case5_text2">Therapy, Eating more, Hanging out with friends</string>
-    <string name="case5_text3">Therapy, Traveling, Experimental treatments like drugs</string>
+    <string name="case5_instruction">Was sind einige wirksame Behandlungen für Depressionen?</string>
+    <string name="case5_text1">Therapie, Medikamente, experimentelle Behandlungen wie transkranielle Magnetstimulation</string>
+    <string name="case5_text2">Therapie, mehr essen, Zeit mit Freunden verbringen</string>
+    <string name="case5_text3">Therapie, Reisen, experimentelle Behandlungen wie Medikamente</string>
 
-    <string name="case6_instruction">Write about how electroconvulsive therapy is described and in what cases it is mentioned to be particularly useful as a treatment for depression</string>
-    <string name="case6_word1">electroconvulsive therapy</string>
-    <string name="case6_word2">electroconvulsive therapy</string>
-    <string name="case6_word3">electroconvulsive therapy</string>
+    <string name="case6_instruction">Schreiben Sie darüber, wie die Elektrokrampftherapie beschrieben wird und in welchen Fällen sie als besonders nützlich zur Behandlung von Depressionen erwähnt wird</string>
+    <string name="case6_word1">Elektrokrampftherapie</string>
+    <string name="case6_word2">Elektrokrampftherapie</string>
+    <string name="case6_word3">Elektrokrampftherapie</string>
 
-    <string name="case7_instruction">Select the correct answer</string>
-    <string name="case7_option1">Depression is an illness cured by medication</string>
-    <string name="case7_option2">Depression, although an illness, does not mean the person is weak</string>
-    <string name="case7_option3">Depression is equivalent to being a suicidal person</string>
+    <string name="case7_instruction">Wählen Sie die richtige Antwort aus</string>
+    <string name="case7_option1">Depression ist eine Krankheit, die durch Medikamente geheilt wird</string>
+    <string name="case7_option2">Depression bedeutet, obwohl eine Krankheit, nicht, dass die Person schwach ist</string>
+    <string name="case7_option3">Depression entspricht einem suizidalen Menschen</string>
 
-    <string name="case8_instruction">Write the percentage of adults with depression in the United States</string>
+    <string name="case8_instruction">Schreiben Sie den Prozentsatz der Erwachsenen mit Depressionen in den Vereinigten Staaten</string>
     <string name="case8_word1">10%</string>
     <string name="case8_word2">10</string>
-    <string name="case8_word3">10percent</string>
-    <string name="case8_word4">ten</string>
-    <string name="case8_word5">tenpercent</string>
+    <string name="case8_word3">10 Prozent</string>
+    <string name="case8_word4">zehn</string>
+    <string name="case8_word5">zehn Prozent</string>
 
-    <string name="case9_instruction">Select the person who may possibly have depression</string>
-    <string name="case9_text1">Feeling bad for a few days because of failing an exam</string>
-    <string name="case9_text2">Has not wanted to go out in the last 2 weeks due to the death of their pet</string>
-    <string name="case9_text3">Feeling guilty, apathetic, and generally unwell for the past month</string>
-    <string name="case9_text4">Has not eaten all day because rainy days make them sad</string>
+    <string name="case9_instruction">Wählen Sie die Person aus, die möglicherweise an Depressionen leidet</string>
+    <string name="case9_text1">Schlecht fühlen für ein paar Tage wegen einer nicht bestandenen Prüfung</string>
+    <string name="case9_text2">Hat in den letzten 2 Wochen nicht rausgehen wollen wegen des Todes ihres Haustiers</string>
+    <string name="case9_text3">Sich schuldig fühlen, apathisch und im Allgemeinen unwohl in den letzten vier Wochen</string>
+    <string name="case9_text4">Hat den ganzen Tag nichts gegessen, weil Regentage sie traurig machen</string>
 
-    <string name="case10_instruction">Select the correct answer</string>
-    <string name="case10_text1">Crying once is an indication of depression</string>
-    <string name="case10_text2">Depression is 100% genetic</string>
-    <string name="case10_text3">Talking about depression helps</string>
-    <string name="case10_text4">Depression already has a definitive cure</string>
+    <string name="case10_instruction">Wählen Sie die richtige Antwort aus</string>
+    <string name="case10_text1">Einmal weinen ist ein Anzeichen für Depression</string>
+    <string name="case10_text2">Depression ist zu 100% genetisch</string>
+    <string name="case10_text3">Über Depression sprechen hilft</string>
+    <string name="case10_text4">Depression hat bereits eine definitive Heilung</string>
+    <!-- Verschiedenes -->
+    <string name="course4Title">Verbrennungen</string>
+    <string name="course4Description">Beurteilen, behandeln und Erstversorgung von Verbrennungsverletzungen.</string>
+    <string name="course5Title">Wunden</string>
+    <string name="course5Description">Beurteilen, behandeln und Erstversorgung von Wundenverletzungen.</string>
+    <string name="course6Title">Blutungen</string>
+    <string name="course6Description">Beurteilen, behandeln und Erstversorgung von Blutungsverletzungen.</string>
+    <string name="course7Title">Reanimation</string>
+    <string name="course7Description">Beurteilen, behandeln und Erstversorgung von Reanimationsverletzungen.</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Schritt 2 -->
+    <string name="readText">
+    Depression ist eine häufige psychische Störung, die Millionen von Menschen weltweit betrifft. Sie zeichnet sich durch ein tiefes Gefühl der Traurigkeit, mangelndes Interesse an Aktivitäten, die einst angenehm waren, Veränderungen im Appetit und Schlafmuster, anhaltende Müdigkeit sowie Konzentrationsschwierigkeiten aus. Obwohl Depression in der Schwere variieren kann, von milden Episoden bis zu schwereren Formen, die das tägliche Leben erheblich beeinträchtigen können, ist es entscheidend, frühzeitig Symptome zu erkennen und angemessene Hilfe zu suchen. Erste Hilfe bei Depressionen kann eine entscheidende Rolle spielen, um jemanden bei diesen emotionalen Herausforderungen zu unterstützen.
+    \n\nEiner der ersten Schritte zur Bewältigung von Depressionen ist die Sensibilisierung und das Verständnis der Anzeichen und Symptome. Es kann für Menschen mit Depressionen herausfordernd sein, ihre Gefühle auszudrücken, und oft verbergen sie ihr Leiden. Daher ist es wichtig, auf Verhaltensänderungen zu achten, wie soziale Isolation, verringerte schulische oder berufliche Leistung, Veränderungen im Schlaf oder Essverhalten sowie Äußerungen von Hoffnungslosigkeit oder Wertlosigkeit.
+    \n\nEmotionale Unterstützung und Empathie sind entscheidend bei der Ersten Hilfe bei Depressionen. Verständnis zu zeigen und zuzuhören, ohne zu urteilen, kann die betroffene Person sich verstanden und unterstützt fühlen lassen. Es ist wichtig zu bedenken, dass Depression nicht nur eine vorübergehende Stimmung oder eine persönliche Schwäche ist; es handelt sich um eine echte medizinische Störung, die Behandlung erfordert.
+    \n\nDie betroffene Person dazu zu ermutigen, professionelle Hilfe in Anspruch zu nehmen, wie von einem Psychologen, Psychiater oder Berater, ist ein weiterer wichtiger Schritt bei der Ersten Hilfe bei Depressionen. Diese Fachleute für psychische Gesundheit sind darauf geschult, Depressionen effektiv zu beurteilen und zu behandeln, wobei sie je nach Schwere der Störung Ansätze von kognitiver Verhaltenstherapie bis zur Medikation verwenden.
+    \n\nDie Förderung einer unterstützenden Umgebung kann ebenfalls einen Unterschied machen. Soziale Isolation kann Depressionssymptome verschärfen, daher können die Aufrechterhaltung sozialer Verbindungen und das Angebot gemeinsamer Aktivitäten von Vorteil sein. Engagement in Freizeitaktivitäten und regelmäßige körperliche Bewegung haben sich ebenfalls als wirksam in der Bewältigung von Depressionen erwiesen.
+    \n\nIn Notfällen, in denen die betroffene Person eine Gefahr für sich selbst oder andere darstellen kann, ist es entscheidend, sofort Hilfe zu suchen. Notdienste und Krisenhotlines können sofortige Unterstützung bieten.
+    \nZusammenfassend umfasst die Erste Hilfe bei Depressionen Verständnis, emotionale Unterstützung und die Förderung der Suche nach professioneller Hilfe. Depression ist nicht etwas, das einfach durch Willenskraft überwunden werden kann, und das damit verbundene Stigma macht es oft schwierig für Menschen, die notwendige Unterstützung zu suchen. Mit Aufklärung, Mitgefühl und Handeln können wir dazu beitragen, das Stigma zu brechen und die notwendige Unterstützung für diejenigen zu bieten, die gegen Depressionen kämpfen.
+</string>
+
+    <string name="step2_case0_instruction">Wählen Sie die richtige Antwort aus:</string>
+    <string name="step2_case0_option1">Verständnis zeigen und zuhören, ohne zu urteilen, kann die betroffene Person sich missverstanden und hilflos fühlen lassen.</string>
+    <string name="step2_case0_option2">Einer der ersten Schritte zur Bewältigung von Depressionen ist die Sensibilisierung und das Verständnis der Anzeichen und Symptome.</string>
+    <string name="step2_case0_option3">In Notfällen, in denen die betroffene Person eine Gefahr für sich selbst oder andere darstellen kann, ist es entscheidend, sofort Hilfe zu suchen.</string>
+
+    <string name="step2_case1_instruction">Was kann eine Person tun, um jemanden mit Depressionen zu unterstützen?</string>
+    <string name="step2_case1_option1">Verständnis zeigen und zuhören, ohne zu urteilen, kann die betroffene Person sich verstanden und unterstützt fühlen lassen.</string>
+    <string name="step2_case1_option2">Veränderungen im Verhalten der Person ignorieren und darauf warten, dass sie sich von selbst erholt.</string>
+    <string name="step2_case1_option3">Vorschlagen, dass Depression nur eine vorübergehende Stimmung ist und die Person sie durch Willenskraft überwinden sollte.</string>
+
+    <string name="step2_case2_instruction">Was kann die betroffene Person im Zusammenhang mit Depressionen sich verstanden und unterstützt fühlen lassen?</string>
+    <string name="step2_case2_word1">Empathie</string>
+    <string name="step2_case2_word2">Empathie</string>
+
+    <string name="step2_case3_instruction">Was ist Depression?</string>
+    <string name="step2_case3_text1">Sie wird ausschließlich durch genetische Faktoren verursacht, und es gibt keinen Einfluss durch Lebenserfahrungen oder Umweltfaktoren.</string>
+    <string name="step2_case3_text2">Eine häufige psychische Störung</string>
+    <string name="step2_case3_text3">Es ist einfach eine traurige Stimmung, die jeder erlebt.</string>
+    <string name="step2_case3_text4">Es ist einfach ein Mangel an Willenskraft.</string>
+
+    <string name="step2_case4_instruction">Was sind einige Frühzeichen von Depressionen, die im Text erwähnt werden, und warum ist es entscheidend, auf diese Verhaltensänderungen zu achten?</string>
+    <string name="step2_case4_text1">Depression betrifft nur emotional schwache Menschen.</string>
+    <string name="step2_case4_text2">Der beste Weg, jemandem mit Depressionen zu helfen, besteht darin, sie dazu zu zwingen, sich ihren Problemen zu stellen und sie selbst zu überwinden.</string>
+    <string name="step2_case4_text3">Regelmäßige körperliche Bewegung hat keinen Einfluss auf die Bewältigung von Depressionen.</string>
+    <string name="step2_case4_text4">Emotionale Unterstützung und Empathie sind entscheidend bei der Ersten Hilfe bei Depressionen.</string>
+
+    <string name="step2_case5_instruction">Was ist einer der grundlegenden Schritte bei der Ersten Hilfe bei Depressionen laut Text?</string>
+    <string name="step2_case5_option1">Veränderungen im Verhalten der Person ignorieren.</string>
+    <string name="step2_case5_option2">Eigenständig Medikamente verschreiben.</string>
+    <string name="step2_case5_option3">Die betroffene Person dazu ermutigen, professionelle Hilfe zu suchen.</string>
+
+    <string name="step2_case6_instruction">Was ist eine der Hauptmerkmale von Depressionen?</string>
+    <string name="step2_case6_option1">Signifikante Steigerung von Energie und Motivation.</string>
+    <string name="step2_case6_option2">Tiefes Gefühl der Traurigkeit und Mangel an Interesse an angenehmen Aktivitäten.</string>
+    <string name="step2_case6_option3">Positive Veränderungen im Schlafverhalten.</string>
+
+    <string name="step2_case7_instruction">Was ist entscheidend für die Bewältigung von Depressionen laut beschriebener Erster Hilfe?</string>
+    <string name="step2_case7_word1">Unterstützung</string>
+    <string name="step2_case7_word2">Emotionale Unterstützung</string>
+
+    <string name="step2_case8_instruction">Was ist entscheidend für die Bewältigung von Depressionen?</string>
+    <string name="step2_case8_word1">Sensibilisierung</string>
+
+    <string name="step2_case9_instruction">Was ist einer der entscheidenden ersten Schritte bei der Bewältigung von Depressionen laut Text?</string>
+    <string name="step2_case9_option1">Veränderungen im Verhalten der betroffenen Person ignorieren.</string>
+    <string name="step2_case9_option2">Verständnis zeigen und zuhören, ohne zu urteilen.</string>
+    <string name="step2_case9_option3">Die betroffene Person für ihren Zustand verantwortlich machen.</string>
+
+    <string name="step2_case10_instruction">Was kann Depressionssymptome verstärken?</string>
+    <string name="step2_case10_word1">Isolation</string>
+    <!-- Schritt 3 -->
+    <string name="step3_case0_instruction">Kann Depression...?</string>
+    <string name="step3_case0_word1">jede</string>
+    <string name="step3_case0_word2">jede Person</string>
+
+    <string name="step3_case1_instruction">Welcher Prozentsatz der Kinder im Alter von 3-17 Jahren hat Depressionen?</string>
+    <string name="step3_case1_word1">3</string>
+    <string name="step3_case1_word2">3%</string>
+    <string name="step3_case1_word3">drei</string>
+    <string name="step3_case1_word4">3 Prozent</string>
+
+    <string name="step3_case2_instruction">Nennen Sie einige Ursachen für Depressionen im Kindesalter</string>
+    <string name="step3_case2_word1">Mobbing in der Schule</string>
+    <string name="step3_case2_word2">Familienprobleme</string>
+    <string name="step3_case2_word3">Stress</string>
+    <string name="step3_case2_word4">körperliche Krankheiten</string>
+
+    <string name="step3_case3_instruction">Wählen Sie das im Video erwähnte Zeichen für Depressionen im Kindesalter aus</string>
+    <string name="step3_case3_option1">Schlechte Laune</string>
+    <string name="step3_case3_option2">Veränderungen im Essverhalten</string>
+    <string name="step3_case3_option3">Weinen</string>
+
+    <string name="step3_case4_instruction">Was ist ein häufiges Symptom für Depressionen im Kindesalter, das im Text im Zusammenhang mit Stimmungsveränderungen erwähnt wird?</string>
+    <string name="step3_case4_option1">Zunahme der körperlichen Aktivität</string>
+    <string name="step3_case4_option2">Veränderung der Essgewohnheiten</string>
+    <string name="step3_case4_option3">Größeres Interesse an lustigen Aktivitäten</string>
+
+    <string name="step3_case5_instruction">Was ist ein häufiges Symptom für Depressionen im Kindesalter, das im Text im Zusammenhang mit Stimmungsveränderungen erwähnt wird?</string>
+    <string name="step3_case5_word1">Reizbarkeit</string>
+
+    <string name="step3_case6_instruction">Wie kann sich Depression auf die Essgewohnheiten eines Kindes laut Video auswirken?</string>
+    <string name="step3_case6_option1">Depression hat keinen Einfluss auf Essgewohnheiten.</string>
+    <string name="step3_case6_option2">Es kann zu Veränderungen führen, wie übermäßigem Essen oder gar nicht essen, aufgrund von Gefühlen der Wertlosigkeit oder Hoffnungslosigkeit.</string>
+    <string name="step3_case6_option3">Verursacht nur positive Veränderungen in der Ernährung, wie die Auswahl gesünderer Optionen.</string>
+
+    <string name="step3_case7_instruction">Was ist eines der Symptome von Depressionen bei Kindern, das sich durch Verhaltensweisen wie Streitereien, erhöhte emotionale Sensibilität und Angst äußert, laut Text?</string>
+    <string name="step3_case7_word1">Müdigkeit</string>
+
+    <string name="step3_case8_instruction">Was kann eine Abnahme der Schulnoten eines Kindes anzeigen?</string>
+    <string name="step3_case8_word1">Desinteresse</string>
+
+    <string name="step3_case9_instruction">Wie wird vorgeschlagen, schulische Verhaltensprobleme im Zusammenhang mit Depressionen im Kindesalter anzugehen?</string>
+    <string name="step3_case9_option1">Die Probleme ignorieren und darauf warten, dass sie von selbst verschwinden.</string>
+    <string name="step3_case9_option2">Das Kind bestrafen, um sein Verhalten zu korrigieren.</string>
+    <string name="step3_case9_option3">Sie mit Mitgefühl und Verständnis ansprechen und die mögliche Verbindung mit Depressionen erkennen.</string>
+
+    <string name="step3_case10_instruction">Wählen Sie die richtige Antwort aus</string>
+
+
+    <!-- 2 -->
+    <string name="course2Title">Frakturen</string>
+    <string name="course2Description">Beurteilen, behandeln und Erstversorgung von Frakturverletzungen.</string>
+
+    <!-- Schritt 1 -->
+    <string name="courseFractures_step1_case0_instruction">Symptome einer Fraktur identifizieren:</string>
+    <string name="courseFractures_step1_case0_option1">Schmerzen, Schwellung, Verformung</string>
+    <string name="courseFractures_step1_case0_option2">Eingeschränkte Beweglichkeit, Bluterguss, Empfindlichkeit</string>
+    <string name="courseFractures_step1_case0_option3">Wärme, Rötung, Bewusstseinsverlust</string>
+
+    <string name="courseFractures_step1_case1_instruction">Was ist eine häufige Ursache für Frakturen?</string>
+    <string name="courseFractures_step1_case1_word1">Trauma oder Verletzung</string>
+    <string name="courseFractures_step1_case1_word2">Alterung</string>
+    <string name="courseFractures_step1_case1_word3">Genetik</string>
+
+    <string name="courseFractures_step1_case2_instruction">Wählen Sie einen häufigen Frakturtyp aus:</string>
+    <string name="courseFractures_step1_case2_text1">Grünholzfraktur</string>
+    <string name="courseFractures_step1_case2_text2">Haarrissfraktur</string>
+    <string name="courseFractures_step1_case2_text3">Röntgenfraktur</string>
+    <string name="courseFractures_step1_case2_text4">Muskelzerrung</string>
+
+    <string name="courseFractures_step1_case3_instruction">Was ist die sofortige Maßnahme bei Verdacht auf eine Fraktur?</string>
+    <string name="courseFractures_step1_case3_option1">Wärme auf die Stelle auftragen</string>
+    <string name="courseFractures_step1_case3_option2">Das verletzte Glied hochhalten</string>
+    <string name="courseFractures_step1_case3_option3">Das verletzte Glied immobilisieren</string>
+
+    <string name="courseFractures_step1_case4_instruction">Wählen Sie ein Symptom einer schweren Fraktur aus:</string>
+    <string name="courseFractures_step1_case4_option1">Leichte Schmerzen</string>
+    <string name="courseFractures_step1_case4_option2">Sichtbare Knochenverlagerung</string>
+    <string name="courseFractures_step1_case4_option3">Geringe Blutergüsse</string>
+
+    <string name="courseFractures_step1_case5_instruction">Was ist der Zweck einer Schienung bei einer Fraktur?</string>
+    <string name="courseFractures_step1_case5_text1">Schmerzen erhöhen</string>
+    <string name="courseFractures_step1_case5_text2">Das verletzte Glied immobilisieren und unterstützen</string>
+    <string name="courseFractures_step1_case5_text3">Bewegung fördern</string>
+
+    <string name="courseFractures_step1_case6_instruction">Wie sollten Sie mit einer offenen Fraktur mit sichtbarer Wunde umgehen?</string>
+    <string name="courseFractures_step1_case6_word1">Die Wunde mit einer sterilen Bandage abdecken</string>
+    <string name="courseFractures_step1_case6_word2">Die Wunde offen lassen</string>
+    <string name="courseFractures_step1_case6_word3">Den Bereich um die Wunde massieren</string>
+
+    <string name="courseFractures_step1_case7_instruction">Die richtige Antwort auswählen</string>
+    <string name="courseFractures_step1_case7_option1">Frakturen erfordern immer eine Operation</string>
+    <string name="courseFractures_step1_case7_option2">Immobilisierung ist ein wesentlicher Bestandteil der Frakturbehandlung</string>
+    <string name="courseFractures_step1_case7_option3">Direkten Druck auf alle Frakturen anwenden ist notwendig</string>
+
+    <string name="courseFractures_step1_case8_instruction">Wie können Sie einer Person mit Verdacht auf eine Fraktur helfen?</string>
+    <string name="courseFractures_step1_case8_word1">Rufen Sie sofort den Rettungsdienst</string>
+    <string name="courseFractures_step1_case8_word2">Ermutigen Sie die Person, das verletzte Glied zu bewegen</string>
+    <string name="courseFractures_step1_case8_word3">Wärme auf die Stelle auftragen</string>
+
+    <string name="courseFractures_step1_case9_instruction">Die richtige Antwort auswählen</string>
+    <string name="courseFractures_step1_case9_text1">Frakturen können immer selbst zu Hause behandelt werden</string>
+    <string name="courseFractures_step1_case9_text2">Sofortige medizinische Aufmerksamkeit ist entscheidend bei Frakturen</string>
+    <string name="courseFractures_step1_case9_text3">Das Immobilisieren des verletzten Glieds ist nicht notwendig</string>
+    <string name="courseFractures_step1_case9_text4">Das verletzte Glied entfernen ist nicht notwendig</string>
+
+    <string name="courseFractures_step1_case10_instruction">Was ist der Zweck des Hochlagerns eines verletzten Glieds?</string>
+    <string name="courseFractures_step1_case10_text1">Blutfluss in die Region erhöhen</string>
+    <string name="courseFractures_step1_case10_text2">Schwellungen reduzieren</string>
+    <string name="courseFractures_step1_case10_text3">Bewegung fördern</string>
+    <string name="courseFractures_step1_case10_text4">Bewegung einschränken</string>
+
+    <!-- Schritt 2 -->
+    <string name="courseFractures_step2_readText">
+    Frakturen sind häufige Verletzungen, die prompte und angemessene Erste Hilfe erfordern. Eine Fraktur tritt auf, wenn die Kontinuität des Knochens unterbrochen ist. Sie kann durch Trauma, Stürze oder übermäßige Krafteinwirkung auf den Knochen entstehen. Das Erkennen der Anzeichen und die sofortige Versorgung sind wesentliche Schritte zur effektiven Behandlung von Frakturen.
+    \n\nTypische Symptome einer Fraktur sind Schmerzen, Schwellungen und Verformung an der Verletzungsstelle. Es ist entscheidend, die verletzte Stelle sorgfältig zu untersuchen und auf Anzeichen wie eingeschränkte Beweglichkeit, Blutergüsse und Empfindlichkeit zu achten. Sofortiges Handeln ist erforderlich, um die verletzte Extremität zu immobilisieren und medizinische Hilfe zu suchen.
+    \n\nEs gibt verschiedene Arten von Frakturen, darunter Grünholzfrakturen, Haarrissfrakturen und offene Frakturen mit sichtbarem Knochenbruch. Die Schwere der Fraktur bestimmt die geeigneten Erste-Hilfe-Maßnahmen. Bei offenen Frakturen mit sichtbaren Wunden ist das Abdecken der Wunde mit einem sterilen Verband unerlässlich, um Infektionen zu verhindern.
+    \n\nDas Schienen ist eine wichtige Erste-Hilfe-Technik für Frakturen. Dabei wird die verletzte Extremität immobilisiert, um weitere Schäden zu verhindern und eine ordnungsgemäße Heilung zu fördern. Es ist wichtig, die Fraktur in der gefundenen Position zu schienen und unnötige Bewegungen der verletzten Stelle zu vermeiden.
+    \n\nDenken Sie daran, dass sofortige medizinische Aufmerksamkeit für schwere Frakturen oder solche, die größere Gelenke betreffen, entscheidend ist. Das Rufen von Notfallmedizin und das Bereitstellen von Trost für die verletzte Person sind wesentliche Schritte im Erste-Hilfe-Prozess bei Frakturen.
+</string>
+
+    <string name="courseFractures_step2_case0_instruction">Wählen Sie die richtige Maßnahme für eine offene Fraktur mit sichtbarer Wunde aus:</string>
+    <string name="courseFractures_step2_case0_option1">Die Wunde der Luft aussetzen</string>
+    <string name="courseFractures_step2_case0_option2">Die Wunde mit einem sterilen Verband abdecken</string>
+    <string name="courseFractures_step2_case0_option3">Direkten Druck auf die Wunde ausüben</string>
+
+    <string name="courseFractures_step2_case1_instruction">Was ist der Zweck des Schienens einer Fraktur?</string>
+    <string name="courseFractures_step2_case1_option1">Um den Schmerz zu steigern</string>
+    <string name="courseFractures_step2_case1_option2">Um die verletzte Extremität zu immobilisieren und zu stützen</string>
+    <string name="courseFractures_step2_case1_option3">Um Bewegung zu fördern</string>
+
+    <string name="courseFractures_step2_case2_instruction">Was sollten Sie vermeiden, wenn Sie eine Fraktur schienen?</string>
+    <string name="courseFractures_step2_case2_word1">Unnötige Bewegungen</string>
+    <string name="courseFractures_step2_case2_word2">Die Gliedmaße unbeweglich halten</string>
+
+    <string name="courseFractures_step2_case3_instruction">Wählen Sie die richtige Antwort aus:</string>
+    <string name="courseFractures_step2_case3_option1">Das Rufen von Notrufhilfe ist für Frakturen unnötig</string>
+    <string name="courseFractures_step2_case3_option2">Sofortige medizinische Aufmerksamkeit ist für schwere Frakturen entscheidend</string>
+    <string name="courseFractures_step2_case3_option3">Frakturen erfordern immer eine Operation</string>
+    <string name="courseFractures_step2_case3_option4">Man kann an einer Fraktur sterben</string>
+
+    <string name="courseFractures_step2_case4_instruction">Was ist das Hauptziel der Ersten Hilfe bei Frakturen?</string>
+    <string name="courseFractures_step2_case4_word1">Weitere Schäden verhindern</string>
+    <string name="courseFractures_step2_case4_word2">Minimieren</string>
+    <string name="courseFractures_step2_case4_word3">Maximieren</string>
+    <string name="courseFractures_step2_case4_word4">Entfernen</string>
+
+    <string name="courseFractures_step2_case5_instruction">Was ist die Bedeutung der Immobilisierung einer verletzten Gliedmaße?</string>
+    <string name="courseFractures_step2_case5_option1">Um Bewegung zu fördern</string>
+    <string name="courseFractures_step2_case5_option2">Um weitere Schäden zu verhindern und eine ordnungsgemäße Heilung zu fördern</string>
+    <string name="courseFractures_step2_case5_option3">Um den Schmerz zu steigern</string>
+
+    <string name="courseFractures_step2_case6_instruction">Wählen Sie die richtige Maßnahme für eine Grünholzfraktur aus:</string>
+    <string name="courseFractures_step2_case6_option1">Eine kalte Kompresse anwenden</string>
+    <string name="courseFractures_step2_case6_option2">Die Gliedmaße immobilisieren und medizinische Hilfe suchen</string>
+    <string name="courseFractures_step2_case6_option3">Bewegung fördern, um Steifheit zu verhindern</string>
+
+    <string name="courseFractures_step2_case7_instruction">Was sollten Sie tun, wenn Sie eine offene Fraktur vermuten?</string>
+    <string name="courseFractures_step2_case7_option1">Es alleine lassen; es wird von selbst heilen</string>
+    <string name="courseFractures_step2_case7_option2">Die Wunde mit einem sterilen Verband abdecken und sofort medizinische Hilfe suchen</string>
+    <string name="courseFractures_step2_case7_option3">Einen straffen Verband anlegen, um Blutungen zu kontrollieren</string>
+
+    <string name="courseFractures_step2_case8_instruction">Wählen Sie die richtige Erste-Hilfe-Maßnahme für eine Haarrissfraktur aus:</string>
+    <string name="courseFractures_step2_case8_option1">Die Gliedmaße immobilisieren und medizinische Hilfe suchen</string>
+    <string name="courseFractures_step2_case8_option2">Ignorieren; Haarrissfrakturen erfordern keine Erste Hilfe</string>
+    <string name="courseFractures_step2_case8_option3">Wärme auf die verletzte Stelle auftragen</string>
+
+    <string name="courseFractures_step2_case9_instruction">Welche Rolle spielt sofortige medizinische Aufmerksamkeit bei schweren Frakturen?</string>
+    <string name="courseFractures_step2_case9_option1">Es ist unnötig; Frakturen heilen von selbst</string>
+    <string name="courseFractures_step2_case9_option2">Um Trost für die verletzte Person zu bieten</string>
+    <string name="courseFractures_step2_case9_option3">Um die verletzte Stelle sorgfältig zu beurteilen</string>
+
+    <string name="courseFractures_step2_case10_instruction">Was sollten Sie tun, wenn eine Fraktur ein größeres Gelenk betrifft?</string>
+    <string name="courseFractures_step2_case10_word1">Sofort medizinische Hilfe suchen</string>
+    <string name="courseFractures_step2_case10_word2">Bewegung fördern, um Steifheit zu verhindern</string>
+    <string name="courseFractures_step2_case10_word3">Eine warme Kompresse auftragen</string>
+    <string name="courseFractures_step2_case10_word4">Es alleine lassen; es wird von selbst heilen</string>
+
+    <!-- Schritt 3 -->
+    <string name="courseFractures_step3_readText">
+    Frakturen sind häufige Verletzungen, die prompte und angemessene Erste Hilfe erfordern. Eine Fraktur tritt auf, wenn die Kontinuität des Knochens unterbrochen ist. Sie kann durch Trauma, Stürze oder übermäßige Krafteinwirkung auf den Knochen entstehen. Das Erkennen der Anzeichen und die sofortige Versorgung sind wesentliche Schritte zur effektiven Behandlung von Frakturen.
+    \n\nTypische Symptome einer Fraktur sind Schmerzen, Schwellungen und Verformung an der Verletzungsstelle. Es ist entscheidend, die verletzte Stelle sorgfältig zu untersuchen und auf Anzeichen wie eingeschränkte Beweglichkeit, Blutergüsse und Empfindlichkeit zu achten. Sofortiges Handeln ist erforderlich, um die verletzte Extremität zu immobilisieren und medizinische Hilfe zu suchen.
+    \n\nEs gibt verschiedene Arten von Frakturen, darunter Grünholzfrakturen, Haarrissfrakturen und offene Frakturen mit sichtbarem Knochenbruch. Die Schwere der Fraktur bestimmt die geeigneten Erste-Hilfe-Maßnahmen. Bei offenen Frakturen mit sichtbaren Wunden ist das Abdecken der Wunde mit einem sterilen Verband unerlässlich, um Infektionen zu verhindern.
+    \n\nDas Schienen ist eine wichtige Erste-Hilfe-Technik für Frakturen. Dabei wird die verletzte Extremität immobilisiert, um weitere Schäden zu verhindern und eine ordnungsgemäße Heilung zu fördern. Es ist wichtig, die Fraktur in der gefundenen Position zu schienen und unnötige Bewegungen der verletzten Stelle zu vermeiden.
+    \n\nDenken Sie daran, dass sofortige medizinische Aufmerksamkeit für schwere Frakturen oder solche, die größere Gelenke betreffen, entscheidend ist. Das Rufen von Notfallmedizin und das Bereitstellen von Trost für die verletzte Person sind wesentliche Schritte im Erste-Hilfe-Prozess bei Frakturen.
+</string>
+
+    <string name="courseFractures_step3_case0_instruction">Wählen Sie die richtige Maßnahme für eine offene Fraktur mit sichtbarer Wunde aus:</string>
+    <string name="courseFractures_step3_case0_option1">Die Wunde der Luft aussetzen</string>
+    <string name="courseFractures_step3_case0_option2">Die Wunde mit einem sterilen Verband abdecken</string>
+    <string name="courseFractures_step3_case0_option3">Direkten Druck auf die Wunde ausüben</string>
+
+    <string name="courseFractures_step3_case1_instruction">Was ist der Zweck des Schienens einer Fraktur?</string>
+    <string name="courseFractures_step3_case1_option1">Um den Schmerz zu steigern</string>
+    <string name="courseFractures_step3_case1_option2">Um die verletzte Extremität zu immobilisieren und zu stützen</string>
+    <string name="courseFractures_step3_case1_option3">Um Bewegung zu fördern</string>
+
+    <string name="courseFractures_step3_case2_instruction">Was sollten Sie vermeiden, wenn Sie eine Fraktur schienen?</string>
+    <string name="courseFractures_step3_case2_word1">unnötigeBewegung</string>
+    <string name="courseFractures_step3_case2_word2">Die Gliedmaße unbeweglich halten</string>
+
+    <string name="courseFractures_step3_case3_instruction">Wählen Sie die richtige Antwort aus:</string>
+    <string name="courseFractures_step3_case3_option1">Das Rufen von Notrufhilfe ist für Frakturen unnötig</string>
+    <string name="courseFractures_step3_case3_option2">Sofortige medizinische Aufmerksamkeit ist für schwere Frakturen entscheidend</string>
+    <string name="courseFractures_step3_case3_option3">Frakturen erfordern immer eine Operation</string>
+    <string name="courseFractures_step3_case3_option4">Man kann an einer Fraktur sterben</string>
+
+    <string name="courseFractures_step3_case4_instruction">Was ist das Hauptziel der Ersten Hilfe bei Frakturen?</string>
+    <string name="courseFractures_step3_case4_word1">Weitere Schäden verhindern</string>
+    <string name="courseFractures_step3_case4_word2">Minimieren</string>
+    <string name="courseFractures_step3_case4_word3">verbrennen</string>
+
+    <string name="courseFractures_step3_case5_instruction">Was ist die Bedeutung der Immobilisierung einer verletzten Gliedmaße?</string>
+    <string name="courseFractures_step3_case5_option1">Um Bewegung zu fördern</string>
+    <string name="courseFractures_step3_case5_option2">Um weitere Schäden zu verhindern und eine ordnungsgemäße Heilung zu fördern</string>
+    <string name="courseFractures_step3_case5_option3">Um den Schmerz zu steigern</string>
+
+    <string name="courseFractures_step3_case6_instruction">Wählen Sie die richtige Maßnahme für eine Grünholzfraktur aus:</string>
+    <string name="courseFractures_step3_case6_option1">Eine kalte Kompresse anwenden</string>
+    <string name="courseFractures_step3_case6_option2">Die Gliedmaße immobilisieren und medizinische Hilfe suchen</string>
+    <string name="courseFractures_step3_case6_option3">Bewegung fördern, um Steifheit zu verhindern</string>
+
+    <string name="courseFractures_step3_case7_instruction">Was sollten Sie tun, wenn Sie eine offene Fraktur vermuten?</string>
+    <string name="courseFractures_step3_case7_option1">Es alleine lassen; es wird von selbst heilen</string>
+    <string name="courseFractures_step3_case7_option2">Die Wunde mit einem sterilen Verband abdecken und sofort medizinische Hilfe suchen</string>
+    <string name="courseFractures_step3_case7_option3">Einen straffen Verband anlegen, um Blutungen zu kontrollieren</string>
+
+    <string name="courseFractures_step3_case8_instruction">Wählen Sie die richtige Erste-Hilfe-Maßnahme für eine Haarrissfraktur aus:</string>
+    <string name="courseFractures_step3_case8_option1">Die Gliedmaße immobilisieren und medizinische Hilfe suchen</string>
+    <string name="courseFractures_step3_case8_option2">Ignorieren; Haarrissfrakturen erfordern keine Erste Hilfe</string>
+    <string name="courseFractures_step3_case8_option3">Wärme auf die verletzte Stelle auftragen</string>
+
+    <string name="courseFractures_step3_case9_instruction">Welche Rolle spielt sofortige medizinische Aufmerksamkeit bei schweren Frakturen?</string>
+    <string name="courseFractures_step3_case9_option1">Es ist unnötig; Frakturen heilen von selbst</string>
+    <string name="courseFractures_step3_case9_option2">Um Trost für die verletzte Person zu bieten</string>
+    <string name="courseFractures_step3_case9_option3">Um die verletzte Stelle sorgfältig zu beurteilen</string>
+
+    <string name="courseFractures_step3_case10_instruction">Was sollten Sie tun, wenn eine Fraktur ein größeres Gelenk betrifft?</string>
+    <string name="courseFractures_step3_case10_word1">Sofort medizinische Hilfe suchen</string>
+    <string name="courseFractures_step3_case10_word2">Bewegung fördern, um Steifheit zu verhindern</string>
+    <string name="courseFractures_step3_case10_word3">Eine warme Kompresse auftragen</string>
+    <string name="courseFractures_step3_case10_word4">Es alleine lassen; es wird von selbst heilen</string>
+
+    <!-- TODO: Entfernen oder diesen Platzhaltertext ändern -->
+    <string name="hello_blank_fragment">Hallo leeres Fragment</string>
+    <string name="in_case_of_text">Im Brandfall müssen Sie zunächst Ihren Mund bedecken, um zu verhindern, dass Rauch in Ihre Lunge gelangt.</string>
 </resources>

@@ -1,8 +1,11 @@
 package com.kyb3r.asistem;
 
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.text.Editable;
@@ -44,14 +47,14 @@ public class ExerciseClass {
 
     public void closeButton() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
-        alertDialogBuilder.setTitle("Are you sure about that?");
-        alertDialogBuilder.setMessage("All progress in this lesson will be lost.");
+        alertDialogBuilder.setTitle(R.string.closeButton_title);
+        alertDialogBuilder.setMessage(R.string.closeButton_message);
 
         // Close activity if press QUIT button.
-        alertDialogBuilder.setPositiveButton("QUIT", (dialog, which) -> ((Activity) context).finish());
+        alertDialogBuilder.setPositiveButton(R.string.closeButton_quit, (dialog, which) -> ((Activity) context).finish());
 
         // Close dialog if press CANCEL button.
-        alertDialogBuilder.setNegativeButton("CANCEL", (dialog, which) -> dialog.dismiss());
+        alertDialogBuilder.setNegativeButton(R.string.closeButton_cancel, (dialog, which) -> dialog.dismiss());
 
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
@@ -71,6 +74,15 @@ public class ExerciseClass {
 
         if (currentLives <= 0) {
             ((Activity) context).setContentView(R.layout.leasson);
+            TextView title = ((Activity) context).findViewById(R.id.title), text = ((Activity) context).findViewById(R.id.text);
+            ImageButton closeButton = ((Activity) context).findViewById(R.id.closeButton);
+            closeButton.setOnClickListener(new View.OnClickListener() { @Override  public void onClick(View v) {
+                Intent MainActivity = new Intent(context, com.kyb3r.asistem.MainActivity.class);
+                context.startActivity(MainActivity);
+            }});
+
+            title.setText(R.string.noLives_title);
+            text.setText(R.string.noLives_description);
 
             // Start sound
             MediaPlayer failLeasson = MediaPlayer.create(context, R.raw.lesson_fail);
@@ -105,7 +117,7 @@ public class ExerciseClass {
                     int newProgress = progress + 1;
                     livesDatabaseHelper.setCourseProgress(courseName, newProgress);
 
-                    ((Activity) context).setContentView(R.layout.leasson);
+                    setupFinishCourse();
                     finish = false;
                     return;
                 }
@@ -374,9 +386,11 @@ public class ExerciseClass {
     public void setupFinishCourse() {
         ((Activity) context).setContentView(R.layout.leasson);
         TextView title = ((Activity) context).findViewById(R.id.title), text = ((Activity) context).findViewById(R.id.text);
+        ImageButton closeButton = ((Activity) context).findViewById(R.id.closeButton);
+        closeButton.setOnClickListener(new View.OnClickListener() { @Override  public void onClick(View v) { ((Activity) context).finish(); }});
 
-        title.setText("Completed Course");
-        text.setText("MENTIIIIIIIIIIIIIIIIIIIII");
+        title.setText(R.string.completedCourse_title);
+        text.setText(R.string.completedCourse_description);
     }
 
 }

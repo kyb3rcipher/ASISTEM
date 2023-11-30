@@ -3,6 +3,7 @@ package com.kyb3r.asistem;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LivesActivity extends AppCompatActivity {
+    private CountDownTimer countDownTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,33 @@ public class LivesActivity extends AppCompatActivity {
         });
 
         TextView timeCounter = findViewById(R.id.timeCounter);
-        timeCounter.setText("00:00:00");
+        countDownTimer = new CountDownTimer(7200000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                // Actualiza el TextView con el tiempo restante
+                long seconds = millisUntilFinished / 1000;
+                long minutes = seconds / 60;
+                seconds = seconds % 60;
+                long hours = minutes / 60;
+                minutes = minutes % 60;
+                String timeFormatted = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+                timeCounter.setText(timeFormatted);
+            }
+
+            @Override
+            public void onFinish() {
+                int currentLives = livesDatabaseHelper.getLivesCount();
+                if (currentLives < 5) {
+                    currentLives++;
+                    livesDatabaseHelper.setLivesCount(currentLives);
+                    // reload activity (for refull heart)
+                    finish();
+                    startActivity(getIntent());
+                }
+                timeCounter.setText("Time's up!");
+            }
+        };
+
+        countDownTimer.start();
     }
 }

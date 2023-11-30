@@ -45,7 +45,11 @@
     <string name="tapPair_title">Toca las parejas</string>
 
     <!-- Exercise -->
-    <string name="exerciseOkay">Listo</string>
+    <string name="closeButton_title">Estas seguro?</string>
+    <string name="closeButton_message">Perderas todo el progreso</string>
+    <string name="closeButton_quit">SALIR</string>
+    <string name="closeButton_cancel">CANCELAR</string>
+    <string name="exerciseOkay">Okay</string>
     <string name="exerciseCheck">Verificar</string>
     <!-- options -->
     <string name="exerciseOptions_title">Selecciona la respuesta</string>
@@ -127,7 +131,326 @@
     <string name="case10_text2">La depresión es 100% genética</string>
     <string name="case10_text3">Hablar sobre la depresión ayuda</string>
     <string name="case10_text4">La depresión ya tiene una cura definitiva</string>
+    <!-- step 2 -->
+    <string name="readText">
+        La depresión es un trastorno mental común que afecta a millones de personas en todo el mundo. Se caracteriza por una profunda sensación de tristeza, falta de interés en actividades que antes resultaban placenteras, cambios en el apetito y patrones de sueño, fatiga persistente y dificultades en la concentración. Aunque la depresión puede variar en gravedad, desde episodios leves hasta formas más graves que pueden interferir significativamente con la vida diaria, es crucial reconocer los síntomas tempranos y buscar ayuda adecuada. Los primeros auxilios para la depresión pueden desempeñar un papel fundamental en el apoyo a alguien que está experimentando estos desafíos emocionales.
+        \n\nUno de los primeros pasos en el manejo de la depresión es la conciencia y la comprensión de los signos y síntomas. Puede ser difícil para quienes sufren de depresión expresar sus sentimientos, y a menudo, pueden ocultar su sufrimiento. Por lo tanto, es esencial prestar atención a cambios en el comportamiento, como el aislamiento social, la disminución del rendimiento académico o laboral, cambios en los hábitos de sueño o alimentación, y expresiones de desesperanza o inutilidad.
+        \n\nEl apoyo emocional y la empatía son fundamentales en los primeros auxilios para la depresión. Mostrar comprensión y escuchar sin juzgar pueden hacer que la persona afectada se sienta comprendida y respaldada. Es crucial recordar que la depresión no es simplemente un estado de ánimo pasajero o una debilidad personal; es un trastorno médico real que requiere tratamiento.
+        \n\nAlentando a la persona a buscar ayuda profesional, como un psicólogo, psiquiatra o consejero, es otro paso vital en los primeros auxilios para la depresión. Estos profesionales de la salud mental están capacitados para evaluar y tratar la depresión de manera efectiva, utilizando enfoques que van desde la terapia cognitivo-conductual hasta la medicación, según la gravedad del trastorno.
+        \n\nPromover un entorno de apoyo también puede marcar la diferencia. El aislamiento social puede exacerbar los síntomas de la depresión, por lo que mantener conexiones sociales y ofrecer actividades compartidas puede ser beneficioso. La participación en actividades recreativas y el ejercicio físico regular también han demostrado ser eficaces en el manejo de la depresión.
+        \n\nEn casos de urgencia, donde la persona afectada pueda representar un riesgo para sí misma o para los demás, es crucial buscar ayuda de inmediato. Los servicios de emergencia y líneas directas de crisis pueden brindar asistencia inmediata.
+        \nEn resumen, los primeros auxilios para la depresión implican la comprensión, el apoyo emocional y la promoción de la búsqueda de ayuda profesional. La depresión no es algo que se pueda superar simplemente con fuerza de voluntad, y el estigma que la rodea a menudo dificulta que las personas busquen el apoyo necesario. Con conciencia, compasión y acción, podemos contribuir a romper el estigma y proporcionar el apoyo necesario para quienes luchan contra la depresión.
+    </string>
+    <string name="step2_case0_instruction">Selecciona la respuesta correcta:</string>
+    <string name="step2_case0_option1">Mostrar comprensión y escuchar sin juzgar pueden hacer que la persona afectada se sienta incomprendida y desamparada</string>
+    <string name="step2_case0_option2">Uno de los primeros pasos en el manejo de la depresión es la conciencia y la comprensión de los signos y síntomas</string>
+    <string name="step2_case0_option3">En casos de urgencia, donde la persona afectada pueda representar un riesgo para sí misma o para los demás, es crucial buscar ayuda de inmediato</string>
+
+    <string name="step2_case1_instruction">¿Qué puede hacer una persona para apoyar a alguien que está experimentando depresión?</string>
+    <string name="step2_case1_option1">Mostrar comprensión y escuchar sin juzgar pueden hacer que la persona afectada se sienta comprendida y respaldada</string>
+    <string name="step2_case1_option2">Ignorar los cambios en el comportamiento de la persona y esperar a que se recupere por sí sola</string>
+    <string name="step2_case1_option3">Sugerir que la depresión es simplemente un estado de ánimo pasajero y que la persona debería superarlo con fuerza de voluntad</string>
+
+    <string name="step2_case2_instruction">¿Qué puede hacer que la persona afectada se sienta comprendida y respaldada en el contexto de la depresión?</string>
+    <string name="step2_case2_word1">empatia</string>
+    <string name="step2_case2_word2">empatia</string>
+
+    <string name="step2_case3_instruction">¿Qué es la depresión?</string>
+    <string name="step2_case3_text1">es causada únicamente por factores genéticos, y no hay influencia de experiencias de vida o factores ambientales</string>
+    <string name="step2_case3_text2">un trastorno mental común</string>
+    <string name="step2_case3_text3">es simplemente un estado de ánimo triste que todos experimentan</string>
+    <string name="step2_case3_text4">es simplemente una falta de fuerza de voluntad</string>
+
+    <string name="step2_case4_instruction">¿Cuáles son algunos de los signos tempranos de la depresión que se mencionan en el texto y por qué es crucial prestar atención a estos cambios en el comportamiento?</string>
+    <string name="step2_case4_text1">la depresión solo afecta a personas débiles emocionalmente</string>
+    <string name="step2_case4_text2">la mejor manera de ayudar a alguien con depresión es forzarlos a enfrentar sus problemas y superarlos por sí mismos</string>
+    <string name="step2_case4_text3">"el ejercicio físico regular no tiene ningún impacto en el manejo de la depresión</string>
+    <string name="step2_case4_text4">el apoyo emocional y la empatía son fundamentales en los primeros auxilios para la depresión</string>
+
+    <string name="step2_case5_instruction">¿Cuál es uno de los pasos fundamentales en los primeros auxilios para la depresión según el texto?</string>
+    <string name="step2_case5_option1">Ignorar los cambios en el comportamiento de la persona</string>
+    <string name="step2_case5_option2">Recetar medicamentos por cuenta propia</string>
+    <string name="step2_case5_option3">Alentar a la persona a buscar ayuda profesional</string>
+
+    <string name="step2_case6_instruction">¿Cuál es una de las principales características de la depresión?</string>
+    <string name="step2_case6_option1">Aumento significativo de la energía y la motivación</string>
+    <string name="step2_case6_option2">Profunda sensación de tristeza y falta de interés en actividades placentera</string>
+    <string name="step2_case6_option3">Cambios positivos en los hábitos de sueño</string>
+
+    <string name="step2_case7_instruction">¿Qué es crucial para el manejo de la depresión según los primeros auxilios descritos?</string>
+    <string name="step2_case7_word1">apoyo</string>
+    <string name="step2_case7_word2">apoyo emocional</string>
+
+    <string name="step2_case8_instruction">¿Qué es crucial para el manejo de la depresión?</string>
+    <string name="step2_case8_word1">conciencia</string>
+
+    <string name="step2_case9_instruction">¿Cuál es uno de los primeros pasos cruciales en el manejo de la depresión según el texto?</string>
+    <string name="step2_case9_option1">Ignorar los cambios en el comportamiento de la persona afectada</string>
+    <string name="step2_case9_option2">Mostrar comprensión y escuchar sin juzgar</string>
+    <string name="step2_case9_option3">Culpar a la persona afectada por su condición</string>
+
+    <string name="step2_case10_instruction">¿Qué puede aumentar los síntomas de la depresión?</string>
+    <string name="step2_case10_word1">aislamiento</string>
+    <string name="step3_case0_instruction">La depresion puede afectar a...?</string>
+    <string name="step3_case0_word1">cualquier</string>
+    <string name="step3_case0_word2">cualquier persona</string>
+
+    <string name="step3_case1_instruction">¿Qué porcentaje de niños de entre 3-17 años tienen depresion?</string>
+    <string name="step3_case1_word1">3</string>
+    <string name="step3_case1_word2">3%</string>
+    <string name="step3_case1_word3">tres</string>
+    <string name="step3_case1_word4">3 porciento</string>
+
+    <string name="step3_case2_instruction">Menciona alguna de las casusas de depresion infantil</string>
+    <string name="step3_case2_word1">acoso escolar</string>
+    <string name="step3_case2_word2">problemas familiares</string>
+    <string name="step3_case2_word3">estres</string>
+    <string name="step3_case2_word4">enfermedades fisicas</string>
+
+    <string name="step3_case3_instruction">Selecciona la señal de depresion infantil mencionada en el video</string>
+    <string name="step3_case3_option1">Mal humor</string>
+    <string name="step3_case3_option2">Cambios en la comida</string>
+    <string name="step3_case3_option3">Llorar</string>
+
+    <string name="step3_case4_instruction">¿Cuál es un síntoma común de la depresión infantil mencionado en el texto que involucra cambios en el estado de ánimo?</string>
+    <string name="step3_case4_option1">Aumento en la actividad física</string>
+    <string name="step3_case4_option2">Cambio en los hábitos alimenticios</string>
+    <string name="step3_case4_option3">Mayor interés en actividades divertidas</string>
+
+    <string name="step3_case5_instruction">¿Cuál es un síntoma común de la depresión infantil mencionado en el texto que involucra cambios en el estado de ánimo?</string>
+    <string name="step3_case5_word1">irritabilidad</string>
+
+    <string name="step3_case6_instruction">¿Cómo puede afectar la depresión a los hábitos alimenticios de un niño según el video?</string>
+    <string name="step3_case6_option1">La depresión no tiene impacto en los hábitos alimenticios</string>
+    <string name="step3_case6_option2">Puede llevar a cambios, como comer en exceso o no comer en absoluto, debido a sentimientos de inutilidad o desesperanza</string>
+    <string name="step3_case6_option3"> Solo causa cambios positivos en la dieta, como elegir opciones más saludables</string>
+
+    <string name="step3_case7_instruction">¿Cuál es uno de los síntomas de la depresión en niños que se manifiesta a través de comportamientos como peleas, sensibilidad emocional aumentada y ansiedad, según el texto?</string>
+    <string name="step3_case7_word1">fatiga</string>
+
+    <string name="step3_case8_instruction">¿Qué puede indicar una disminución en las calificaciones escolares de un niño?</string>
+    <string name="step3_case8_word1">desinteres</string>
+
+    <string name="step3_case9_instruction">¿Cómo se sugiere abordar los problemas de comportamiento en la escuela relacionados con la depresión infantil?</string>
+    <string name="step3_case9_option1">Ignorar los problemas y esperar a que desaparezcan por sí solos</string>
+    <string name="step3_case9_option2">Castigar al niño para corregir su comportamiento</string>
+    <string name="step3_case9_option3">Abordarlos con compasión y comprensión, reconociendo la posible conexión con la depresión</string>
+
+    <string name="step3_case10_instruction">Selecciona la respuesta correcta</string>
+    <string name="step3_case10_text1"></string>
+    <string name="step3_case10_text2"></string>
+    <string name="step3_case10_text3"></string>
+    <string name="step3_case10_text4"></string>
+
+    <!-- 2 -->
+    <string name="course2Title">Fracturas</string>
+    <string name="course2Description">Evaluar, tratar y brindar atención inicial para lesiones por fracturas.</string>
+
+    <!-- step 1 -->
+    <string name="courseFractures_step1_case0_instruction">Identificar síntomas de una fractura:</string>
+    <string name="courseFractures_step1_case0_option1">Dolor, hinchazón, deformidad</string>
+    <string name="courseFractures_step1_case0_option2">Movilidad limitada, hematomas, sensibilidad</string>
+    <string name="courseFractures_step1_case0_option3">Calor, enrojecimiento, pérdida de conciencia</string>
+
+    <string name="courseFractures_step1_case1_instruction">¿Cuál es una causa común de fracturas?</string>
+    <string name="courseFractures_step1_case1_word1">Trauma o lesión</string>
+    <string name="courseFractures_step1_case1_word2">Envejecimiento</string>
+    <string name="courseFractures_step1_case1_word3">Genética</string>
+
+    <string name="courseFractures_step1_case2_instruction">Seleccione un tipo común de fractura:</string>
+    <string name="courseFractures_step1_case2_text1">Fractura en tallo verde</string>
+    <string name="courseFractures_step1_case2_text2">Fractura de estrés</string>
+    <string name="courseFractures_step1_case2_text3">Fractura en radiografía</string>
+    <string name="courseFractures_step1_case2_text4">Distensión muscular</string>
+
+    <string name="courseFractures_step1_case3_instruction">¿Cuál es la acción inmediata para una fractura sospechada?</string>
+    <string name="courseFractures_step1_case3_option1">Aplicar calor en la zona</string>
+    <string name="courseFractures_step1_case3_option2">Mantener elevado el miembro lesionado</string>
+    <string name="courseFractures_step1_case3_option3">Inmovilizar el miembro lesionado</string>
+
+    <string name="courseFractures_step1_case4_instruction">Seleccione un síntoma de una fractura grave:</string>
+    <string name="courseFractures_step1_case4_option1">Dolor leve</string>
+    <string name="courseFractures_step1_case4_option2">Protuberancia ósea visible</string>
+    <string name="courseFractures_step1_case4_option3">Moretón leve</string>
+
+    <string name="courseFractures_step1_case5_instruction">¿Cuál es el propósito de colocar una férula en una fractura?</string>
+    <string name="courseFractures_step1_case5_text1">Aumentar el dolor</string>
+    <string name="courseFractures_step1_case5_text2">Inmovilizar y apoyar el miembro lesionado</string>
+    <string name="courseFractures_step1_case5_text3">Promover el movimiento</string>
+
+    <string name="courseFractures_step1_case6_instruction">¿Cómo se debe manejar una fractura abierta con una herida visible?</string>
+    <string name="courseFractures_step1_case6_word1">Cubrir la herida con una venda estéril</string>
+    <string name="courseFractures_step1_case6_word2">Dejar la herida expuesta</string>
+    <string name="courseFractures_step1_case6_word3">Masajear el área alrededor de la herida</string>
+
+    <string name="courseFractures_step1_case7_instruction">Seleccione la respuesta correcta</string>
+    <string name="courseFractures_step1_case7_option1">Las fracturas siempre requieren cirugía</string>
+    <string name="courseFractures_step1_case7_option2">La inmovilización es un componente clave del tratamiento de fracturas</string>
+    <string name="courseFractures_step1_case7_option3">Aplicar presión directa es necesario para todas las fracturas</string>
+
+    <string name="courseFractures_step1_case8_instruction">¿Cómo puede ayudar a una persona con una fractura sospechada?</string>
+    <string name="courseFractures_step1_case8_word1">Llamar a ayuda médica de emergencia</string>
+    <string name="courseFractures_step1_case8_word2">Animar a la persona a mover el miembro lesionado</string>
+    <string name="courseFractures_step1_case8_word3">Aplicar calor en la zona</string>
+
+    <string name="courseFractures_step1_case9_instruction">Seleccione la respuesta correcta</string>
+    <string name="courseFractures_step1_case9_text1">Las fracturas siempre se pueden tratar en casa</string>
+    <string name="courseFractures_step1_case9_text2">La atención médica inmediata es crucial para las fracturas</string>
+    <string name="courseFractures_step1_case9_text3">No es necesario inmovilizar el miembro lesionado</string>
+    <string name="courseFractures_step1_case9_text4">Quitar el miembro lesionado no es necesario</string>
+
+    <string name="courseFractures_step1_case10_instruction">¿Cuál es el propósito de elevar un miembro lesionado?</string>
+    <string name="courseFractures_step1_case10_text1">Aumentar el flujo sanguíneo en la zona</string>
+    <string name="courseFractures_step1_case10_text2">Reducir la hinchazón</string>
+    <string name="courseFractures_step1_case10_text3">Promover el movimiento</string>
+    <string name="courseFractures_step1_case10_text4">Eliminar el movimiento</string>
+
+    <!-- step 2 -->
+    <string name="courseFractures_step2_readText">
+        Las fracturas son lesiones comunes que requieren primeros auxilios rápidos y adecuados. Una fractura ocurre cuando hay una interrupción en la continuidad del hueso. Puede resultar de un trauma, caídas o fuerza excesiva aplicada al hueso. Reconocer los signos y brindar atención inmediata son pasos esenciales para manejar las fracturas de manera efectiva.
+        \n\nLos síntomas comunes de una fractura incluyen dolor, hinchazón y deformidad en el sitio de la lesión. Es crucial evaluar cuidadosamente el área lesionada y buscar signos como movilidad limitada, hematomas y sensibilidad. Se debe tomar una acción inmediata para inmovilizar el miembro lesionado y buscar ayuda médica.
+        \n\nExisten diferentes tipos de fracturas, como fracturas en tallo verde, fracturas de estrés y fracturas compuestas con protuberancia ósea visible. La gravedad de la fractura determina las medidas de primeros auxilios adecuadas. En casos de fracturas abiertas con heridas visibles, es esencial cubrir la herida con una venda estéril para prevenir infecciones.
+        \n\nLa férula es una técnica clave de primeros auxilios para fracturas. Consiste en inmovilizar el miembro lesionado para prevenir más daños y promover una curación adecuada. Es importante férular la fractura en la posición encontrada y evitar movimientos innecesarios del área lesionada.
+        \n\nRecuerde, la atención médica inmediata es crucial para fracturas graves o aquellas que involucran articulaciones importantes. Llamar a ayuda médica de emergencia y brindar consuelo a la persona lesionada son pasos vitales en el proceso de primeros auxilios para fracturas.
+    </string>
+
+    <string name="courseFractures_step2_case0_instruction">Seleccione la acción correcta para una fractura abierta con una herida visible:</string>
+    <string name="courseFractures_step2_case0_option1">Exponer la herida al aire</string>
+    <string name="courseFractures_step2_case0_option2">Cubrir la herida con una venda estéril</string>
+    <string name="courseFractures_step2_case0_option3">Aplicar presión directa a la herida</string>
+
+    <string name="courseFractures_step2_case1_instruction">¿Cuál es el propósito de colocar una férula en una fractura?</string>
+    <string name="courseFractures_step2_case1_option1">Aumentar el dolor</string>
+    <string name="courseFractures_step2_case1_option2">Inmovilizar y apoyar el miembro lesionado</string>
+    <string name="courseFractures_step2_case1_option3">Fomentar el movimiento</string>
+
+    <string name="courseFractures_step2_case2_instruction">¿Qué debe evitar al colocar una férula en una fractura?</string>
+    <string name="courseFractures_step2_case2_word1">Movimiento innecesario</string>
+    <string name="courseFractures_step2_case2_word2">Mantener el miembro inmóvil</string>
+
+    <string name="courseFractures_step2_case3_instruction">Seleccione la respuesta correcta:</string>
+    <string name="courseFractures_step2_case3_option1">Llamar a ayuda de emergencia no es necesario para fracturas</string>
+    <string name="courseFractures_step2_case3_option2">La atención médica inmediata es crucial para fracturas graves</string>
+    <string name="courseFractures_step2_case3_option3">Las fracturas siempre requieren cirugía</string>
+    <string name="courseFractures_step2_case3_option4">Se puede morir a causa de una fractura</string>
+
+    <string name="courseFractures_step2_case4_instruction">¿Cuál es el objetivo principal de los primeros auxilios para fracturas?</string>
+    <string name="courseFractures_step2_case4_word1">Prevenir más daños</string>
+    <string name="courseFractures_step2_case4_word2">Minimizar</string>
+    <string name="courseFractures_step2_case4_word3">Maximizar</string>
+    <string name="courseFractures_step2_case4_word4">Eliminar</string>
+
+    <string name="courseFractures_step2_case5_instruction">¿Cuál es la importancia de inmovilizar un miembro lesionado?</string>
+    <string name="courseFractures_step2_case5_option1">Fomentar el movimiento</string>
+    <string name="courseFractures_step2_case5_option2">Prevenir más daños y promover una curación adecuada</string>
+    <string name="courseFractures_step2_case5_option3">Aumentar el dolor</string>
+
+    <string name="courseFractures_step2_case6_instruction">Seleccione la acción correcta para una fractura en tallo verde:</string>
+    <string name="courseFractures_step2_case6_option1">Aplicar una compresa fría</string>
+    <string name="courseFractures_step2_case6_option2">Inmovilizar el miembro y buscar ayuda médica</string>
+    <string name="courseFractures_step2_case6_option3">Fomentar el movimiento para prevenir la rigidez</string>
+
+    <string name="courseFractures_step2_case7_instruction">¿Qué debe hacer si sospecha de una fractura compuesta?</string>
+    <string name="courseFractures_step2_case7_option1">Dejarlo así; sanará por sí solo</string>
+    <string name="courseFractures_step2_case7_option2">Cubrir la herida con una venda estéril y buscar atención médica inmediata</string>
+    <string name="courseFractures_step2_case7_option3">Aplicar un vendaje ajustado para controlar el sangrado</string>
+
+    <string name="courseFractures_step2_case8_instruction">Seleccione la medida de primeros auxilios correcta para una fractura de estrés:</string>
+    <string name="courseFractures_step2_case8_option1">Inmovilizar el miembro y buscar ayuda médica</string>
+    <string name="courseFractures_step2_case8_option2">Ignorarlo; las fracturas de estrés no requieren primeros auxilios</string>
+    <string name="courseFractures_step2_case8_option3">Aplicar calor en el área lesionada</string>
+
+    <string name="courseFractures_step2_case9_instruction">¿Cuál es el papel de la atención médica inmediata en fracturas graves?</string>
+    <string name="courseFractures_step2_case9_option1">No es necesario; las fracturas sanarán por sí solas</string>
+    <string name="courseFractures_step2_case9_option2">Brindar consuelo a la persona lesionada</string>
+    <string name="courseFractures_step2_case9_option3">Evaluar cuidadosamente el área lesionada</string>
+
+    <string name="courseFractures_step2_case10_instruction">¿Qué debe hacer si una fractura involucra una articulación importante?</string>
+    <string name="courseFractures_step2_case10_word1">Buscar atención médica inmediata</string>
+    <string name="courseFractures_step2_case10_word2">Fomentar el movimiento para prevenir la rigidez</string>
+    <string name="courseFractures_step2_case10_word3">Aplicar una compresa tibia</string>
+    <string name="courseFractures_step2_case10_word4">Dejarlo así; sanará por sí solo</string>
+
+    <!-- step 3 -->
+    <!-- Paso 3 -->
+    <string name="courseFractures_step3_readText">
+        Las fracturas son lesiones comunes que requieren primeros auxilios rápidos y apropiados. Una fractura ocurre cuando hay una interrupción en la continuidad del hueso. Puede resultar de traumatismos, caídas o fuerza excesiva aplicada al hueso. Reconocer los signos y brindar cuidados inmediatos son pasos esenciales para gestionar las fracturas de manera efectiva.
+        \n\nLos síntomas comunes de una fractura incluyen dolor, hinchazón y deformidad en el sitio de la lesión. Es crucial evaluar cuidadosamente el área lesionada y buscar signos como movilidad limitada, hematomas y sensibilidad. Se debe tomar acción inmediata para inmovilizar la extremidad lesionada y buscar ayuda médica.
+        \n\nExisten diferentes tipos de fracturas, incluyendo fracturas en tallo verde, fracturas de línea fina y fracturas compuestas con protrusión ósea visible. La gravedad de la fractura determina las medidas apropiadas de primeros auxilios. En casos de fracturas abiertas con heridas visibles, es esencial cubrir la herida con un vendaje estéril para prevenir infecciones.
+        \n\nLa férula es una técnica clave de primeros auxilios para las fracturas. Implica inmovilizar la extremidad lesionada para evitar más daños y promover una curación adecuada. Es importante férular la fractura en la posición encontrada y evitar movimientos innecesarios en el área lesionada.
+        \n\nRecuerda, la atención médica inmediata es crucial para fracturas graves o aquellas que involucran articulaciones importantes. Llamar a ayuda médica de emergencia y brindar consuelo a la persona lesionada son pasos vitales en el proceso de primeros auxilios para fracturas.
+    </string>
+
+    <string name="courseFractures_step3_case0_instruction">Selecciona la acción correcta para una fractura abierta con una herida visible:</string>
+    <string name="courseFractures_step3_case0_option1">Exponer la herida al aire</string>
+    <string name="courseFractures_step3_case0_option2">Cubrir la herida con un vendaje estéril</string>
+    <string name="courseFractures_step3_case0_option3">Aplicar presión directa a la herida</string>
+
+    <string name="courseFractures_step3_case1_instruction">¿Cuál es el propósito de férular una fractura?</string>
+    <string name="courseFractures_step3_case1_option1">Aumentar el dolor</string>
+    <string name="courseFractures_step3_case1_option2">Inmovilizar y brindar soporte a la extremidad lesionada</string>
+    <string name="courseFractures_step3_case1_option3">Estimular el movimiento</string>
+
+    <string name="courseFractures_step3_case2_instruction">¿Qué debes evitar al férular una fractura?</string>
+    <string name="courseFractures_step3_case2_word1">movimientosinnecesarios</string>
+    <string name="courseFractures_step3_case2_word2">mantener la extremidad inmóvil</string>
+
+    <string name="courseFractures_step3_case3_instruction">Selecciona la respuesta correcta:</string>
+    <string name="courseFractures_step3_case3_option1">Llamar a ayuda de emergencia no es necesario para fracturas</string>
+    <string name="courseFractures_step3_case3_option2">La atención médica inmediata es crucial para fracturas graves</string>
+    <string name="courseFractures_step3_case3_option3">Las fracturas siempre requieren cirugía</string>
+    <string name="courseFractures_step3_case3_option4">Puedes morir por una fractura</string>
+
+    <string name="courseFractures_step3_case4_instruction">¿Cuál es el objetivo principal de los primeros auxilios para las fracturas?</string>
+    <string name="courseFractures_step3_case4_word1">prevenirmásdaños</string>
+    <string name="courseFractures_step3_case4_word2">minimizar</string>
+    <string name="courseFractures_step3_case4_word3">quemar</string>
+
+    <string name="courseFractures_step3_case5_instruction">¿Cuál es la importancia de inmovilizar una extremidad lesionada?</string>
+    <string name="courseFractures_step3_case5_option1">Estimular el movimiento</string>
+    <string name="courseFractures_step3_case5_option2">Prevenir más daños y promover una curación adecuada</string>
+    <string name="courseFractures_step3_case5_option3">Aumentar el dolor</string>
+
+    <string name="courseFractures_step3_case6_instruction">Selecciona la acción correcta para una fractura en tallo verde:</string>
+    <string name="courseFractures_step3_case6_option1">Aplicar un paño frío</string>
+    <string name="courseFractures_step3_case6_option2">Inmovilizar la extremidad y buscar ayuda médica</string>
+    <string name="courseFractures_step3_case6_option3">Estimular el movimiento para evitar rigidez</string>
+
+    <string name="courseFractures_step3_case7_instruction">¿Qué debes hacer si sospechas de una fractura compuesta?</string>
+    <string name="courseFractures_step3_case7_option1">Dejarlo así; sanará por sí solo</string>
+    <string name="courseFractures_step3_case7_option2">Cubrir la herida con un vendaje estéril y buscar atención médica inmediata</string>
+    <string name="courseFractures_step3_case7_option3">Aplicar un vendaje ajustado para controlar el sangrado</string>
+
+    <string name="courseFractures_step3_case8_instruction">Selecciona la medida correcta de primeros auxilios para una fractura de línea fina:</string>
+    <string name="courseFractures_step3_case8_option1">Inmovilizar la extremidad y buscar ayuda médica</string>
+    <string name="courseFractures_step3_case8_option2">Ignorarla; las fracturas de línea fina no requieren primeros auxilios</string>
+    <string name="courseFractures_step3_case8_option3">Aplicar calor en el área lesionada</string>
+
+    <string name="courseFractures_step3_case9_instruction">¿Cuál es el papel de la atención médica inmediata en las fracturas graves?</string>
+    <string name="courseFractures_step3_case9_option1">No es necesario; las fracturas sanarán por sí solas</string>
+    <string name="courseFractures_step3_case9_option2">Brindar consuelo a la persona lesionada</string>
+    <string name="courseFractures_step3_case9_option3">Evaluar cuidadosamente el área lesionada</string>
+
+    <string name="courseFractures_step3_case10_instruction">¿Qué debes hacer si una fractura involucra una articulación importante?</string>
+    <string name="courseFractures_step3_case10_word1">Buscar atención médica inmediata</string>
+    <string name="courseFractures_step3_case10_word2">Estimular el movimiento para evitar rigidez</string>
+    <string name="courseFractures_step3_case10_word3">Aplicar un paño tibio</string>
+    <string name="courseFractures_step3_case10_word4">Dejarlo así; sanará por sí solo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="notlevel">No tienes suficiente nivel para desbloquear este curso.</string>
+    <string name="completedCourse_title">Completaste el curso</string>
+    <string name="completedCourse_description">Felicidades, has completado el curso</string>
+    <string name="noLives_title">Ya no tienes vidas</string>
+    <string name="noLives_description">Consigue más vidas :(</string>
+    <string name="course4Title">Quemaduras</string>
+    <string name="course4Description">Evaluar, tratar y brindar atención inicial a las lesiones por quemaduras.</string>
+    <string name="course5Title">Heridas</string>
+    <string name="course5Description">Evaluar, tratar y brindar atención inicial a las lesiones por heridas.</string>
+    <string name="course6Title">Hemorragias</string>
+    <string name="course6Description">Evaluar, tratar y brindar atención inicial a las lesiones por hemorragias.</string>
+    <string name="course7Title">RCP</string>
+    <string name="course7Description">Evaluar, tratar y brindar atención inicial para las lesiones por reanimación.</string>
+    <string name="in_case_of_text">En caso de incendio, lo primero que tienes que hacer es taparte la boca para evitar que el humo entre en tus pulmones.</string>
 </resources>

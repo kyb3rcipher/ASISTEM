@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -83,6 +84,13 @@ public class HomeFragment extends Fragment {
                 startActivity(EmergencyNumbersActivity);
             }
         });
+
+        TextView course1Name = view.findViewById(R.id.course1Name), course1Description = view.findViewById(R.id.course1Description);
+        ImageView course1Image = view.findViewById(R.id.course1Image);
+
+        course1Name.setText(R.string.course1Title);
+        course1Description.setText(R.string.course1Description);
+        course1Image.setImageResource(R.drawable.banner_course_depression);
 
         // Inflate the layout for this fragment
         return view;
