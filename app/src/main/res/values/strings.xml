@@ -25,7 +25,7 @@
     <!-- Home -->
     <string name="textWelcome">Welcome Back</string>
     <string name="in_case_of">In case of:</string>
-    <string name="lives">lives</string>
+    <string name="bands">bands</string>
     <string name="days">days</string>
     <string name="call_emergency_number">Emergency Numbers</string>
     <string name="continue_where_you_left_of">Continue where you left of</string>
@@ -77,8 +77,8 @@
     <string name="courseImageDescription">Course Image</string>
     <string name="courseButtonDescription">Course button</string>
     <!-- completed -->
-    <string name="courseNoLives_title">YOU DONT HAVE LIVES</string>
-    <string name="courseNoLives_message">TEMPORAL I HOPE I HOPE</string>
+    <string name="courseNoBands_title">YOU DONT HAVE BANDS</string>
+    <string name="courseNoBands_message">TEMPORAL I HOPE I HOPE</string>
     <!-- completed -->
     <string name="courseCompleted_title">Completed Course</string>
     <string name="courseCompleted_message">TEMPORAL I HOPE I HOPE</string>

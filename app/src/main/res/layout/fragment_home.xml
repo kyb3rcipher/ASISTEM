@@ -47,18 +47,18 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageHeart"
+                    android:id="@+id/imageBand"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/logo_duetone_black"
+                    android:src="@drawable/ic_band_black"
                     android:tint="@null" />
 
                 <TextView
-                    android:id="@+id/livesLeft"
+                    android:id="@+id/bandsLeft"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
-                    android:text="0 lives"
+                    android:text="0 bands"
                     android:textAlignment="viewStart"
                     android:textStyle="bold" />
             </LinearLayout>

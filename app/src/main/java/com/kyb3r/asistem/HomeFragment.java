@@ -31,17 +31,17 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        TextView lives = view.findViewById(R.id.livesLeft), days = view.findViewById(R.id.streaksDays);
+        TextView bands = view.findViewById(R.id.bandsLeft), days = view.findViewById(R.id.streaksDays);
 
         DatabaseHelper db = new DatabaseHelper(getContext());
 
-        int livesNumber = db.getLivesCount();
-        lives.setText(livesNumber + " " + getString(R.string.lives));
-        ImageView heart = view.findViewById(R.id.imageHeart), fire = view.findViewById(R.id.imageFire);
-        if (livesNumber > 0) {
-            heart.setImageResource(R.drawable.logo_duetone);
+        int bandsNumber = db.getBandsCount();
+        bands.setText(bandsNumber + " " + getString(R.string.bands));
+        ImageView band = view.findViewById(R.id.imageBand), fire = view.findViewById(R.id.imageFire);
+        if (bandsNumber > 0) {
+            band.setImageResource(R.drawable.ic_band);
         } else {
-            heart.setImageResource(R.drawable.logo_duetone_black);
+            band.setImageResource(R.drawable.ic_band_black);
         }
 
         days.setText("7 " + getString(R.string.days));
@@ -56,8 +56,8 @@ public class HomeFragment extends Fragment {
         livesCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent LivesActivity = new Intent(getContext(), LivesActivity.class);
-                startActivity(LivesActivity);
+                Intent BandsActivity = new Intent(getContext(), BandsActivity.class);
+                startActivity(BandsActivity);
             }
         });
         emergencyNumbers.setOnClickListener(new View.OnClickListener() {

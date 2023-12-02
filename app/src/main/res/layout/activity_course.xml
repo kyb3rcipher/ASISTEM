@@ -44,7 +44,7 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/lives"
+            android:id="@+id/bands"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -56,9 +56,9 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="40dp"
-            android:layout_height="match_parent"
+            android:layout_height="35dp"
             android:layout_marginTop="4dp"
-            android:src="@drawable/logo_duetone"
+            android:src="@drawable/ic_band"
             android:tint="@null"
             tools:ignore="UseAppTint" />
 

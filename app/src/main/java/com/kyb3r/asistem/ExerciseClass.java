@@ -32,14 +32,14 @@ public class ExerciseClass {
     private final String courseName;
     private final Context context;
     public static int correct, nextFragment;
-    private DatabaseHelper livesDatabaseHelper;
-    private int currentLives;
+    private DatabaseHelper db;
+    private int currentBands;
     private boolean finish;
 
     public ExerciseClass(String courseName, Context context ) {
         this.courseName = courseName;
         this.context = context;
-        this.livesDatabaseHelper = new DatabaseHelper(context);
+        this.db = new DatabaseHelper(context);
     }
 
     public void closeButton() {
@@ -57,20 +57,20 @@ public class ExerciseClass {
         alertDialog.show();
     }
 
-    private void decreaseLives() {
-        currentLives = livesDatabaseHelper.getLivesCount();
-        // Decrease live
-        currentLives--;
-        // Update lives count in database
-        livesDatabaseHelper.setLivesCount(currentLives);
+    private void decreaseBands() {
+        currentBands = db.getBandsCount();
+        // Decrease band
+        currentBands--;
+        // Update band count in database
+        db.setBandsCount(currentBands);
 
 
-        // Write lives number
-        TextView textLives = ((Activity) context).findViewById(R.id.lives);
-        textLives.setText(String.valueOf(currentLives));
+        // Write bands number
+        TextView bandsText = ((Activity) context).findViewById(R.id.bands);
+        bandsText.setText(String.valueOf(currentBands));
 
-        if (currentLives <= 0) {
-            setupLeasson(R.string.courseNoLives_title, R.string.courseNoLives_message);
+        if (currentBands <= 0) {
+            setupLeasson(R.string.courseNoBands_title, R.string.courseNoBands_message);
 
             // Start sound
             MediaPlayer failLeasson = MediaPlayer.create(context, R.raw.lesson_fail);
@@ -101,9 +101,9 @@ public class ExerciseClass {
                 Toast.makeText(context, R.string.exerciseCorrect, Toast.LENGTH_SHORT).show();
 
                 if (finish) {
-                    int progress = livesDatabaseHelper.getCourseProgress(courseName);
+                    int progress = db.getCourseProgress(courseName);
                     int newProgress = progress + 1;
-                    livesDatabaseHelper.setCourseProgress(courseName, newProgress);
+                    db.setCourseProgress(courseName, newProgress);
 
                     ((Activity) context).setContentView(R.layout.leasson);
                     finish = false;
@@ -112,7 +112,7 @@ public class ExerciseClass {
             } else {
                 // start sound
                 incorrectPlayer.start();
-                decreaseLives(); // Restar una vida
+                decreaseBands(); // Rest a life
                 // delay for release resource (4 seconds)
                 //new Handler().postDelayed(() -> { if (correctPlayer != null) incorrectPlayer.release(); }, 4000);
 
@@ -128,9 +128,9 @@ public class ExerciseClass {
         frameLayout.removeAllViews();
         ((Activity) context).getLayoutInflater().inflate(layoutId, frameLayout, true);
 
-        currentLives = livesDatabaseHelper.getLivesCount();
-        TextView textLives = ((Activity) context).findViewById(R.id.lives);
-        textLives.setText(String.valueOf(currentLives));
+        currentBands = db.getBandsCount();
+        TextView textLives = ((Activity) context).findViewById(R.id.bands);
+        textLives.setText(String.valueOf(currentBands));
     }
 
     // Exercises setup methods.

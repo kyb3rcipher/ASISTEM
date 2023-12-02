@@ -6,8 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    private static final String TABLE_LIVES = "lives";
-    private static final String COLUMN_LIVES_COUNT = "lives_count";
+    private static final String TABLE_BANDS = "bands";
+    private static final String COLUMN_BANDS_COUNT = "bands_count";
 
     private static final String TABLE_COURSES = "courses";
     private static final String COLUMN_COURSES_NAME = "name";
@@ -19,10 +19,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // Create lives table
-        String createTableLivesQuery = "CREATE TABLE " + TABLE_LIVES + " (" +
-                COLUMN_LIVES_COUNT + " INTEGER)";
-        db.execSQL(createTableLivesQuery);
+        // Create bands table
+        String createTableBandsQuery = "CREATE TABLE " + TABLE_BANDS + " (" +
+                COLUMN_BANDS_COUNT + " INTEGER)";
+        db.execSQL(createTableBandsQuery);
 
         // Create courses table
         String createTableCoursesQuery = "CREATE TABLE " + TABLE_COURSES + " (" +
@@ -33,50 +33,50 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_LIVES);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_BANDS);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_COURSES);
         onCreate(db);
     }
 
-    // Methods for lives table
-    public void setLivesCount(int livesCount) {
+    // Methods for bands table
+    public void setBandsCount(int bandsCount) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(COLUMN_LIVES_COUNT, livesCount);
+        values.put(COLUMN_BANDS_COUNT, bandsCount);
 
-        // Update the existing row with the new lives count
-        int rowsAffected = db.update(TABLE_LIVES, values, null, null);
+        // Update the existing row with the new bands count
+        int rowsAffected = db.update(TABLE_BANDS, values, null, null);
 
         // If no rows were affected, insert a new row
         if (rowsAffected == 0) {
-            db.insert(TABLE_LIVES, null, values);
+            db.insert(TABLE_BANDS, null, values);
         }
 
         db.close();
     }
 
 
-    public int getLivesCount() {
+    public int getBandsCount() {
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_LIVES, null);
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_BANDS, null);
 
-        int livesCount = 0;
+        int bandsCount = 0;
         if (cursor.moveToFirst()) {
-            livesCount = cursor.getInt(cursor.getColumnIndex(COLUMN_LIVES_COUNT));
+            bandsCount = cursor.getInt(cursor.getColumnIndex(COLUMN_BANDS_COUNT));
         } else {
-            livesCount = 5;
+            bandsCount = 5;
         }
 
         cursor.close();
         db.close();
-        return livesCount;
+        return bandsCount;
     }
 
-    public void addOneLive() {
-        int livesNumber = getLivesCount();
-        if (livesNumber < 5) {
-            livesNumber++;
-            setLivesCount(livesNumber);
+    public void addOneBand() {
+        int bandsNumber = getBandsCount();
+        if (bandsNumber < 5) {
+            bandsNumber++;
+            setBandsCount(bandsNumber);
         }
     }
 

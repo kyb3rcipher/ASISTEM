@@ -23,7 +23,7 @@
             app:tint="#3C3838" />
 
         <TextView
-            android:id="@+id/lives"
+            android:id="@+id/bands"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginRight="10dp"
@@ -32,43 +32,43 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/heart1"
+            android:id="@+id/band1"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginRight="10dp"
-            android:src="@drawable/logo_duetone_black"
+            android:src="@drawable/ic_band_black"
             app:tint="@null" />
 
         <ImageView
-            android:id="@+id/heart2"
+            android:id="@+id/band2"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:src="@drawable/logo_duetone_black"
+            android:src="@drawable/ic_band_black"
             app:tint="@null" />
 
         <ImageView
-            android:id="@+id/heart3"
+            android:id="@+id/band3"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:src="@drawable/logo_duetone_black"
+            android:src="@drawable/ic_band_black"
             app:tint="@null" />
 
         <ImageView
-            android:id="@+id/heart4"
+            android:id="@+id/band4"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:src="@drawable/logo_duetone_black"
+            android:src="@drawable/ic_band_black"
             app:tint="@null" />
 
         <ImageView
-            android:id="@+id/heart5"
+            android:id="@+id/band5"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:src="@drawable/logo_duetone_black"
+            android:src="@drawable/ic_band_black"
             app:tint="@null" />
 
     </LinearLayout>
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="10dp"
-        android:text="Remaining time to restore life:"
+        android:text="Remaining time to restore band:"
         android:textSize="25sp"
         android:textStyle="bold" />
 

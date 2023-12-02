@@ -70,11 +70,11 @@ public class CoursesFragment extends Fragment {
                     break;
             }
 
-            // If you don't have lives no start course
-            if (db.getLivesCount() > 0) {
+            // If you don't have bands no start course
+            if (db.getBandsCount() > 0) {
                 startActivity(course);
             } else {
-                Toast.makeText(getContext(), R.string.courseNoLives_message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.courseNoBands_title, Toast.LENGTH_SHORT).show();
             }
         });
 

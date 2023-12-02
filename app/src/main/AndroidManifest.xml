@@ -16,7 +16,7 @@
             android:name=".EmergencyNumbersActivity"
             android:exported="false" />
         <activity
-            android:name=".LivesActivity"
+            android:name=".BandsActivity"
             android:exported="false" />
         <activity
             android:name=".course.DepressionCourseActivity"

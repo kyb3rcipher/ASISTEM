@@ -8,28 +8,28 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class LivesActivity extends AppCompatActivity {
+public class BandsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lives);
+        setContentView(R.layout.activity_bands);
         // Close button
         ImageButton closeButton = findViewById(R.id.closeButton);
         closeButton.setOnClickListener(v -> finish());
         DatabaseHelper db = new DatabaseHelper(this);
 
         // Get lives number
-        final int[] livesNumber = {db.getLivesCount()};
+        final int[] bandsNumber = {db.getBandsCount()};
 
         // Set number
-        TextView lives = findViewById(R.id.lives);
-        lives.setText(String.valueOf(livesNumber[0]));
+        TextView bandsText = findViewById(R.id.bands);
+        bandsText.setText(String.valueOf(bandsNumber[0]));
 
         // Set number lives images
-        ImageView heart1 = findViewById(R.id.heart1), heart2 = findViewById(R.id.heart2), heart3 = findViewById(R.id.heart3), heart4 = findViewById(R.id.heart4), heart5 = findViewById(R.id.heart5);
-        ImageView[] hearts = new ImageView[]{ heart1, heart2, heart3, heart4, heart5 };
-        for (int i = 0; i < livesNumber[0]; i++) { hearts[i].setImageResource(R.drawable.logo_duetone); }
+        ImageView band1 = findViewById(R.id.band1), band2 = findViewById(R.id.band2), band3 = findViewById(R.id.band3), band4 = findViewById(R.id.band4), band5 = findViewById(R.id.band5);
+        ImageView[] bands = new ImageView[]{ band1, band2, band3, band4, band5 };
+        for (int i = 0; i < bandsNumber[0]; i++) { bands[i].setImageResource(R.drawable.ic_band); }
 
         // Set counter for new life
         CountDownTimer countDownTimer;
@@ -49,7 +49,7 @@ public class LivesActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                db.addOneLive();
+                db.addOneBand();
                 // reload activity (for refill heart)
                 finish();
                 startActivity(getIntent());
@@ -61,7 +61,7 @@ public class LivesActivity extends AppCompatActivity {
         // Set temporal button for manual add life
         ImageButton buttonAddLife = findViewById(R.id.buttonAddLifee);
         buttonAddLife.setOnClickListener(v -> {
-            db.addOneLive();
+            db.addOneBand();
             // reload activity (for refill heart)
             finish();
             startActivity(getIntent());
