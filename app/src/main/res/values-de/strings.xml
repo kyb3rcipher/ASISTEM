@@ -1,2 +1,152 @@
 <resources>
+    <string name="app_name" translatable="false">ASISTEM</string>
+    <string name="app_version" translatable="false">ALPHA 0.0.9</string>
+
+    <!-- Menu -->
+    <string name="settings">Einstellungen</string>
+    <string name="about">Über diese App</string>
+    <string name="home">Home</string>
+    <string name="courses">Kurse</string>
+    <string name="saved">Gespeichertes</string>
+
+    <!-- Settings -->
+    <string-array name="appareance">
+        <item>Automatisch</item>
+        <item>Hell</item>
+        <item>Dunkel</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Englisch</item>
+        <item>Spanisch</item>
+        <item>Deutsch</item>
+        <item>Russisch</item>
+    </string-array>
+
+    <!-- Home -->
+    <string name="textWelcome">Willkommen zurück!</string>
+    <string name="in_case_of">Im Fall das:</string>
+    <string name="bands">Erste-Hilfe-Verband</string>
+    <string name="days">Tage</string>
+    <string name="call_emergency_number">Notrufnummern</string>
+    <string name="continue_where_you_left_of">Fahre fort, wo Du aufgehört haben</string>
+
+    <!-- About -->
+    <string name="image_logo_description">Logo der App</string>
+    <string name="image_contributor_description">Avatarbild des Mitwirkenden</string>
+    <string name="development">Entwicklung</string>
+    <string name="development_name" translatable="false">Kyb3r Cipher</string>
+    <string name="development_contact"><a href="https://kyb3rcipher.com">Kontakt</a></string>
+    <string name="teacher">Lehrer/in</string>
+    <string name="teacher_name" translatable="false">Veronica Martinez Anaya</string>
+    <string name="design">Design</string>
+    <string name="designer_name" translatable="false">Benito</string>
+    <string name="designer_contact"><a href="https://github.com/bengiv">@bengiv</a></string>
+    <string name="translation">Übersetzung</string>
+    <string name="translator_name" translatable="false">Данил Климович (Danil Klimovich)</string>
+    <string name="translator_contact" translatable="false"><a href="https://vk.com/daniklimovich">@picaflorito</a></string>
+    <!-- Tap Pair -->
+    <string name="button_check_name">Überprüfen</string>
+    <string name="button_check_description">Check button</string>
+    <string name="button_close_description">Close button</string>
+    <string name="tapPair_title">Klicke die Paare</string>
+
+    <!-- Exercise -->
+    <string name="exerciseCorrect">Richtig :D</string>
+    <string name="exerciseIncorrect">Falsch, versuche es ernuet! D:</string>
+    <string name="exerciseOkay">Okay</string>
+    <string name="exerciseCheck">Überprüfen</string>
+    <!-- Close alert -->
+    <string name="exerciseAlert_title">Bis du Dir sicher?</string>
+    <string name="exerciseAlert_message">Alle Fortschritte in dieser Lektion gehen verloren.</string>
+    <string name="exerciseAlert_quit">Schließen</string>
+    <string name="exerciseAlert_cancel">Abbrechen</string>
+    <!-- options -->
+    <string name="exerciseOptions_title">Wähle die Antwort</string>
+    <!-- read -->
+    <string name="exerciseRead_title">Les Dir den Text durch</string>
+    <!-- video -->
+    <string name="exerciseVideo_title">Schau Dir das Video an</string>
+    <!-- select -->
+    <string name="exerciseSelect_title">Wähl die richtige Option aus</string>
+    <!-- write -->
+    <string name="exerciseWrite_title">Schreib deine Antwort</string>
+    <!-- tap pairs -->
+    <string name="exerciseTap_pairs">Klicke die Paare</string>
+
+    <!-- Courses -->
+    <string name="courseImageDescription">Bild des Kurses</string>
+    <string name="courseButtonDescription">Knopf des Kurses</string>
+    <!-- completed -->
+    <string name="courseNoBands_title">DU HAST KEINE ERSTE HILFE VERBÄNDE</string>
+    <string name="courseNoBands_message">TEMPORAL I HOPE I HOPE</string>
+    <!-- completed -->
+    <string name="courseCompleted_title">Erledigte Kurse</string>
+    <string name="courseCompleted_message">TEMPORAL I HOPE I HOPE</string>
+    <!-- finished -->
+    <string name="courseFinished_title">Erledigte Kurse</string>
+    <string name="courseFinished_message">TEMPORAL I HOPE I HOPE</string>
+
+    <!-- 1 -->
+    <string name="course1Title">Depresionen</string>
+    <string name="course1Description">Beurteilung, Behandlung und Prävention von Komplikationen bei Frakturen.</string>
+    <!-- step 1 -->
+    <string name="case0_instruction">Wähle Deine Symptome der Depression aus:</string>
+    <string name="case0_option1">Kopfschmerzen, Weinen, Änderung des Kleidungsstils</string>
+    <string name="case0_option2">Apathie, Interessenverlust, Appetitveränderung, Gefühl der Nutzlosigkeit/ Schuldgefühle</string>
+    <string name="case0_option3">Den ganzen Tag allein sein, viel schlafen, keine Videospiele spielen</string>
+
+    <string name="case1_instruction">Schreibe einen Neurotransmitter, der in geringerem Maße Depressionen verursacht</string>
+    <string name="case1_word1">Serotonin</string>
+    <string name="case1_word2">Dopamin</string>
+    <string name="case1_word3">Norepinephrin</string>
+
+    <string name="case2_instruction">Wähle eine Veränderung aus, die im Gehirn einer Person mit Depression auftritt</string>
+    <string name="case2_text1">Kleinere Lappen/ Hippocampus</string>
+    <string name="case2_text2">Leeres Gedanken</string>
+    <string name="case2_text3">Röntgenblick</string>
+    <string name="case2_text4">Größere Frontallappen und Hippocampus</string>
+
+    <string name="case3_instruction">Wie lange dauert es ungefähr, bis eine Person mit einer psychischen Erkrankung/ Depression Hilfe sucht?</string>
+    <string name="case3_option1">12 Monate</string>
+    <string name="case3_option2">6 Monate</string>
+    <string name="case3_option3">10 Jahre</string>
+
+    <string name="case4_instruction">Was ist der Unterschied zwischen einer klinischen Depression und einem einfachen Gefühl der Niedergeschlagenheit?</string>
+    <string name="case4_option1">Eine klinische Depression ist eine vorübergehende Reaktion auf Situationen wie schlechte Noten. Im Gegensatz dazu ist eine Depression eine medizinische Reaktion und ein Zustand, der über Wochen anhalten kann.</string>
+    <string name="case4_option2">Eine klinische Depression ist ein medizinischer Zustand, der mindestens zwei Wochen lang anhält und die Fähigkeit zu arbeiten, zu spielen oder zu lieben erheblich beeinträchtigt. Im Gegensatz dazu kann das Gefühl der Depression eine vorübergehende Reaktion auf Situationen wie schlechte Noten sein</string>
+    <string name="case4_option3">Klinische Depression ist eine Krankheit, die durch Röntgenstrahlen nachgewiesen werden kann</string>
+
+    <string name="case5_instruction">Welche wirksamen Behandlungen gibt es für Depressionen?</string>
+    <string name="case5_text1">Therapie, Medikamente, experimentelle Behandlungen wie transkranielle Magnetstimulation</string>
+    <string name="case5_text2">Therapie, Mehr essen, Mit Freunden zusammen sein</string>
+    <string name="case5_text3">Therapie, Reisen, Experimentelle Behandlungen wie Medikamente</string>
+
+    <string name="case6_instruction">Schreibe, wie die Elektrokrampftherapie beschrieben wird und in welchen Fällen sie als besonders nützlich für die Behandlung von Depressionen genannt wird</string>
+    <string name="case6_word1">Elektrokonvulsionstherapie</string>
+    <string name="case6_word2">Elektrokonvulsionstherapie</string>
+    <string name="case6_word3">Elektrokonvulsionstherapie</string>
+
+    <string name="case7_instruction">Wählen Sie die richtige Antwort</string>
+    <string name="case7_option1">Depression ist eine Krankheit, die durch Medikamente geheilt wird</string>
+    <string name="case7_option2">Die Depression ist zwar eine Krankheit, bedeutet aber nicht, dass die Person schwach ist</string>
+    <string name="case7_option3">Die Depression ist gleichbedeutend mit Selbstmordgefahr</string>
+
+    <string name="case8_instruction">Schreiben Sie den Prozentsatz der Erwachsenen mit Depressionen in den Vereinigten Staaten</string>
+    <string name="case8_word1">10%</string>
+    <string name="case8_word2">10</string>
+    <string name="case8_word3">10Prozent</string>
+    <string name="case8_word4">zehn</string>
+    <string name="case8_word5">zehnProzent</string>
+
+    <string name="case9_instruction">Wähle die Person, die möglicherweise an einer Depression leidet</string>
+    <string name="case9_text1">Fühlt sich seit ein paar Tagen schlecht, weil er eine Prüfung nicht bestanden hat</string>
+    <string name="case9_text2">Wollte in den letzten 2 Wochen nicht mehr ausgehen, weil Ihr Haustier gestorben ist</string>
+    <string name="case9_text3">Fühlt sich seit einem Monat schuldig, apathisch und allgemein unwohl</string>
+    <string name="case9_text4">Haben den ganzen Tag nichts gegessen, weil Regentage traurig machen</string>
+
+    <string name="case10_instruction">Wähle die richtige Antwort</string>
+    <string name="case10_text1">Einmal weinen ist ein Anzeichen für eine Depression</string>
+    <string name="case10_text2">Depression ist zu 100% genetisch bedingt</string>
+    <string name="case10_text3">Über Depressionen zu sprechen hilft</string>
+    <string name="case10_text4">Die Depression hat bereits ein endgültiges Heilmittel</string>
 </resources>
