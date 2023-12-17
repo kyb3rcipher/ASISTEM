@@ -68,6 +68,12 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
+        TextView course1Name = view.findViewById(R.id.course1Name);
+        ImageView image = view.findViewById(R.id.course1Image);
+        course1Name.setText(R.string.course1Title);
+        image.setImageResource(R.drawable.banner_course_depression);
+
         // Inflate the layout for this fragment
         return view;
     }

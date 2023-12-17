@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.kyb3r.asistem.course.DepressionCourseActivity;
+import com.kyb3r.asistem.course.FracturesCourseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +47,11 @@ public class CoursesFragment extends Fragment {
 
         elements = new ArrayList<>();
         elements.add(new CoursesList(getString(R.string.course1Title), getString(R.string.course1Description), R.drawable.banner_course_depression));
-        //elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_fractures));
+        elements.add(new CoursesList(getString(R.string.course2Title), getString(R.string.course2Description), R.drawable.banner_course_fractures));
+        elements.add(new CoursesList(getString(R.string.course4Title), getString(R.string.course4Description), R.drawable.banner_course_burns));
+        elements.add(new CoursesList(getString(R.string.course5Title), getString(R.string.course5Description), R.drawable.banner_course_wounds));
+        elements.add(new CoursesList(getString(R.string.course6Title), getString(R.string.course6Description), R.drawable.banner_course_hemorrhages));
+        elements.add(new CoursesList(getString(R.string.course7Title), getString(R.string.course7Description), R.drawable.banner_course_resusitation));
 
         DatabaseHelper db = new DatabaseHelper(getContext());
 
@@ -62,17 +67,32 @@ public class CoursesFragment extends Fragment {
 
         // Cards clicks
         adapter.setOnItemClickListener(coursesList -> {
+            boolean noLevel = false;
             Intent course = null;
 
             switch (elements.indexOf(coursesList)) {
                 case 0:
                     course = new Intent(getContext(), DepressionCourseActivity.class);
                     break;
+                case 1:
+                    course = new Intent(getContext(), FracturesCourseActivity.class);
+                    break;
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                    noLevel = true;
+                    break;
             }
 
             // If you don't have bands no start course
-            if (db.getBandsCount() > 0) {
-                startActivity(course);
+            if (noLevel) {
+                Toast.makeText(getContext(), R.string.notlevel, Toast.LENGTH_SHORT).show();
+            } else if (db.getBandsCount() > 0) {
+                if (course != null) {
+                    startActivity(course);
+                }
             } else {
                 Toast.makeText(getContext(), R.string.courseNoBands_title, Toast.LENGTH_SHORT).show();
             }

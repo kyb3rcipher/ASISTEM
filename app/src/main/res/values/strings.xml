@@ -25,6 +25,7 @@
     <!-- Home -->
     <string name="textWelcome">Welcome Back</string>
     <string name="in_case_of">In case of:</string>
+    <string name="in_case_of_text">In the event of a fire, the first thing you have to do is cover your mouth to prevent smoke from entering your lungs.</string>
     <string name="bands">bands</string>
     <string name="days">days</string>
     <string name="call_emergency_number">Emergency Numbers</string>
@@ -149,4 +150,321 @@
     <string name="case10_text2">Depression is 100% genetic</string>
     <string name="case10_text3">Talking about depression helps</string>
     <string name="case10_text4">Depression already has a definitive cure</string>
+    <!-- step 2 -->
+    <string name="readText">
+        Depression is a common mental disorder that affects millions of people worldwide. It is characterized by a deep sense of sadness, lack of interest in activities that were once pleasurable, changes in appetite and sleep patterns, persistent fatigue, and difficulties in concentration. Although depression can vary in severity, from mild episodes to more severe forms that can significantly interfere with daily life, it is crucial to recognize early symptoms and seek appropriate help. First aid for depression can play a crucial role in supporting someone experiencing these emotional challenges.
+        \n\nOne of the first steps in managing depression is awareness and understanding of signs and symptoms. It can be challenging for those suffering from depression to express their feelings, and often, they may conceal their suffering. Therefore, it is essential to pay attention to changes in behavior, such as social isolation, decreased academic or work performance, changes in sleep or eating habits, and expressions of hopelessness or worthlessness.
+        \n\nEmotional support and empathy are crucial in first aid for depression. Showing understanding and listening without judgment can make the affected person feel understood and supported. It is crucial to remember that depression is not just a passing mood or a personal weakness; it is a real medical disorder that requires treatment.
+        \n\nEncouraging the person to seek professional help, such as a psychologist, psychiatrist, or counselor, is another vital step in first aid for depression. These mental health professionals are trained to assess and treat depression effectively, using approaches ranging from cognitive-behavioral therapy to medication, depending on the severity of the disorder.
+        \n\nPromoting a supportive environment can also make a difference. Social isolation can exacerbate depression symptoms, so maintaining social connections and offering shared activities can be beneficial. Engagement in recreational activities and regular physical exercise has also been shown to be effective in managing depression.
+        \n\nIn cases of urgency, where the affected person may pose a risk to themselves or others, it is crucial to seek help immediately. Emergency services and crisis hotlines can provide immediate assistance.
+        \nIn summary, first aid for depression involves understanding, emotional support, and promoting the seeking of professional help. Depression is not something that can be overcome simply through willpower, and the stigma surrounding it often makes it difficult for people to seek the necessary support. With awareness, compassion, and action, we can contribute to breaking the stigma and providing the necessary support for those battling depression.
+    </string>
+
+    <string name="step2_case0_instruction">Select the correct answer:</string>
+    <string name="step2_case0_option1">Showing understanding and listening without judging can make the affected person feel misunderstood and helpless</string>
+    <string name="step2_case0_option2">One of the first steps in managing depression is awareness and understanding of signs and symptoms</string>
+    <string name="step2_case0_option3">In cases of urgency, where the affected person may pose a risk to themselves or others, it is crucial to seek help immediately</string>
+
+    <string name="step2_case1_instruction">What can a person do to support someone experiencing depression?</string>
+    <string name="step2_case1_option1">Showing understanding and listening without judging can make the affected person feel understood and supported</string>
+    <string name="step2_case1_option2">Ignoring changes in the person\'s behavior and waiting for them to recover on their own</string>
+    <string name="step2_case1_option3">Suggesting that depression is just a passing mood, and the person should overcome it through willpower</string>
+
+    <string name="step2_case2_instruction">What can make the affected person feel understood and supported in the context of depression?</string>
+    <string name="step2_case2_word1">empathy</string>
+    <string name="step2_case2_word2">empathy</string>
+
+    <string name="step2_case3_instruction">What is depression?</string>
+    <string name="step2_case3_text1">It is caused solely by genetic factors, and there is no influence from life experiences or environmental factors</string>
+    <string name="step2_case3_text2">A common mental disorder</string>
+    <string name="step2_case3_text3">It is simply a sad mood that everyone experiences</string>
+    <string name="step2_case3_text4">It is simply a lack of willpower</string>
+
+    <string name="step2_case4_instruction">What are some early signs of depression mentioned in the text, and why is it crucial to pay attention to these changes in behavior?</string>
+    <string name="step2_case4_text1">Depression only affects emotionally weak people</string>
+    <string name="step2_case4_text2">The best way to help someone with depression is to force them to face their problems and overcome them on their own</string>
+    <string name="step2_case4_text3">Regular physical exercise has no impact on managing depression</string>
+    <string name="step2_case4_text4">Emotional support and empathy are crucial in first aid for depression</string>
+
+    <string name="step2_case5_instruction">What is one of the fundamental steps in first aid for depression according to the text?</string>
+    <string name="step2_case5_option1">Ignoring changes in the person\'s behavior</string>
+    <string name="step2_case5_option2">Prescribing medication on one\'s own</string>
+    <string name="step2_case5_option3">Encouraging the person to seek professional help</string>
+
+    <string name="step2_case6_instruction">What is one of the main characteristics of depression?</string>
+    <string name="step2_case6_option1">Significant increase in energy and motivation</string>
+    <string name="step2_case6_option2">Deep sense of sadness and lack of interest in pleasurable activities</string>
+    <string name="step2_case6_option3">Positive changes in sleep habits</string>
+
+    <string name="step2_case7_instruction">What is crucial for managing depression according to the described first aid?</string>
+    <string name="step2_case7_word1">support</string>
+    <string name="step2_case7_word2">emotional support</string>
+
+    <string name="step2_case8_instruction">What is crucial for managing depression?</string>
+    <string name="step2_case8_word1">awareness</string>
+
+    <string name="step2_case9_instruction">What is one of the crucial first steps in managing depression according to the text?</string>
+    <string name="step2_case9_option1">Ignoring changes in the affected person\'s behavior</string>
+    <string name="step2_case9_option2">Showing understanding and listening without judging</string>
+    <string name="step2_case9_option3">Blaming the affected person for their condition</string>
+
+    <string name="step2_case10_instruction">What can increase depression symptoms?</string>
+    <string name="step2_case10_word1">isolation</string>
+    <!-- step 3 -->
+    <string name="step3_case0_instruction">Can depression affect...?</string>
+    <string name="step3_case0_word1">any</string>
+    <string name="step3_case0_word2">any person</string>
+
+    <string name="step3_case1_instruction">What percentage of children aged 3-17 have depression?</string>
+    <string name="step3_case1_word1">3</string>
+    <string name="step3_case1_word2">3%</string>
+    <string name="step3_case1_word3">three</string>
+    <string name="step3_case1_word4">3 percent</string>
+
+    <string name="step3_case2_instruction">Name some of the causes of childhood depression</string>
+    <string name="step3_case2_word1">school bullying</string>
+    <string name="step3_case2_word2">family problems</string>
+    <string name="step3_case2_word3">stress</string>
+    <string name="step3_case2_word4">physical illnesses</string>
+
+    <string name="step3_case3_instruction">Select the sign of childhood depression mentioned in the video</string>
+    <string name="step3_case3_option1">Bad mood</string>
+    <string name="step3_case3_option2">Changes in eating</string>
+    <string name="step3_case3_option3">Crying</string>
+
+    <string name="step3_case4_instruction">What is a common symptom of childhood depression mentioned in the text involving changes in mood?</string>
+    <string name="step3_case4_option1">Increase in physical activity</string>
+    <string name="step3_case4_option2">Change in eating habits</string>
+    <string name="step3_case4_option3">Greater interest in fun activities</string>
+
+    <string name="step3_case5_instruction">What is a common symptom of childhood depression mentioned in the text involving changes in mood?</string>
+    <string name="step3_case5_word1">irritability</string>
+
+    <string name="step3_case6_instruction">How can depression affect a child\'s eating habits according to the video?</string>
+    <string name="step3_case6_option1">Depression has no impact on eating habits</string>
+    <string name="step3_case6_option2">It can lead to changes, such as overeating or not eating at all, due to feelings of worthlessness or hopelessness</string>
+    <string name="step3_case6_option3">Only causes positive changes in the diet, such as choosing healthier options</string>
+
+    <string name="step3_case7_instruction">What is one of the symptoms of depression in children that manifests through behaviors like fights, increased emotional sensitivity, and anxiety, according to the text?</string>
+    <string name="step3_case7_word1">fatigue</string>
+
+    <string name="step3_case8_instruction">What can a decrease in a child\'s grades indicate?</string>
+    <string name="step3_case8_word1">disinterest</string>
+
+    <string name="step3_case9_instruction">How is it suggested to address school behavior problems related to childhood depression?</string>
+    <string name="step3_case9_option1">Ignore the problems and wait for them to disappear on their own</string>
+    <string name="step3_case9_option2">Punish the child to correct their behavior</string>
+    <string name="step3_case9_option3">Address them with compassion and understanding, recognizing the possible connection with depression</string>
+
+    <string name="step3_case10_instruction">Select the correct answer</string>
+    <string name="step3_case10_text1" translatable="false"></string>
+    <string name="step3_case10_text2" translatable="false"></string>
+    <string name="step3_case10_text3" translatable="false"></string>
+    <string name="step3_case10_text4" translatable="false"></string>
+
+    <!-- miscellaneous -->
+    <string name="course4Title">Burns</string>
+    <string name="course4Description">Assess, treat, and provide initial care for burns injuries.</string>
+    <string name="course5Title">Wounds</string>
+    <string name="course5Description">Assess, treat, and provide initial care for wounds injuries.</string>
+    <string name="course6Title">Hemorrhages</string>
+    <string name="course6Description">Assess, treat, and provide initial care for hemorrhages injuries.</string>
+    <string name="course7Title">Resusitation</string>
+    <string name="course7Description">Assess, treat, and provide initial care for resuitation injuries.</string>
+
+    <!-- 2 -->
+    <string name="course2Title">Fractures</string>
+    <string name="course2Description">Assess, treat, and provide initial care for fracture injuries.</string>
+
+    <!-- step 1 -->
+    <string name="courseFractures_step1_case0_instruction">Identify symptoms of a fracture:</string>
+    <string name="courseFractures_step1_case0_option1">Pain, Swelling, Deformity</string>
+    <string name="courseFractures_step1_case0_option2">Limited mobility, Bruising, Tenderness</string>
+    <string name="courseFractures_step1_case0_option3">Warmth, Redness, Loss of consciousness</string>
+
+    <string name="courseFractures_step1_case1_instruction">What is a common cause of fractures?</string>
+    <string name="courseFractures_step1_case1_word1">Trauma or injury</string>
+    <string name="courseFractures_step1_case1_word2">Aging</string>
+    <string name="courseFractures_step1_case1_word3">Genetics</string>
+
+    <string name="courseFractures_step1_case2_instruction">Select a common type of fracture:</string>
+    <string name="courseFractures_step1_case2_text1">Greenstick fracture</string>
+    <string name="courseFractures_step1_case2_text2">Hairline fracture</string>
+    <string name="courseFractures_step1_case2_text3">X-ray fracture</string>
+    <string name="courseFractures_step1_case2_text4">Muscle strain</string>
+
+    <string name="courseFractures_step1_case3_instruction">What is the immediate action for a suspected fracture?</string>
+    <string name="courseFractures_step1_case3_option1">Apply heat to the area</string>
+    <string name="courseFractures_step1_case3_option2">Keep the injured limb elevated</string>
+    <string name="courseFractures_step1_case3_option3">Immobilize the injured limb</string>
+
+    <string name="courseFractures_step1_case4_instruction">Select a symptom of a severe fracture:</string>
+    <string name="courseFractures_step1_case4_option1">Mild pain</string>
+    <string name="courseFractures_step1_case4_option2">Visible bone protrusion</string>
+    <string name="courseFractures_step1_case4_option3">Minor bruising</string>
+
+    <string name="courseFractures_step1_case5_instruction">What is the purpose of splinting a fracture?</string>
+    <string name="courseFractures_step1_case5_text1">To increase pain</string>
+    <string name="courseFractures_step1_case5_text2">To immobilize and support the injured limb</string>
+    <string name="courseFractures_step1_case5_text3">To promote movement</string>
+
+    <string name="courseFractures_step1_case6_instruction">How should you manage an open fracture with a visible wound?</string>
+    <string name="courseFractures_step1_case6_word1">Cover the wound with a sterile dressing</string>
+    <string name="courseFractures_step1_case6_word2">Leave the wound exposed</string>
+    <string name="courseFractures_step1_case6_word3">Massage the area around the wound</string>
+
+    <string name="courseFractures_step1_case7_instruction">Select the correct answer</string>
+    <string name="courseFractures_step1_case7_option1">Fractures always require surgery</string>
+    <string name="courseFractures_step1_case7_option2">Immobilization is a key component of fracture treatment</string>
+    <string name="courseFractures_step1_case7_option3">Applying direct pressure is necessary for all fractures</string>
+
+    <string name="courseFractures_step1_case8_instruction">How can you assist a person with a suspected fracture?</string>
+    <string name="courseFractures_step1_case8_word1">Call for emergency medical help</string>
+    <string name="courseFractures_step1_case8_word2">Encourage the person to move the injured limb</string>
+    <string name="courseFractures_step1_case8_word3">Apply heat to the area</string>
+
+    <string name="courseFractures_step1_case9_instruction">Select the correct answer</string>
+    <string name="courseFractures_step1_case9_text1">Fractures can always be self-treated at home</string>
+    <string name="courseFractures_step1_case9_text2">Immediate medical attention is crucial for fractures</string>
+    <string name="courseFractures_step1_case9_text3">Immobilizing the injured limb is not necessary</string>
+    <string name="courseFractures_step1_case9_text4">Remove the injured limb is not necessary</string>
+
+    <string name="courseFractures_step1_case10_instruction">What is the purpose of elevating an injured limb?</string>
+    <string name="courseFractures_step1_case10_text1">To increase blood flow to the area</string>
+    <string name="courseFractures_step1_case10_text2">To reduce swelling</string>
+    <string name="courseFractures_step1_case10_text3">To promote movement</string>
+    <string name="courseFractures_step1_case10_text4">Remove movement</string>
+
+    <!-- step 2 -->
+    <string name="courseFractures_step2_readText">
+        Fractures are common injuries that require prompt and appropriate first aid. A fracture occurs when there is a break in the continuity of the bone. It can result from trauma, falls, or excessive force applied to the bone. Recognizing the signs and providing immediate care are essential steps in managing fractures effectively.
+        \n\nCommon symptoms of a fracture include pain, swelling, and deformity at the site of injury. It is crucial to assess the injured area carefully and look for signs such as limited mobility, bruising, and tenderness. Immediate action should be taken to immobilize the injured limb and seek medical help.
+        \n\nDifferent types of fractures exist, including greenstick fractures, hairline fractures, and compound fractures with visible bone protrusion. The severity of the fracture determines the appropriate first aid measures. In cases of open fractures with visible wounds, covering the wound with a sterile dressing is essential to prevent infection.
+        \n\nSplinting is a key first aid technique for fractures. It involves immobilizing the injured limb to prevent further damage and promote proper healing. It is important to splint the fracture in the position found and avoid unnecessary movement of the injured area.
+        \n\nRemember, immediate medical attention is crucial for severe fractures or those involving major joints. Calling for emergency medical help and providing comfort to the injured person are vital steps in the first aid process for fractures.
+    </string>
+
+    <string name="courseFractures_step2_case0_instruction">Select the correct action for an open fracture with a visible wound:</string>
+    <string name="courseFractures_step2_case0_option1">Expose the wound to air</string>
+    <string name="courseFractures_step2_case0_option2">Cover the wound with a sterile dressing</string>
+    <string name="courseFractures_step2_case0_option3">Apply direct pressure to the wound</string>
+
+    <string name="courseFractures_step2_case1_instruction">What is the purpose of splinting a fracture?</string>
+    <string name="courseFractures_step2_case1_option1">To increase pain</string>
+    <string name="courseFractures_step2_case1_option2">To immobilize and support the injured limb</string>
+    <string name="courseFractures_step2_case1_option3">To encourage movement</string>
+
+    <string name="courseFractures_step2_case2_instruction">What should you avoid when splinting a fracture?</string>
+    <string name="courseFractures_step2_case2_word1">unnecessary movement</string>
+    <string name="courseFractures_step2_case2_word2">keeping the limb immobile</string>
+
+    <string name="courseFractures_step2_case3_instruction">Select the correct answer:</string>
+    <string name="courseFractures_step2_case3_option1">Calling for emergency help is unnecessary for fractures</string>
+    <string name="courseFractures_step2_case3_option2">Immediate medical attention is crucial for severe fractures</string>
+    <string name="courseFractures_step2_case3_option3">Fractures always require surgery</string>
+    <string name="courseFractures_step2_case3_option4">You can die from a fracture</string>
+
+    <string name="courseFractures_step2_case4_instruction">What is the primary goal of first aid for fractures?</string>
+    <string name="courseFractures_step2_case4_word1">prevent further damage</string>
+    <string name="courseFractures_step2_case4_word2">minimize</string>
+    <string name="courseFractures_step2_case4_word3">maximize</string>
+    <string name="courseFractures_step2_case4_word4">remove</string>
+
+    <string name="courseFractures_step2_case5_instruction">What is the significance of immobilizing an injured limb?</string>
+    <string name="courseFractures_step2_case5_option1">To encourage movement</string>
+    <string name="courseFractures_step2_case5_option2">To prevent further damage and promote proper healing</string>
+    <string name="courseFractures_step2_case5_option3">To increase pain</string>
+
+    <string name="courseFractures_step2_case6_instruction">Select the correct action for a greenstick fracture:</string>
+    <string name="courseFractures_step2_case6_option1">Apply a cold compress</string>
+    <string name="courseFractures_step2_case6_option2">Immobilize the limb and seek medical help</string>
+    <string name="courseFractures_step2_case6_option3">Encourage movement to prevent stiffness</string>
+
+    <string name="courseFractures_step2_case7_instruction">What should you do if you suspect a compound fracture?</string>
+    <string name="courseFractures_step2_case7_option1">Leave it alone; it will heal on its own</string>
+    <string name="courseFractures_step2_case7_option2">Cover the wound with a sterile dressing and seek immediate medical attention</string>
+    <string name="courseFractures_step2_case7_option3">Apply a tight bandage to control bleeding</string>
+
+    <string name="courseFractures_step2_case8_instruction">Select the correct first aid measure for a hairline fracture:</string>
+    <string name="courseFractures_step2_case8_option1">Immobilize the limb and seek medical help</string>
+    <string name="courseFractures_step2_case8_option2">Ignore it; hairline fractures don\'t require first aid</string>
+    <string name="courseFractures_step2_case8_option3">Apply heat to the injured area</string>
+
+    <string name="courseFractures_step2_case9_instruction">What is the role of immediate medical attention in severe fractures?</string>
+    <string name="courseFractures_step2_case9_option1">It\'s unnecessary; fractures will heal on their own</string>
+    <string name="courseFractures_step2_case9_option2">To provide comfort to the injured person</string>
+    <string name="courseFractures_step2_case9_option3">To assess the injured area carefully</string>
+
+    <string name="courseFractures_step2_case10_instruction">What should you do if a fracture involves a major joint?</string>
+    <string name="courseFractures_step2_case10_word1">Seek immediate medical attention</string>
+    <string name="courseFractures_step2_case10_word2">Encourage movement to prevent stiffness</string>
+    <string name="courseFractures_step2_case10_word3">Apply a warm compress</string>
+    <string name="courseFractures_step2_case10_word4">Leave it alone; it will heal on its own</string>
+
+    <!-- step 3 -->
+    <string name="courseFractures_step3_readText">
+        Fractures are common injuries that require prompt and appropriate first aid. A fracture occurs when there is a break in the continuity of the bone. It can result from trauma, falls, or excessive force applied to the bone. Recognizing the signs and providing immediate care are essential steps in managing fractures effectively.
+        \n\nCommon symptoms of a fracture include pain, swelling, and deformity at the site of injury. It is crucial to assess the injured area carefully and look for signs such as limited mobility, bruising, and tenderness. Immediate action should be taken to immobilize the injured limb and seek medical help.
+        \n\nDifferent types of fractures exist, including greenstick fractures, hairline fractures, and compound fractures with visible bone protrusion. The severity of the fracture determines the appropriate first aid measures. In cases of open fractures with visible wounds, covering the wound with a sterile dressing is essential to prevent infection.
+        \n\nSplinting is a key first aid technique for fractures. It involves immobilizing the injured limb to prevent further damage and promote proper healing. It is important to splint the fracture in the position found and avoid unnecessary movement of the injured area.
+        \n\nRemember, immediate medical attention is crucial for severe fractures or those involving major joints. Calling for emergency medical help and providing comfort to the injured person are vital steps in the first aid process for fractures.
+    </string>
+    <string name="courseFractures_step3_case0_instruction">Select the correct action for an open fracture with a visible wound:</string>
+    <string name="courseFractures_step3_case0_option1">Expose the wound to air</string>
+    <string name="courseFractures_step3_case0_option2">Cover the wound with a sterile dressing</string>
+    <string name="courseFractures_step3_case0_option3">Apply direct pressure to the wound</string>
+
+    <string name="courseFractures_step3_case1_instruction">What is the purpose of splinting a fracture?</string>
+    <string name="courseFractures_step3_case1_option1">To increase pain</string>
+    <string name="courseFractures_step3_case1_option2">To immobilize and support the injured limb</string>
+    <string name="courseFractures_step3_case1_option3">To encourage movement</string>
+
+    <string name="courseFractures_step3_case2_instruction">What should you avoid when splinting a fracture?</string>
+    <string name="courseFractures_step3_case2_word1">unnecessarymovement</string>
+
+    <string name="courseFractures_step3_case2_word2">keeping the limb immobile</string>
+
+    <string name="courseFractures_step3_case3_instruction">Select the correct answer:</string>
+    <string name="courseFractures_step3_case3_option1">Calling for emergency help is unnecessary for fractures</string>
+    <string name="courseFractures_step3_case3_option2">Immediate medical attention is crucial for severe fractures</string>
+    <string name="courseFractures_step3_case3_option3">Fractures always require surgery</string>
+    <string name="courseFractures_step3_case3_option4">You can die from a fracture</string>
+
+    <string name="courseFractures_step3_case4_instruction">What is the primary goal of first aid for fractures?</string>
+    <string name="courseFractures_step3_case4_word1">prevent further damage</string>
+    <string name="courseFractures_step3_case4_word2">minimize</string>
+    <string name="courseFractures_step3_case4_word3">burn</string>
+
+    <string name="courseFractures_step3_case5_instruction">What is the significance of immobilizing an injured limb?</string>
+    <string name="courseFractures_step3_case5_option1">To encourage movement</string>
+    <string name="courseFractures_step3_case5_option2">To prevent further damage and promote proper healing</string>
+    <string name="courseFractures_step3_case5_option3">To increase pain</string>
+
+    <string name="courseFractures_step3_case6_instruction">Select the correct action for a greenstick fracture:</string>
+    <string name="courseFractures_step3_case6_option1">Apply a cold compress</string>
+    <string name="courseFractures_step3_case6_option2">Immobilize the limb and seek medical help</string>
+    <string name="courseFractures_step3_case6_option3">Encourage movement to prevent stiffness</string>
+
+    <string name="courseFractures_step3_case7_instruction">What should you do if you suspect a compound fracture?</string>
+    <string name="courseFractures_step3_case7_option1">Leave it alone; it will heal on its own</string>
+    <string name="courseFractures_step3_case7_option2">Cover the wound with a sterile dressing and seek immediate medical attention</string>
+    <string name="courseFractures_step3_case7_option3">Apply a tight bandage to control bleeding</string>
+
+    <string name="courseFractures_step3_case8_instruction">Select the correct first aid measure for a hairline fracture:</string>
+    <string name="courseFractures_step3_case8_option1">Immobilize the limb and seek medical help</string>
+    <string name="courseFractures_step3_case8_option2">Ignore it; hairline fractures don\'t require first aid</string>
+    <string name="courseFractures_step3_case8_option3">Apply heat to the injured area</string>
+
+    <string name="courseFractures_step3_case9_instruction">What is the role of immediate medical attention in severe fractures?</string>
+    <string name="courseFractures_step3_case9_option1">It\'s unnecessary; fractures will heal on their own</string>
+    <string name="courseFractures_step3_case9_option2">To provide comfort to the injured person</string>
+    <string name="courseFractures_step3_case9_option3">To assess the injured area carefully</string>
+
+    <string name="courseFractures_step3_case10_instruction">What should you do if a fracture involves a major joint?</string>
+    <string name="courseFractures_step3_case10_word1">Seek immediate medical attention</string>
+    <string name="courseFractures_step3_case10_word2">Encourage movement to prevent stiffness</string>
+    <string name="courseFractures_step3_case10_word3">Apply a warm compress</string>
+    <string name="courseFractures_step3_case10_word4">Leave it alone; it will heal on its own</string>
+    <string name="notlevel">You don\'t have enough level for this, complete lessons</string>
 </resources>

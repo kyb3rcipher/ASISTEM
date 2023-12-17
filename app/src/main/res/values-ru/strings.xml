@@ -1,2 +1,462 @@
 <resources>
+
+    <!-- Меню -->
+    <string name="settings">Настройки</string>
+    <string name="about">О приложении</string>
+    <string name="home">Главная</string>
+    <string name="courses">Курсы</string>
+    <string name="saved">Сохраненные</string>
+
+    <!-- Настройки -->
+    <string-array name="appareance">
+        <item>Авто</item>
+        <item>Светлая тема</item>
+        <item>Темная тема</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Английский</item>
+        <item>Испанский</item>
+        <item>Немецкий</item>
+        <item>Русский</item>
+    </string-array>
+
+    <!-- Главная -->
+    <string name="textWelcome">Добро пожаловать обратно</string>
+    <string name="in_case_of">В случае:</string>
+    <string name="bands">повязок</string>
+    <string name="days">дней</string>
+    <string name="call_emergency_number">Номера экстренных служб</string>
+    <string name="continue_where_you_left_of">Продолжить с того места, где вы остановились</string>
+
+    <!-- О приложении -->
+    <string name="image_logo_description">Изображение логотипа приложения</string>
+    <string name="image_contributor_description">Изображение аватара участника</string>
+    <string name="development">Разработка</string>
+    <string name="development_contact"><a href="https://kyb3rcipher.com">Контакт</a></string>
+    <string name="teacher">Преподаватель</string>
+    <string name="design">Дизайн</string>
+    <string name="designer_contact"><a href="https://github.com/bengiv">@bengiv</a></string>
+    <string name="translation">Перевод</string>
+
+    <!-- Пара по касанию -->
+    <string name="button_check_name">Проверить</string>
+    <string name="button_check_description">Кнопка "Проверить"</string>
+    <string name="button_close_description">Кнопка "Закрыть"</string>
+    <string name="tapPair_title">Касайтесь пар</string>
+    <!-- Упражнение -->
+    <string name="exerciseCorrect">Верно :D</string>
+    <string name="exerciseIncorrect">Неверно, попробуйте еще раз! D:</string>
+    <string name="exerciseOkay">Хорошо</string>
+    <string name="exerciseCheck">Проверить</string>
+    <!-- Закрыть предупреждение -->
+    <string name="exerciseAlert_title">Вы уверены?</string>
+    <string name="exerciseAlert_message">Весь прогресс в этом уроке будет потерян.</string>
+    <string name="exerciseAlert_quit">ВЫЙТИ</string>
+    <string name="exerciseAlert_cancel">ОТМЕНА</string>
+    <!-- Опции -->
+    <string name="exerciseOptions_title">Выберите ответ</string>
+    <!-- Прочитайте -->
+    <string name="exerciseRead_title">Прочитайте текст</string>
+    <!-- Видео -->
+    <string name="exerciseVideo_title">Посмотрите видео</string>
+    <!-- Выберите -->
+    <string name="exerciseSelect_title">Выберите правильный вариант</string>
+    <!-- Напишите -->
+    <string name="exerciseWrite_title">Напишите ответ</string>
+    <!-- Нажмите на пары -->
+    <string name="exerciseTap_pairs">Коснитесь пар</string>
+
+    <!-- Курсы -->
+    <string name="courseImageDescription">Изображение курса</string>
+    <string name="courseButtonDescription">Кнопка курса</string>
+    <!-- Завершено -->
+    <string name="courseNoBands_title">У ВАС НЕТ ПОЛОС</string>
+    <string name="courseNoBands_message">ВРЕМЕННО, НАДЕЮСЬ, НАДЕЮСЬ</string>
+    <!-- Завершено -->
+    <string name="courseCompleted_title">Завершенный курс</string>
+    <string name="courseCompleted_message">ВРЕМЕННО, НАДЕЮСЬ, НАДЕЮСЬ</string>
+    <!-- Завершено -->
+    <string name="courseFinished_title">Завершенный курс</string>
+    <string name="courseFinished_message">ВРЕМЕННО, НАДЕЮСЬ, НАДЕЮСЬ</string>
+
+    <!-- 1 -->
+    <string name="course1Title">Депрессия</string>
+    <string name="course1Description">Оцените, лечите и предотвращайте осложнения при переломах.</string>
+    <!-- Шаг 1 -->
+    <string name="case0_instruction">Выберите симптомы депрессии:</string>
+    <string name="case0_option1">Головная боль, Плач, Изменение стиля одежды</string>
+    <string name="case0_option2">Апатия, Потеря интереса, Изменения в аппетите, Чувство бесполезности/вины</string>
+    <string name="case0_option3">Пробыть весь день в одиночестве, много спать, не играть в видеоигры</string>
+
+    <string name="case1_instruction">Напишите нейромедиатор, который в меньшей степени вызывает депрессию</string>
+    <string name="case1_word1">серотонин</string>
+    <string name="case1_word2">допамин</string>
+    <string name="case1_word3">норэпинефрин</string>
+
+    <string name="case2_instruction">Выберите изменение, которое происходит в мозге человека с депрессией</string>
+    <string name="case2_text1">Меньшие доли/гиппокамп</string>
+    <string name="case2_text2">Пустой/пустой мозг</string>
+    <string name="case2_text3">Рентгеновское зрение</string>
+    <string name="case2_text4">Большие лобные доли и гиппокамп</string>
+
+    <string name="case3_instruction">Примерно сколько времени человек с психическим заболеванием/депрессией ищет помощь:</string>
+    <string name="case3_option1">12 месяцев</string>
+    <string name="case3_option2">6 месяцев</string>
+    <string name="case3_option3">10 лет</string>
+
+    <string name="case4_instruction">В чем разница между клинической депрессией и просто чувством депрессии?</string>
+    <string name="case4_option1">Клиническая депрессия - временная реакция на ситуации, такие как плохие оценки. В отличие от этого, чувство депрессии - это медицинская реакция и состояние, которое может длиться неделями</string>
+    <string name="case4_option2">Клиническая депрессия - это медицинское состояние, которое длится как минимум две недели и значительно влияет на способность работать, играть или любить. В отличие от этого, чувство депрессии может быть временной реакцией на ситуации, такие как плохие оценки</string>
+    <string name="case4_option3">Клиническая депрессия - это болезнь, которую можно выявить с помощью рентгеновских лучей</string>
+
+    <string name="case5_instruction">Какие эффективные методы лечения депрессии?</string>
+    <string name="case5_text1">Терапия, медикаменты, экспериментальные методы, такие как транскраниальная магнитная стимуляция</string>
+    <string name="case5_text2">Терапия, увеличение потребления пищи, общение с друзьями</string>
+    <string name="case5_text3">Терапия, путешествия, экспериментальные методы, такие как применение наркотиков</string>
+
+    <string name="case6_instruction">Напишите о том, как описывается электровазоконвульсивная терапия и в каких случаях ее считают особенно эффективной при лечении депрессии</string>
+    <string name="case6_word1">электровазоконвульсивная терапия</string>
+    <string name="case6_word2">электровазоконвульсивная терапия</string>
+    <string name="case6_word3">электровазоконвульсивная терапия</string>
+
+    <string name="case7_instruction">Выберите правильный ответ</string>
+    <string name="case7_option1">Депрессия - это болезнь, излечиваемая лекарствами</string>
+    <string name="case7_option2">Депрессия, хотя и болезнь, не означает, что человек слаб</string>
+    <string name="case7_option3">Депрессия эквивалентна наличию у человека суицидальных намерений</string>
+
+    <string name="case8_instruction">Напишите процент взрослых с депрессией в Соединенных Штатах</string>
+    <string name="case8_word1">10%</string>
+    <string name="case8_word2">10</string>
+    <string name="case8_word3">10процентов</string>
+    <string name="case8_word4">десять</string>
+    <string name="case8_word5">десятьпроцентов</string>
+
+    <string name="case9_instruction">Выберите человека, возможно, страдающего депрессией</string>
+    <string name="case9_text1">Плохое настроение после провала экзамена в течение нескольких дней</string>
+    <string name="case9_text2">Не хочет выходить в течение последних 2 недель из-за смерти своего питомца</string>
+    <string name="case9_text3">Чувствует себя виноватым, апатичным и в целом плохо в течение последнего месяца</string>
+    <string name="case9_text4">Не ел весь день, потому что дождливые дни делают его грустным</string>
+
+    <string name="case10_instruction">Выберите правильный ответ</string>
+    <string name="case10_text1">Один раз плакать - признак депрессии</string>
+    <string name="case10_text2">Депрессия на 100% генетическая</string>
+    <string name="case10_text3">Разговор о депрессии помогает</string>
+    <string name="case10_text4">Депрессия уже имеет окончательное лечение</string>
+    <!-- Шаг 2 -->
+    <string name="readText">
+    Депрессия - это распространенное психическое расстройство, которое затрагивает миллионы людей по всему миру. Она характеризуется глубоким чувством грусти, отсутствием интереса к ранее приятным занятиям, изменениями в аппетите и режиме сна, постоянной усталостью и трудностями с концентрацией. Хотя депрессия может варьироваться по тяжести от легких эпизодов до более серьезных форм, которые могут существенно вмешиваться в повседневную жизнь, важно распознавать ранние симптомы и искать подходящую помощь. Первая помощь при депрессии может сыграть решающую роль в поддержке тех, кто переживает эти эмоциональные трудности.
+\n\nОдин из первых шагов в управлении депрессией - это осознание и понимание признаков и симптомов. Тем, кто страдает от депрессии, может быть сложно выразить свои чувства, и часто они могут скрывать свое страдание. Поэтому важно обращать внимание на изменения в поведении, такие как социальная изоляция, снижение академической или профессиональной эффективности, изменения в режиме сна или питания, а также выражения отчаяния или никчемности.
+\n\nЭмоциональная поддержка и сопереживание имеют важное значение в первой помощи при депрессии. Показывая понимание и слушая без суждений, можно заставить пострадавшего почувствовать себя понятым и поддержанным. Важно помнить, что депрессия - это не просто проходящее настроение или личная слабость; это реальное медицинское расстройство, требующее лечения.
+\n\nПоощрение человека обратиться за профессиональной помощью, такой как психолог, психиатр или консультант, еще один важный шаг в первой помощи при депрессии. Эти специалисты в области психического здоровья обучены оценивать и эффективно лечить депрессию, используя различные подходы от когнитивно-поведенческой терапии до медикаментозного лечения, в зависимости от тяжести расстройства.
+\n\nСоздание поддерживающей среды также может сыграть роль. Социальная изоляция может усугублять симптомы депрессии, поэтому поддержание социальных связей и предложение совместных занятий могут быть полезными. Участие в развлекательных мероприятиях и регулярные физические упражнения также показаны как эффективные методы управления депрессией.
+\n\nВ случаях крайней необходимости, когда пострадавший может представлять угрозу себе или другим, важно немедленно искать помощь. Службы экстренной помощи и кризисные горячие линии могут предоставить немедленную поддержку.
+\n\nВ заключение, первая помощь при депрессии включает в себя понимание, эмоциональную поддержку и поощрение обращения за профессиональной помощью. Депрессия - не что-то, что можно преодолеть просто силой воли, и стигма вокруг нее часто делает сложным поиск необходимой поддержки. С осознанием, состраданием и действием мы можем способствовать преодолению стигмы и предоставлению необходимой поддержки тем, кто борется с депрессией.
+</string>
+
+    <string name="step2_case0_instruction">Выберите правильный ответ:</string>
+    <string name="step2_case0_option1">Показывать понимание и слушать без осуждения может заставить пострадавшего почувствовать себя непонятым и беспомощным</string>
+    <string name="step2_case0_option2">Одним из первых шагов в управлении депрессией является осознание и понимание признаков и симптомов</string>
+    <string name="step2_case0_option3">В случаях крайней необходимости, когда пострадавший может представлять угрозу себе или другим, важно немедленно искать помощь</string>
+
+    <string name="step2_case1_instruction">Что может сделать человек, чтобы поддержать того, кто переживает депрессию?</string>
+    <string name="step2_case1_option1">Показывать понимание и слушать без осуждения может заставить пострадавшего почувствовать себя понятым и поддержанным</string>
+    <string name="step2_case1_option2">Игнорировать изменения в поведении человека и ждать, пока он восстановится самостоятельно</string>
+    <string name="step2_case1_option3">Предполагать, что депрессия - это просто проходное настроение, и человек должен преодолеть его силой воли</string>
+
+    <string name="step2_case2_instruction">Что может заставить пострадавшего почувствовать себя понятым и поддержанным в контексте депрессии?</string>
+    <string name="step2_case2_word1">эмпатия</string>
+    <string name="step2_case2_word2">эмпатия</string>
+
+    <string name="step2_case3_instruction">Что такое депрессия?</string>
+    <string name="step2_case3_text1">Она вызывается исключительно генетическими факторами, и на нее не оказывает влияния жизненный опыт или окружающая среда</string>
+    <string name="step2_case3_text2">Распространенное психическое расстройство</string>
+    <string name="step2_case3_text3">Это просто грустное настроение, которое испытывает каждый</string>
+    <string name="step2_case3_text4">Это просто отсутствие силы воли</string>
+
+    <string name="step2_case4_instruction">Какие ранние признаки депрессии упоминаются в тексте, и почему важно обращать внимание на эти изменения в поведении?</string>
+    <string name="step2_case4_text1">Депрессия воздействует только на эмоционально слабых людей</string>
+    <string name="step2_case4_text2">Лучший способ помочь человеку с депрессией - заставить его столкнуться с проблемами и преодолеть их самостоятельно</string>
+    <string name="step2_case4_text3">Регулярные физические упражнения не оказывают влияния на управление депрессией</string>
+    <string name="step2_case4_text4">Эмоциональная поддержка и эмпатия имеют важное значение в первой помощи при депрессии</string>
+
+    <string name="step2_case5_instruction">Какой из фундаментальных шагов первой помощи при депрессии согласно тексту?</string>
+    <string name="step2_case5_option1">Игнорирование изменений в поведении человека</string>
+    <string name="step2_case5_option2">Прописывание лекарств самостоятельно</string>
+    <string name="step2_case5_option3">Поощрение человека обратиться за профессиональной помощью</string>
+
+    <string name="step2_case6_instruction">Что является одной из основных характеристик депрессии?</string>
+    <string name="step2_case6_option1">Значительный прирост энергии и мотивации</string>
+    <string name="step2_case6_option2">Глубокое чувство грусти и отсутствие интереса к приятным занятиям</string>
+    <string name="step2_case6_option3">Положительные изменения в привычках сна</string>
+
+    <string name="step2_case7_instruction">Что критично для управления депрессией согласно описанной первой помощи?</string>
+    <string name="step2_case7_word1">поддержка</string>
+    <string name="step2_case7_word2">эмоциональная поддержка</string>
+
+    <string name="step2_case8_instruction">Что критично для управления депрессией?</string>
+    <string name="step2_case8_word1">осознание</string>
+
+    <string name="step2_case9_instruction">Что является одним из решающих первых шагов в управлении депрессией согласно тексту?</string>
+    <string name="step2_case9_option1">Игнорирование изменений в поведении пострадавшего</string>
+    <string name="step2_case9_option2">Показывание понимания и слушание без осуждения</string>
+    <string name="step2_case9_option3">Винить пострадавшего в его состоянии</string>
+
+    <string name="step2_case10_instruction">Что может усилить симптомы депрессии?</string>
+    <string name="step2_case10_word1">изоляция</string>
+
+    <!-- Шаг 3 -->
+    <string name="step3_case0_instruction">Может ли депрессия влиять на...?</string>
+    <string name="step3_case0_word1">любого</string>
+    <string name="step3_case0_word2">любого человека</string>
+
+    <string name="step3_case1_instruction">Какой процент детей в возрасте от 3 до 17 лет страдает депрессией?</string>
+    <string name="step3_case1_word1">3</string>
+    <string name="step3_case1_word2">3%</string>
+    <string name="step3_case1_word3">три</string>
+    <string name="step3_case1_word4">3 процента</string>
+
+    <string name="step3_case2_instruction">Назовите некоторые из причин детской депрессии</string>
+    <string name="step3_case2_word1">школьное издевательство</string>
+    <string name="step3_case2_word2">семейные проблемы</string>
+    <string name="step3_case2_word3">стресс</string>
+    <string name="step3_case2_word4">физические болезни</string>
+
+    <string name="step3_case3_instruction">Выберите признак детской депрессии, упомянутый в видео</string>
+    <string name="step3_case3_option1">Плохое настроение</string>
+    <string name="step3_case3_option2">Изменения в питании</string>
+    <string name="step3_case3_option3">Плач</string>
+
+    <string name="step3_case4_instruction">Что является общим симптомом детской депрессии, упомянутым в тексте, касающемся изменений в настроении?</string>
+    <string name="step3_case4_option1">Увеличение физической активности</string>
+    <string name="step3_case4_option2">Изменение в пищевых привычках</string>
+    <string name="step3_case4_option3">Больший интерес к веселым мероприятиям</string>
+
+    <string name="step3_case5_instruction">Что является общим симптомом детской депрессии, упомянутым в тексте, касающемся изменений в настроении?</string>
+    <string name="step3_case5_word1">раздражительность</string>
+
+    <string name="step3_case6_instruction">Как депрессия может повлиять на пищевые привычки ребенка согласно видео?</string>
+    <string name="step3_case6_option1">Депрессия не влияет на пищевые привычки</string>
+    <string name="step3_case6_option2">Это может привести к изменениям, таким как переедание или полное отсутствие аппетита из-за чувства бесполезности или отчаяния</string>
+    <string name="step3_case6_option3">Вызывает только положительные изменения в диете, такие как выбор более здоровых вариантов</string>
+
+    <string name="step3_case7_instruction">Что является одним из симптомов депрессии у детей, проявляющимся через поведение, такие как драки, увеличенная эмоциональная чувствительность и тревога, согласно тексту?</string>
+    <string name="step3_case7_word1">усталость</string>
+
+    <string name="step3_case8_instruction">Что может указывать на снижение оценок у ребенка?</string>
+    <string name="step3_case8_word1">отсутствие интереса</string>
+
+    <string name="step3_case9_instruction">Как предполагается решать проблемы поведения в школе, связанные с детской депрессией?</string>
+    <string name="step3_case9_option1">Игнорировать проблемы и ждать, пока они не исчезнут сами по себе</string>
+    <string name="step3_case9_option2">Наказывать ребенка, чтобы исправить его поведение</string>
+    <string name="step3_case9_option3">Обращаться с ними с сочувствием и пониманием, признавая возможную связь с депрессией</string>
+
+    <string name="step3_case10_instruction">Выберите правильный ответ</string>
+    <string name="step3_case10_text1" translatable="false"></string>
+    <string name="step3_case10_text2" translatable="false"></string>
+    <string name="step3_case10_text3" translatable="false"></string>
+    <string name="step3_case10_text4" translatable="false"></string>
+
+    <!-- miscellaneous -->
+    <string name="course4Title">Ожоги</string>
+    <string name="course4Description">Оценка, лечение и предоставление первой помощи при ожогах.</string>
+    <string name="course5Title">Раны</string>
+    <string name="course5Description">Оценка, лечение и предоставление первой помощи при ранах.</string>
+    <string name="course6Title">Кровотечения</string>
+    <string name="course6Description">Оценка, лечение и предоставление первой помощи при кровотечениях.</string>
+    <string name="course7Title">Реанимация</string>
+    <string name="course7Description">Оценка, лечение и предоставление первой помощи при реанимационных состояниях.</string>
+
+    <!-- 2 -->
+    <string name="course2Title">Переломы</string>
+    <string name="course2Description">Оценка, лечение и предоставление первой помощи при переломах.</string>
+
+    <!-- step 1 -->
+    <string name="courseFractures_step1_case0_instruction">Определите симптомы перелома:</string>
+    <string name="courseFractures_step1_case0_option1">Боль, Отек, Деформация</string>
+    <string name="courseFractures_step1_case0_option2">Ограниченная подвижность, Синяки, Болезненность</string>
+    <string name="courseFractures_step1_case0_option3">Теплота, Покраснение, Потеря сознания</string>
+
+    <string name="courseFractures_step1_case1_instruction">Что является общей причиной переломов?</string>
+    <string name="courseFractures_step1_case1_word1">Травма или повреждение</string>
+    <string name="courseFractures_step1_case1_word2">Старение</string>
+    <string name="courseFractures_step1_case1_word3">Генетика</string>
+
+    <string name="courseFractures_step1_case2_instruction">Выберите общий тип перелома:</string>
+    <string name="courseFractures_step1_case2_text1">Зеленая ветка перелома</string>
+    <string name="courseFractures_step1_case2_text2">Микроперелом</string>
+    <string name="courseFractures_step1_case2_text3">Рентгеновский перелом</string>
+    <string name="courseFractures_step1_case2_text4">Перелом мышцы</string>
+
+    <string name="courseFractures_step1_case3_instruction">Каково немедленное действие при подозрении на перелом?</string>
+    <string name="courseFractures_step1_case3_option1">Нанести тепло на область</string>
+    <string name="courseFractures_step1_case3_option2">Держать поврежденную конечность в поднятом положении</string>
+    <string name="courseFractures_step1_case3_option3">Иммобилизировать поврежденную конечность</string>
+
+    <string name="courseFractures_step1_case4_instruction">Выберите симптом тяжелого перелома:</string>
+    <string name="courseFractures_step1_case4_option1">Легкая боль</string>
+    <string name="courseFractures_step1_case4_option2">Видимое выступление костей</string>
+    <string name="courseFractures_step1_case4_option3">Незначительные синяки</string>
+
+    <string name="courseFractures_step1_case5_instruction">Какова цель накладывания шины при переломе?</string>
+    <string name="courseFractures_step1_case5_text1">Увеличить боль</string>
+    <string name="courseFractures_step1_case5_text2">Иммобилизировать и поддерживать поврежденную конечность</string>
+    <string name="courseFractures_step1_case5_text3">Способствовать движению</string>
+
+    <string name="courseFractures_step1_case6_instruction">Как следует обращаться с открытым переломом с видимой раной?</string>
+    <string name="courseFractures_step1_case6_word1">Закрыть рану стерильным повязочным материалом</string>
+    <string name="courseFractures_step1_case6_word2">Оставить рану открытой</string>
+    <string name="courseFractures_step1_case6_word3">Массировать область вокруг раны</string>
+    <string name="courseFractures_step1_case7_instruction">Выберите правильный ответ</string>
+    <string name="courseFractures_step1_case7_option1">Переломы всегда требуют хирургического вмешательства</string>
+    <string name="courseFractures_step1_case7_option2">Иммобилизация является ключевым компонентом лечения переломов</string>
+    <string name="courseFractures_step1_case7_option3">Применение прямого давления необходимо для всех переломов</string>
+
+    <string name="courseFractures_step1_case8_instruction">Как вы можете помочь человеку с подозрением на перелом?</string>
+    <string name="courseFractures_step1_case8_word1">Вызовите скорую медицинскую помощь</string>
+    <string name="courseFractures_step1_case8_word2">Побуждайте человека двигать поврежденной конечностью</string>
+    <string name="courseFractures_step1_case8_word3">Нанесите тепло на область</string>
+
+    <string name="courseFractures_step1_case9_instruction">Выберите правильный ответ</string>
+    <string name="courseFractures_step1_case9_text1">Переломы всегда могут быть лечены дома</string>
+    <string name="courseFractures_step1_case9_text2">Срочная медицинская помощь крайне важна для переломов</string>
+    <string name="courseFractures_step1_case9_text3">Иммобилизация поврежденной конечности не обязательна</string>
+    <string name="courseFractures_step1_case9_text4">Удаление поврежденной конечности не обязательно</string>
+
+    <string name="courseFractures_step1_case10_instruction">Какова цель поднятия поврежденной конечности?</string>
+    <string name="courseFractures_step1_case10_text1">Увеличение кровотока в область</string>
+    <string name="courseFractures_step1_case10_text2">Уменьшение отека</string>
+    <string name="courseFractures_step1_case10_text3">Поощрение движения</string>
+    <string name="courseFractures_step1_case10_text4">Исключение движения</string>
+
+    <!-- Шаг 2 -->
+    <string name="courseFractures_step2_readText">
+        Переломы - это распространенные травмы, требующие оперативной и подходящей первой помощи. Перелом происходит, когда нарушается целостность кости. Это может быть следствием травмы, падений или избыточной силы, приложенной к кости. Распознавание признаков и предоставление немедленной помощи - ключевые шаги в эффективном управлении переломами.
+        \n\nОсновные симптомы перелома включают боль, отек и деформацию в месте травмы. Крайне важно внимательно оценить поврежденную область и выявить признаки, такие как ограниченная подвижность, синяки и болезненность. Немедленные меры должны быть приняты для иммобилизации поврежденной конечности и вызова медицинской помощи.
+        \n\nСуществуют различные типы переломов, включая зеленые переломы, трещиновидные переломы и открытые переломы с видимым выступом кости. Тяжесть перелома определяет соответствующие меры первой помощи. В случае открытых переломов с видимыми ранами важно покрыть рану стерильным перевязочным материалом, чтобы предотвратить инфекцию.
+        \n\nШинирование - ключевая техника первой помощи при переломах. Она заключается в иммобилизации поврежденной конечности для предотвращения дальнейших повреждений и содействия правильному заживлению. Важно зашинировать перелом в найденном положении и избегать лишних движений в поврежденной области.
+        \n\nПомните, срочная медицинская помощь крайне важна при тяжелых переломах или тех, которые затрагивают крупные суставы. Вызов скорой медицинской помощи и предоставление утешения пострадавшему - важные шаги в процессе первой помощи при переломах.
+    </string>
+
+    <string name="courseFractures_step2_case0_instruction">Выберите правильное действие при открытом переломе с видимой раной:</string>
+    <string name="courseFractures_step2_case0_option1">Выставить рану на воздух</string>
+    <string name="courseFractures_step2_case0_option2">Закрыть рану стерильным перевязочным материалом</string>
+    <string name="courseFractures_step2_case0_option3">Нанести прямое давление на рану</string>
+
+    <string name="courseFractures_step2_case1_instruction">Какова цель наложения шины при переломе?</string>
+    <string name="courseFractures_step2_case1_option1">Увеличение боли</string>
+    <string name="courseFractures_step2_case1_option2">Иммобилизация и поддержка поврежденной конечности</string>
+    <string name="courseFractures_step2_case1_option3">Способствование движению</string>
+    <string name="courseFractures_step2_case2_instruction">Что следует избегать при наложении шины на перелом?</string>
+    <string name="courseFractures_step2_case2_word1">ненужное движение</string>
+    <string name="courseFractures_step2_case2_word2">сохранение неподвижности конечности</string>
+
+    <string name="courseFractures_step2_case3_instruction">Выберите правильный ответ:</string>
+    <string name="courseFractures_step2_case3_option1">Вызов скорой помощи не требуется при переломах</string>
+    <string name="courseFractures_step2_case3_option2">Немедленная медицинская помощь критична для тяжелых переломов</string>
+    <string name="courseFractures_step2_case3_option3">Переломы всегда требуют хирургического вмешательства</string>
+    <string name="courseFractures_step2_case3_option4">От перелома можно умереть</string>
+
+    <string name="courseFractures_step2_case4_instruction">Какова основная цель первой помощи при переломах?</string>
+    <string name="courseFractures_step2_case4_word1">предотвращение дополнительных повреждений</string>
+    <string name="courseFractures_step2_case4_word2">минимизация</string>
+    <string name="courseFractures_step2_case4_word3">максимизация</string>
+    <string name="courseFractures_step2_case4_word4">удаление</string>
+
+    <string name="courseFractures_step2_case5_instruction">Каково значение иммобилизации поврежденной конечности?</string>
+    <string name="courseFractures_step2_case5_option1">Способствовать движению</string>
+    <string name="courseFractures_step2_case5_option2">Предотвращать дополнительные повреждения и способствовать правильному заживлению</string>
+    <string name="courseFractures_step2_case5_option3">Увеличивать боль</string>
+
+    <string name="courseFractures_step2_case6_instruction">Выберите правильное действие при зеленом переломе:</string>
+    <string name="courseFractures_step2_case6_option1">Приложить холодный компресс</string>
+    <string name="courseFractures_step2_case6_option2">Иммобилизовать конечность и обратиться за медицинской помощью</string>
+    <string name="courseFractures_step2_case6_option3">Способствовать движению для предотвращения застойности</string>
+
+    <string name="courseFractures_step2_case7_instruction">Что следует делать, если есть подозрение на открытый перелом?</string>
+    <string name="courseFractures_step2_case7_option1">Оставить все как есть; со временем заживет само</string>
+    <string name="courseFractures_step2_case7_option2">Закрыть рану стерильным перевязочным материалом и немедленно обратиться за медицинской помощью</string>
+    <string name="courseFractures_step2_case7_option3">Наложить крепкое бандажное повязание для контроля кровотечения</string>
+
+    <string name="courseFractures_step2_case8_instruction">Выберите правильное первое средство первой помощи при мелком переломе:</string>
+    <string name="courseFractures_step2_case8_option1">Иммобилизовать конечность и обратиться за медицинской помощью</string>
+    <string name="courseFractures_step2_case8_option2">Игнорировать; мелкие переломы не требуют первой помощи</string>
+    <string name="courseFractures_step2_case8_option3">Нанести тепло на поврежденную область</string>
+
+    <string name="courseFractures_step2_case9_instruction">Какова роль немедленной медицинской помощи при тяжелых переломах?</string>
+    <string name="courseFractures_step2_case9_option1">Это излишне; переломы заживут сами по себе</string>
+    <string name="courseFractures_step2_case9_option2">Предоставить утешение пострадавшему</string>
+    <string name="courseFractures_step2_case9_option3">Тщательно оценить поврежденную область</string>
+
+    <string name="courseFractures_step2_case10_instruction">Что следует делать, если перелом затрагивает крупный сустав?</string>
+    <string name="courseFractures_step2_case10_word1">Обратиться за медицинской помощью немедленно</string>
+    <string name="courseFractures_step2_case10_word2">Способствовать движению для предотвращения застойности</string>
+    <string name="courseFractures_step2_case10_word3">Приложить теплый компресс</string>
+    <string name="courseFractures_step2_case10_word4">Оставить все как есть; со временем заживет само</string>
+
+    <!-- step 3 -->
+    <string name="courseFractures_step3_readText">
+        Переломы - это распространенные повреждения, требующие быстрой и подходящей первой помощи. Перелом происходит, когда нарушается целостность костей. Это может произойти из-за травмы, падений или излишней силы, приложенной к кости. Распознавание признаков и предоставление немедленной помощи - ключевые шаги эффективного управления переломами.
+        \n\nОбщие симптомы перелома включают боль, отечность и деформацию на месте повреждения. Крайне важно тщательно оценить поврежденную область и искать признаки, такие как ограниченная подвижность, синяки и болезненность. Немедленные действия должны быть предприняты для иммобилизации поврежденной конечности и вызова медицинской помощи.
+        \n\nСуществуют различные типы переломов, включая зеленые, мелкие и открытые переломы с видимым выступом кости. Тяжесть перелома определяет соответствующие средства первой помощи. В случаях открытых переломов с видимыми ранами необходимо закрыть рану стерильным перевязочным материалом, чтобы предотвратить инфекцию.
+        \n\nШинирование - ключевая техника первой помощи при переломах. Оно заключается в иммобилизации поврежденной конечности для предотвращения дополнительных повреждений и способствования правильному заживлению. Важно шинировать перелом в том положении, в котором он был найден, и избегать ненужного движения поврежденной области.
+        \n\nПомните, что немедленная медицинская помощь критична для тяжелых переломов или тех, которые затрагивают крупные суставы. Вызов скорой медицинской помощи и предоставление утешения пострадавшему - важные шаги в процессе первой помощи при переломах.
+    </string>
+    <string name="courseFractures_step3_case0_instruction">Выберите правильное действие при открытом переломе с видимой раной:</string>
+    <string name="courseFractures_step3_case0_option1">Выставить рану на воздух</string>
+    <string name="courseFractures_step3_case0_option2">Закрыть рану стерильным перевязочным материалом</string>
+    <string name="courseFractures_step3_case0_option3">Наложить прямое давление на рану</string>
+
+    <string name="courseFractures_step3_case1_instruction">Какова цель наложения шины при переломе?</string>
+    <string name="courseFractures_step3_case1_option1">Увеличение боли</string>
+    <string name="courseFractures_step3_case1_option2">Иммобилизация и поддержка поврежденной конечности</string>
+    <string name="courseFractures_step3_case1_option3">Способствование движению</string>
+
+    <string name="courseFractures_step3_case2_instruction">Что следует избегать при наложении шины на перелом?</string>
+    <string name="courseFractures_step3_case2_word1">ненужное движение</string>
+
+    <string name="courseFractures_step3_case2_word2">сохранение неподвижности конечности</string>
+
+    <string name="courseFractures_step3_case3_instruction">Выберите правильный ответ:</string>
+    <string name="courseFractures_step3_case3_option1">Вызов скорой помощи не требуется при переломах</string>
+    <string name="courseFractures_step3_case3_option2">Немедленная медицинская помощь критична для тяжелых переломов</string>
+    <string name="courseFractures_step3_case3_option3">Переломы всегда требуют хирургического вмешательства</string>
+    <string name="courseFractures_step3_case3_option4">От перелома можно умереть</string>
+
+    <string name="courseFractures_step3_case4_instruction">Какова основная цель первой помощи при переломах?</string>
+    <string name="courseFractures_step3_case4_word1">предотвращение дополнительных повреждений</string>
+    <string name="courseFractures_step3_case4_word2">минимизация</string>
+    <string name="courseFractures_step3_case4_word3">ожог</string>
+
+    <string name="courseFractures_step3_case5_instruction">Каково значение иммобилизации поврежденной конечности?</string>
+    <string name="courseFractures_step3_case5_option1">Способствовать движению</string>
+    <string name="courseFractures_step3_case5_option2">Предотвращать дополнительные повреждения и способствовать правильному заживлению</string>
+    <string name="courseFractures_step3_case5_option3">Увеличивать боль</string>
+
+    <string name="courseFractures_step3_case6_instruction">Выберите правильное действие при зеленом переломе:</string>
+    <string name="courseFractures_step3_case6_option1">Приложить холодный компресс</string>
+    <string name="courseFractures_step3_case6_option2">Иммобилизуйте конечность и обратитесь за медицинской помощью</string>
+    <string name="courseFractures_step3_case6_option3">Поощряйте движение, чтобы предотвратить застой</string>
+
+    <string name="courseFractures_step3_case7_instruction">Что следует делать, если вы подозреваете открытый перелом?</string>
+    <string name="courseFractures_step3_case7_option1">Оставьте его в покое; он заживет сам</string>
+    <string name="courseFractures_step3_case7_option2">Закройте рану стерильным перевязочным материалом и немедленно обратитесь за медицинской помощью</string>
+    <string name="courseFractures_step3_case7_option3">Наложите плотный бинт для контроля кровотечения</string>
+
+    <string name="courseFractures_step3_case8_instruction">Выберите правильные меры первой помощи для трещины:</string>
+    <string name="courseFractures_step3_case8_option1">Иммобилизуйте конечность и обратитесь за медицинской помощью</string>
+    <string name="courseFractures_step3_case8_option2">Игнорируйте; трещины не требуют первой помощи</string>
+    <string name="courseFractures_step3_case8_option3">Нанесите тепло на поврежденную область</string>
+
+    <string name="courseFractures_step3_case9_instruction">Какова роль немедленной медицинской помощи при тяжелых переломах?</string>
+    <string name="courseFractures_step3_case9_option1">Это необязательно; переломы заживут сами по себе</string>
+    <string name="courseFractures_step3_case9_option2">Для обеспечения комфорта пострадавшему</string>
+    <string name="courseFractures_step3_case9_option3">Оценить поврежденную область внимательно</string>
+
+    <string name="courseFractures_step3_case10_instruction">Что следует делать, если перелом затрагивает крупный сустав?</string>
+    <string name="courseFractures_step3_case10_word1">Обратитесь за медицинской помощью немедленно</string>
+    <string name="courseFractures_step3_case10_word2">Поощряйте движение, чтобы предотвратить застой</string>
+    <string name="courseFractures_step3_case10_word3">Нанесите теплый компресс</string>
+    <string name="courseFractures_step3_case10_word4">Оставьте его в покое; он заживет сам</string>
+    <string name="notlevel">У вас недостаточно уровня для этого, пройдите уроки</string>
+    <string name="in_case_of_text">В случае пожара первое, что вам нужно сделать, это прикрыть рот, чтобы дым не попал в легкие.</string>
 </resources>
